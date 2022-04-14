@@ -12,7 +12,7 @@ export default function Contact() {
         <Layout>
             <Link to="/">
                 <Text className="title">
-                    pelusas
+                    pelusillas grises
                 </Text>
             </Link>
             <Text>
