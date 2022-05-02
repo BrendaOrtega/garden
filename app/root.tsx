@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from "~/theme"
+import Nav from "~/components/Nav"
 import {
   Links,
   LiveReload,
@@ -25,6 +26,7 @@ export default function App() {
       </head>
       <body>
         <ChakraProvider theme={theme}>
+          <Nav />
           <Outlet />
         </ChakraProvider>
         <ScrollRestoration />
