@@ -16,23 +16,20 @@ export default function Index() {
 const Body = () => {
   return <>
     <Flex
-      justifyContent="space-between"
+      w='100%'
+      justifyContent='space-between'
       flexWrap={["wrap", "wrap", "nowrap"]}
       // flexDirection={["column", "row", "row-reverse", "column", "row"]}
-      gap="0"
+      gap={10}
       alignItems="center"
       h={["auto", "500px"]}
       px={20}
     >
-      <Text
-        flex="1"
-      >
-        <Heading size='2xl' lineHeight={"tall"}>
-          👋 Hello, I'm Brenda.
-          <br />
-          I'm a Product Designer from México.
-        </Heading>
-      </Text>
+      <Heading size='2xl' lineHeight={"tall"}>
+        👋 Hello, I'm Brenda.
+        <br />
+        I'm a Product Designer <br /> working from México.
+      </Heading>
       <Image
         w={"240px"}
         src="/images/emoji.png" />
@@ -76,6 +73,7 @@ const Card = ({ image, name, description }) => {
         boxShadow='lg'
         marginY={8}
         bg="white"
+        _hover={{ boxShadow: 'xl' }}
       >
         <Image src={image} objectFit={"cover"} borderRadius='lg' h="400px" w="100vw" />
         <Box
@@ -84,7 +82,7 @@ const Card = ({ image, name, description }) => {
           <Heading size="md">
             {name}
           </Heading>
-          <Text fontSize='md' color='tooltip' marginTop={'2'}>{description}</Text>
+          <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
         </Box>
       </Flex >
     </Link>
