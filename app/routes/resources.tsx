@@ -16,10 +16,11 @@ export default function Resources() {
                     <Box>
                         <Cathegories />
                     </Box>
-                    <Box>
+                    <Box marginTop='48px'>
                         <Card
-                            image='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Ficons8-open-book-emoji.svg?alt=media&token=66a821e7-d1ea-4971-b146-de62ff8818ec'
-                            description='Lorem'
+                            image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
+                            title='Emotional design'
+                            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
                             link='https://www.fixtergeek.com.ms'
                         />
                     </Box>
@@ -71,13 +72,16 @@ const Type = ({ icon, text }) => {
     )
 }
 
-const Card = ({ image, description, link }) => {
+const Card = ({ image, description, link, title }) => {
     return (
-        <Flex>
-            <Image src={image} />
-            <Text>{description}</Text>
+        <Flex h='120px' p={4} gap={4}>
+            <Image h='90%' src={image} />
+            <Box >
+                <Heading fontFamily='Avenir' fontSize='md'>{title}</Heading>
+                <Text color='text' fontSize='md' lineHeight='1'>{description}</Text>
+            </Box>
             <a href={link}>
-                Ver más
+                Ver más info
             </a>
         </Flex>
     )

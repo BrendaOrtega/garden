@@ -7,7 +7,7 @@ const theme = extendTheme({
         global: {
             // styles for the `body`
             body: {
-                bg: 'gray.100',
+                bg: '#fbfbfb',
                 color: 'black',
             },
             // styles for the `a`  from remix
@@ -72,24 +72,25 @@ const theme = extendTheme({
         tooltip: '#BBC3D1',
         transparent: 'transparent',
         black: '#15191E',
+        secondary: "#4966F6",
         gray: {
-            100: '#fbfbfb',
+            100: '#F1F2F6',
             200: '#F1F2F6',
             500: '#A3A8B0',
             800: '#4D5562',
             900: '#1C1F25',
         },
         brand: {
-            50: "#dae0fd",
-            100: "#91a3f9",
-            200: "#6d84f7",
-            300: "#5b75f6",
+            50: "#f7de93",
+            100: "#f5d981",
+            200: "#f4d36f",
+            300: "#f3ce5d",
             400: "#4966f6",
-            500: "#415bdd",
-            600: "#3a51c4",
-            700: "#3347ac",
-            800: "#2b3d93",
-            900: "#24337b"
+            500: "#f2c94c",
+            600: "#d9b444",
+            700: "#c1a03c",
+            800: "#c1a03c",
+            900: "#91782d"
         },
     },
     sizes: {

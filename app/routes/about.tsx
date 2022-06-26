@@ -11,7 +11,6 @@ export default function About() {
     return (
         <Layout
             body={<Body />}
-            footer={<Footer />}
         >
 
         </Layout>

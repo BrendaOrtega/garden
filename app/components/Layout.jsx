@@ -4,7 +4,7 @@ export default function Layout({ list, body, footer }) {
     return (
         <Container
             maxW={"container.xxl"}
-            py={40}
+            pt={40}
             px={20}
         >
             <Flex

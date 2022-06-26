@@ -13,6 +13,7 @@ export default function Nav() {
             borderRadius='40px'
             h={20}
             marginTop={8}
+            boxShadow='0 10px 15px -3px rgba(204, 204, 204, 0.3),0 4px 6px -2px rgba(204, 204, 204, 0.05)'
         >
             <Flex
                 h='100%'
