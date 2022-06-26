@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from "~/theme"
 import Nav from "~/components/Nav"
+import Footer from "~/components/Footer"
 import {
   Links,
   LiveReload,
@@ -13,7 +14,7 @@ import {
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Brenda González Ortega",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -28,6 +29,7 @@ export default function App() {
         <ChakraProvider theme={theme}>
           <Nav />
           <Outlet />
+          <Footer />
         </ChakraProvider>
         <ScrollRestoration />
         <Scripts />

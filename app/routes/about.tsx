@@ -11,13 +11,12 @@ export default function About() {
     return (
         <Layout
             body={<Body />}
-            footer={<Footer />}
         >
 
         </Layout>
     )
 }
-const image = "https://scontent.fmex27-1.fna.fbcdn.net/v/t39.30808-6/271243862_4679889645439720_5871205983227558537_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeHewxSbR56ZFA3pUNORZnF7WqnmTUuRz1ZaqeZNS5HPVu_hoIPtumX5O94_tSQwd0eHaYUddBfIuJvdQGFGyYu6&_nc_ohc=8Tr0OaHJor8AX9I5994&_nc_ht=scontent.fmex27-1.fna&oh=00_AT_gkU53i73Je600QVWr_6yAu2i1FtF8VWa5xy6KJfg_jg&oe=6271D8A8"
+const image = "https://scontent.fmex31-1.fna.fbcdn.net/v/t39.30808-6/254934065_4471923606236326_1885709296426766927_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFQICTOxB6l-acGH4PBEjPvsi2QBvL3SUGyLZAG8vdJQaY0R0t-KV3DqN4LVziHBxK-yH2ByEGQQbzgk0gWakVr&_nc_ohc=biJO9U-jR48AX-19rCR&_nc_ht=scontent.fmex31-1.fna&oh=00_AT9xKqN_AjFZq5WvmGTboZgIjTKxaG9Gn9JoTmSEdiEyaQ&oe=62AA9EB0"
 const michi = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fmichi.svg?alt=media&token=faed25c9-c1df-4e3b-9954-e48a72a76984"
 
 const Body = () => {
@@ -42,6 +41,13 @@ const Body = () => {
                     <br />
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla laborum sapiente porro ipsa aliquam dolorum facere impedit magni laboriosam, ullam quos fugiat est ipsam sint hic ea, omnis maxime.
                 </Text>
+                <Flex my='48px'>
+                    <a href="mailto:bremin11.20.93@gmail.com" aria-label="Mail" rel="noopener noreferrer">
+                        <Text color='text' fontSize="xl">  ✉️ Write me </Text>
+                    </a>
+                    <hr style={{ backgroundColor: '#A3A8B0', width: '1px', height: '24px', margin: '0 8px' }} />
+                    <Text color='text' fontSize="xl"> 📝 Download my CV </Text>
+                </Flex>
             </Box>
             <Image
                 w="50%"
