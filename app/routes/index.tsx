@@ -44,18 +44,38 @@ const List = () => {
       marginTop={12}
     >
       <Card
-        name="Tumblr  — Making Queueing Better on Mobile"
-        description="Product Design, Agency"
+        name="Covalto App"
+        description="Credit Card Aplication & Internal Management Platform | Fitech"
+        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2F71.png?alt=media&token=45550d18-ba7f-4371-baed-369706c70174"
+      />
+      <Card
+        name="Webdive"
+        description="Web Application | SaaS"
         image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fportada-covalto.png?alt=media&token=f442985a-f817-4b97-a063-9f25af7fc583"
       />
       <Card
-        name="Tumblr  — Making Queueing Better on Mobile"
-        description="Product Design, Agency"
+        name="Santander Móvil"
+        description="Banking Mobile Aplication | Banking"
         image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fportada-covalto.png?alt=media&token=f442985a-f817-4b97-a063-9f25af7fc583"
       />
       <Card
-        name="Tumblr  — Making Queueing Better on Mobile"
-        description="Product Design, Agency"
+        name="Santander Personal"
+        description="Banking Mobile Aplication & Internal Management Application | Banking"
+        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fportada-covalto.png?alt=media&token=f442985a-f817-4b97-a063-9f25af7fc583"
+      />
+      <Card
+        name="FixterGeek"
+        description="Website & Learning platform | Education"
+        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fportada-covalto.png?alt=media&token=f442985a-f817-4b97-a063-9f25af7fc583"
+      />
+      <Card
+        name="SurveyUp"
+        description="Surveys web application & Management Platform | Market Research"
+        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fportada-covalto.png?alt=media&token=f442985a-f817-4b97-a063-9f25af7fc583"
+      />
+      <Card
+        name="Unikko"
+        description="Website & Property Management Application | Real State "
         image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fportada-covalto.png?alt=media&token=f442985a-f817-4b97-a063-9f25af7fc583"
       />
     </VStack >
@@ -74,7 +94,9 @@ const Card = ({ image, name, description }) => {
         bg="white"
         _hover={{ boxShadow: 'xl' }}
       >
-        <Image src={image} objectFit={"cover"} borderRadius='lg' h="400px" w="100vw" />
+        <Flex h="400px" overflow='hidden' borderRadius='lg lg none none'>
+          <Image src={image} objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
+        </Flex>
         <Flex>
           <Box
             padding={4}
@@ -85,7 +107,6 @@ const Card = ({ image, name, description }) => {
             <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
           </Box>
         </Flex>
-
       </Flex >
     </Link>
   )

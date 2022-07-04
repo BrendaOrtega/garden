@@ -40,6 +40,7 @@ const Cathegories = () => {
             marginTop={20}
             borderRight='2px solid rgba(77,85,98,.2)'
             paddingRight={4}
+            marginRight={8}
         >
             <Type
                 text="Libros"
@@ -74,15 +75,19 @@ const Type = ({ icon, text }) => {
 
 const Card = ({ image, description, link, title }) => {
     return (
-        <Flex h='120px' p={4} gap={4}>
-            <Image h='90%' src={image} />
-            <Box >
+        <Flex h='120px' p={4} gap={4} bg='white' p='2%' boxSizing='border-box' alignItems='stretch' border='1px solid #F8F8F8' borderRadius={4} cursor='pointer'>
+            <Image h='100%' src={image} />
+            <Flex flexDirection='column' >
                 <Heading fontFamily='Avenir' fontSize='md'>{title}</Heading>
                 <Text color='text' fontSize='md' lineHeight='1'>{description}</Text>
-            </Box>
-            <a href={link}>
-                Ver más info
-            </a>
+            </Flex>
+            {/* <Flex alignItems='center'>
+                <a href={link}>
+                    <Button colorScheme='gray' variant='ghost' size='xs'>
+                        Ver más
+                    </Button>
+                </a>
+            </Flex> */}
         </Flex>
     )
 }

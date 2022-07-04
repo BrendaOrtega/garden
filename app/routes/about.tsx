@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, Box, Image } from "@chakra-ui/react"
+import { Flex, Heading, Text, Box, Image, Skeleton } from "@chakra-ui/react"
 import { Link } from "@remix-run/react"
 import Layout from "~/components/Layout"
 import styles from "~/styles/about.css"
@@ -16,7 +16,6 @@ export default function About() {
         </Layout>
     )
 }
-const image = "https://scontent.fmex31-1.fna.fbcdn.net/v/t39.30808-6/254934065_4471923606236326_1885709296426766927_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFQICTOxB6l-acGH4PBEjPvsi2QBvL3SUGyLZAG8vdJQaY0R0t-KV3DqN4LVziHBxK-yH2ByEGQQbzgk0gWakVr&_nc_ohc=biJO9U-jR48AX-19rCR&_nc_ht=scontent.fmex31-1.fna&oh=00_AT9xKqN_AjFZq5WvmGTboZgIjTKxaG9Gn9JoTmSEdiEyaQ&oe=62AA9EB0"
 const michi = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fmichi.svg?alt=media&token=faed25c9-c1df-4e3b-9954-e48a72a76984"
 
 const Body = () => {
@@ -42,19 +41,21 @@ const Body = () => {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla laborum sapiente porro ipsa aliquam dolorum facere impedit magni laboriosam, ullam quos fugiat est ipsam sint hic ea, omnis maxime.
                 </Text>
                 <Flex my='48px'>
-                    <a href="mailto:bremin11.20.93@gmail.com" aria-label="Mail" rel="noopener noreferrer">
+                    <a href="mailto:brenda@fixter.org" aria-label="Mail" rel="noopener noreferrer">
                         <Text color='text' fontSize="xl">  ✉️ Write me </Text>
                     </a>
                     <hr style={{ backgroundColor: '#A3A8B0', width: '1px', height: '24px', margin: '0 8px' }} />
-                    <Text color='text' fontSize="xl"> 📝 Download my CV </Text>
+                    <a href="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2FProductDesigner_Brenda%20Gonzalez.pdf?alt=media&token=3a199ddc-1de1-4cf9-a9e4-efd4bb300d74" target='_blank'>
+                        <Text color='text' fontSize="xl"> 📝 Download my CV </Text>
+                    </a>
                 </Flex>
             </Box>
             <Image
                 w="50%"
                 h="65vh"
                 borderRadius='lg'
-                objectFit={"cover"}
-                src={image} alt="brenda's profile photo" />
+                objectFit="cover"
+                src="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2F290392402_1155660754995788_4128669087143201483_n.jpg?alt=media&token=80873c39-44cb-4177-b216-6eef6a5d3f42" alt="brenda's profile photo" />
         </Flex>
     </>
 }
