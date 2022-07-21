@@ -7,7 +7,7 @@ const theme = extendTheme({
         global: {
             // styles for the `body`
             body: {
-                bg: '#fbfbfb',
+                bg: '#F8F8F8',
                 color: 'black',
             },
             // styles for the `a`  from remix
@@ -21,7 +21,7 @@ const theme = extendTheme({
     },
     fonts: {
         body: "Avenir",
-        heading: "Georgia, serif",
+        heading: "Proxima Nova",
         mono: "Menlo, monospace",
     },
 

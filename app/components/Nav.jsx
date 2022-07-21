@@ -24,8 +24,7 @@ export default function Nav() {
                 <Link to="/">
                     <Anchor >
                         <Flex alignItems='center'>
-                            <Image src='/images/michis.svg' h="36px" alt="Brenda's logo" marginRight={4} />
-                            <Text>Brenda González Ortega</Text>
+                            <Image src='/images/michi-name.svg' h="36px" alt="Brenda's logo" marginRight={4} />
                         </Flex>
                     </Anchor>
                 </Link>

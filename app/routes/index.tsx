@@ -56,7 +56,7 @@ const List = () => {
       <Card
         name="Santander Móvil"
         description="Banking Mobile Aplication | Banking"
-        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fportada-covalto.png?alt=media&token=f442985a-f817-4b97-a063-9f25af7fc583"
+        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fsantander.png?alt=media&token=1285dbee-e120-4354-9480-64bfa2cbf988"
       />
       <Card
         name="Santander Personal"

@@ -45,10 +45,10 @@ export default function covalto() {
                 </Box>
                 <Flex my={14}>
                     <Box>
-                        <Box w='180px' h={1} bg='#F2C94C'></Box>
                         <Heading size='xl' mb={4} textAlign='left'>
                             0.1 Empathy
                         </Heading >
+                        <Image w='160px' src='./images/mark3.svg' />
                     </Box>
                     <Box>
                         <Text mb={4} color='text'>User research is intended to deepen the understanding of users, their frustrations and expectations, their needs, limitations, reasoning and objectives.</Text>

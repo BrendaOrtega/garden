@@ -1,29 +1,29 @@
 import { Box, Container, Heading, Flex, Text, Button, Image } from "@chakra-ui/react";
 import { Link } from "@remix-run/react"
-import { json } from "@remix-run/node";
+import { json, redirect } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import MarkDown from "~/components/MarkDown";
 import styles from "~/styles/markdown.css"
 import { HiOutlineArrowSmLeft } from 'react-icons/hi';
-import { PrismaClient } from '@prisma/client'
+import dbConnection from "~/db/db.server"
+
 
 export function links() {
     return [{ rel: "stylesheet", href: styles }]
 }
 export async function loader({ params }) {
-    const prisma = new PrismaClient()
-    const { slug } = params
-    const data = await prisma.post.findFirst({
-        where: {
-            slug
-        }
-    })
-
-    return data
+    const slug = params.slug
+    const db = await dbConnection()
+    const post = await db.Post.findOne({ slug })
+    if (!slug) {
+        return redirect('/blog')
+    }
+    return { post }
 }
 
 export default function () {
-    const loaderData = useLoaderData()
+    const { post } = useLoaderData()
+    console.log("not null", post)
     return (
         <Box>
             <Box
@@ -52,8 +52,7 @@ export default function () {
                     paddingBottom={"4"}
                     fontSize={48}
                 >
-                    Título del post de blog
-                    {/* {loaderData.title} */}
+                    {post.title}
                 </Heading>
                 <Flex
                     justifyContent={"space-between"}
@@ -65,7 +64,7 @@ export default function () {
                             borderRadius={"50%"}
                             bgSize="cover"
                             bgPos={"center"}
-                            bgImg={loaderData.photoUrl}
+                            bgImg={post.photoUrl || ''}
                         />
                         <Box
                             paddingLeft={2}
@@ -74,19 +73,19 @@ export default function () {
                                 fontWeight={"bold"}
                             >
                                 Brenda Gonzalez Ortega
-                                {/* {loaderData.authorName} */}
+                                {/* {post.authorName} */}
                             </Text>
                             <Text
                                 color={"#767676"}
-                            >{loaderData.authorAt}</Text>
+                            >{post.authorAt}</Text>
                         </Box>
                     </Flex>
                     <Text
                         color={"#767676"}
-                    >{loaderData.createdAt}</Text>
+                    >{post.createdAt}</Text>
                 </Flex>
                 <MarkDown>
-                    {loaderData.body}
+                    {post.body}
                 </MarkDown>
             </Container>
         </Box>
