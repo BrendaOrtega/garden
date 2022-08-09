@@ -7,7 +7,7 @@ const theme = extendTheme({
         global: {
             // styles for the `body`
             body: {
-                bg: '#F8F8F8',
+                bg: 'white',
                 color: 'black',
             },
             // styles for the `a`  from remix
@@ -71,7 +71,7 @@ const theme = extendTheme({
     colors: {
         tooltip: '#BBC3D1',
         transparent: 'transparent',
-        black: '#15191E',
+        black: '#07192B',
         secondary: "#4966F6",
         gray: {
             100: '#F1F2F6',

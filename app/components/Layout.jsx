@@ -4,19 +4,17 @@ export default function Layout({ list, body, footer }) {
     return (
         <Container
             maxW={"container.xxl"}
-            pt={40}
-            px={20}
+            pt={{ base: '20', lg: '40' }}
+            px={{ base: '8', lg: '20' }}
         >
             <Flex
             >
                 {body}
             </Flex>
-            <Flex>
+            <Flex justifyContent='center'>
                 {list}
             </Flex>
-            <Flex>
-                {footer}
-            </Flex>
+
         </Container >
     );
 }
