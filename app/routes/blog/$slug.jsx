@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Flex, Text, Button, Image } from "@chakra-ui/react";
+import { Box, Container, Heading, Flex, Text, Button, Image, Divider } from "@chakra-ui/react";
 import { Link } from "@remix-run/react"
 import { json, redirect } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
@@ -7,10 +7,15 @@ import styles from "~/styles/markdown.css"
 import { HiOutlineArrowSmLeft } from 'react-icons/hi';
 import dbConnection from "~/db/db.server"
 
+const twitter = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fmedia%2Ftwitter.svg?alt=media&token=8cc3ffaa-806f-420b-a50d-957511961cd8"
+const facebook = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fmedia%2Ffacebook.svg?alt=media&token=6fcb28c2-bc83-4fdb-a304-7a49d40f44d8"
+const linkedin = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fmedia%2Ficons8-linkedin.svg?alt=media&token=3e7d9b8e-9553-4856-ac01-e804783344cd"
+const link = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fmedia%2Flink.svg?alt=media&token=d11a8a8d-4e68-4da3-b539-0ab879797c3f"
 
 export function links() {
     return [{ rel: "stylesheet", href: styles }]
 }
+
 export async function loader({ params }) {
     const slug = params.slug
     const db = await dbConnection()
@@ -28,7 +33,7 @@ export default function () {
         <Box>
             <Box
                 w="100%"
-                h={500}
+                minH={{ base: '280px', lg: '540px' }}
                 bgSize="cover"
                 bgPos={"center"}
                 bgImg={"https://images.pexels.com/photos/161863/edinburgh-carlton-hill-landscape-scotland-161863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"}
@@ -37,53 +42,68 @@ export default function () {
             <Container
                 paddingY={"8"}
                 maxW={"container.sm"}
+                position='relative'
             >
-                <Link to="/">
+                <Link to="/blog" >
                     <Button
+                        top={{ base: '20px', lg: '40px' }}
+                        position='absolute'
+                        left={{ base: '16px', lg: '-54px' }}
                         variant={"ghost"}
                         fontSize={24}
                     >
                         <HiOutlineArrowSmLeft />
                     </Button>
                 </Link>
-
                 <Heading
-                    paddingTop={"8"}
                     paddingBottom={"4"}
-                    fontSize={48}
+                    fontSize={{ base: '32px', lg: '48' }}
+                    lineHeight={{ base: '110%', lg: '130%' }}
+                    mt={{ base: '40px', lg: 'inherit' }}
+                    mb={{ base: '8px', lg: 'inherit' }}
                 >
                     {post.title}
                 </Heading>
-                <Flex
-                    justifyContent={"space-between"}
-                    marginBottom={12}>
-                    <Flex>
-                        <Box
-                            w={12}
-                            h={12}
-                            borderRadius={"50%"}
-                            bgSize="cover"
-                            bgPos={"center"}
-                            bgImg={post.photoUrl || ''}
-                        />
-                        <Box
-                            paddingLeft={2}
-                        >
-                            <Text
-                                fontWeight={"bold"}
+                <Flex mb={{ base: '16px', lg: 'inherit' }} justifyContent='space-between' alignItems='flex-start' flexWrap={{ base: 'wrap', lg: 'no-wrap' }}>
+                    <Flex
+                        justifyContent={"space-between"}
+                        marginBottom={{ base: '16px', lg: '32px' }}>
+                        <Flex>
+                            <Box
+                                w={12}
+                                h={12}
+                                borderRadius={"50%"}
+                                bgSize="cover"
+                                bgPos={"center"}
+                                bgImg={post.authorImage || ''}
+                            />
+                            <Box
+                                paddingLeft={2}
                             >
-                                Brenda Gonzalez Ortega
-                                {/* {post.authorName} */}
-                            </Text>
-                            <Text
-                                color={"#767676"}
-                            >{post.authorAt}</Text>
-                        </Box>
+                                <Text
+                                    mb='0px'
+                                    fontWeight={"bold"}
+                                >
+                                    Brenda Gonzalez Ortega
+                                    {/* {post.authorName} */}
+                                </Text>
+                                <Text
+                                    color={"#767676"}
+                                >{post.authorAt}</Text>
+                            </Box>
+                        </Flex>
+                        <Text
+                            color={"#767676"}
+                        >{post.createdAt}</Text>
                     </Flex>
-                    <Text
-                        color={"#767676"}
-                    >{post.createdAt}</Text>
+                    <Flex bg='pìnk' gap='2'>
+                        <Image w='24px' transition='all 1s ease' _hover={{ opacity: '1', }} cursor='pointer' opacity='.3' src={twitter} />
+                        <Image w='24px' transition='all 1s ease' opacity='.3' _hover={{ opacity: '1', }} cursor='pointer' src={facebook} />
+                        <Image w='24px' transition='all 1s ease' opacity='.3' _hover={{ opacity: '1', }} cursor='pointer' src={linkedin} />
+                        <Image w='24px' transition='all 1s ease' opacity='.3' _hover={{ opacity: '1', }} cursor='pointer' src={link} />
+                    </Flex>
                 </Flex>
+                <Divider bg='#373C50' />
                 <MarkDown>
                     {post.body}
                 </MarkDown>

@@ -1,6 +1,6 @@
 import { Container, Flex, Box, ControlBox } from "@chakra-ui/react";
 
-export default function Layout({ list, body, footer }) {
+export default function Layout({ list, body }) {
     return (
         <Container
             maxW={"container.xxl"}
@@ -14,7 +14,7 @@ export default function Layout({ list, body, footer }) {
             <Flex justifyContent='center'>
                 {list}
             </Flex>
-
+        
         </Container >
     );
 }

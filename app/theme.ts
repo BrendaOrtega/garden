@@ -38,6 +38,9 @@ const theme = extendTheme({
                     _hover: { bg: 'gray.200' },
                     _focus: { border: 'none' },
                 },
+                'ghost': {
+
+                }
             }
         },
         Link: {
@@ -106,7 +109,7 @@ const theme = extendTheme({
 },
     withDefaultColorScheme({
         colorScheme: 'brand',
-        components: ['Button'],
+        components: ['Button:filter'],
     }),
 )
 
