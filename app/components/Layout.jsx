@@ -7,11 +7,11 @@ export default function Layout({ list, body }) {
             <Container
                 maxW={"container.xxl"}
                 px={{ base: '8', lg: '20' }}
+                pt={{
+                    base: '80px', lg: '10%'
+                }}
             >
                 <Flex
-                    mt={{
-                        base: '80px', lg: '16%'
-                    }}
                 >
                     {body}
                 </Flex>

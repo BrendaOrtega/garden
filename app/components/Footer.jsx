@@ -18,7 +18,7 @@ export default function Footer() {
             <Flex
                 justifyContent={"center"}
             >
-                <a href="/https://twitter.com/brendaojs" target="_blank" rel="noopener noreferrer" >
+                <a href="https://twitter.com/brendaojs" target="_blank" rel="noopener noreferrer" >
                     <Image src={twitter} w="24px" marginX={2} alt="twitter logo blue" />
                 </a>
                 <a href="https://www.linkedin.com/in/brenda-ort/" target="_blank" rel="noopener noreferrer" >
