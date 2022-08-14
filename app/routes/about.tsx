@@ -35,7 +35,7 @@ const Body = () => {
                 <Heading fontSize="6xl" >
                     🐝
                 </Heading>
-                <Heading fontSize={{ base: '4xl', lg: '5xl' }} marginY={4} lineHeight="base">
+                <Heading fontSize={{ base: '4xl', lg: '5xl' }} marginY={4} lineHeight="base" color='title'>
                     About me
                 </Heading>
                 <Text color="text" fontSize={{ base: 'xl', lg: '2xl' }}>

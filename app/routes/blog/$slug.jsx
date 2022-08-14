@@ -61,6 +61,7 @@ export default function () {
                     lineHeight={{ base: '110%', lg: '130%' }}
                     mt={{ base: '40px', lg: 'inherit' }}
                     mb={{ base: '8px', lg: 'inherit' }}
+                    color='title'
                 >
                     {post.title}
                 </Heading>

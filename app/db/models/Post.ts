@@ -12,7 +12,8 @@ const schema = new Schema(
         category: String,
         authorName: String,
         authorImage: String,
-        slug: String
+        slug: String,
+        main: Boolean,
     },
     {
         timestamps: true,
@@ -35,5 +36,6 @@ export type PostType = {
     category?: string,
     authorName?: string,
     authorImage?: string,
-    slug: string
+    slug: string,
+    main?: boolean,
 };

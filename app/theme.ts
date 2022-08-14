@@ -91,7 +91,7 @@ const theme = extendTheme({
         },
     },
     colors: {
-        white: '#F4F4F4',
+        white: '#ffffff',
         tooltip: '#BBC3D1',
         transparent: 'transparent',
         black: '#0B0E18',

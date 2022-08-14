@@ -12,7 +12,7 @@ export default function Resources() {
                 maxW={"container.xxl"}
                 p={{ base: '160px 16px 80px 16px', lg: '240px  80px 120px 80px' }}
             >
-                <Heading textAlign='center' fontSize={{ base: '4xl', lg: '5xl' }}>
+                <Heading textAlign='center' fontSize={{ base: '4xl', lg: '5xl' }} color='title'>
                     My best recommendations on ux resources
                 </Heading>
                 <TabBar />
