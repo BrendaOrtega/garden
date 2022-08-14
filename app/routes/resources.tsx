@@ -1,29 +1,58 @@
-import { Flex, Heading, Text, Box, Image, Container, VStack, Button } from "@chakra-ui/react"
+import { Flex, Heading, Text, Box, Image, Container, VStack, Button, Divider } from "@chakra-ui/react"
 import { Link, Links } from "@remix-run/react"
 import Layout from "~/components/Layout"
+import TabBar from "~/components/TabBar"
+import { useState } from 'react'
 
 export default function Resources() {
+
     return (
         <>
             <Container
                 maxW={"container.xxl"}
-                py={40}
-                px={20}>
-                <Heading textAlign='center'>
+                p={{ base: '160px 16px 80px 16px', lg: '240px  80px 120px 80px' }}
+            >
+                <Heading textAlign='center' fontSize={{ base: '4xl', lg: '5xl' }}>
                     My best recommendations on ux resources
                 </Heading>
-                <Flex>
-                    <Box>
-                        <Cathegories />
-                    </Box>
-                    <Box marginTop='48px'>
-                        <Card
-                            image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
-                            title='Emotional design'
-                            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-                            link='https://www.fixtergeek.com.ms'
-                        />
-                    </Box>
+                <TabBar />
+                <Flex gap={10} justifyContent='center' flexWrap='wrap'>
+                    <BookCard
+                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
+                        title='Emotional design'
+                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+                        link='https://www.fixtergeek.com.ms'
+                    />
+                    <BookCard
+                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
+                        title='Emotional design'
+                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+                        link='https://www.fixtergeek.com.ms'
+                    />
+                    <BookCard
+                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
+                        title='Emotional design'
+                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+                        link='https://www.fixtergeek.com.ms'
+                    />
+                    <BookCard
+                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
+                        title='Emotional design'
+                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+                        link='https://www.fixtergeek.com.ms'
+                    />
+                    <BookCard
+                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
+                        title='Emotional design'
+                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+                        link='https://www.fixtergeek.com.ms'
+                    />
+                    <BookCard
+                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
+                        title='Emotional design'
+                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+                        link='https://www.fixtergeek.com.ms'
+                    />
                 </Flex>
             </Container>
         </>
@@ -63,31 +92,26 @@ const Cathegories = () => {
     )
 }
 
-const Type = ({ icon, text }) => {
+const BookCard = ({ image, description, link, title }) => {
     return (
-        <Button variant='filter'
+        <Flex flexDir='column' w={{ base: '80%', lg: '260px' }} h='auto' alignItems='center' position='relative'
+            role='group'
         >
-            <Image w={8} h={8} src={icon} alt='cathegory icon' objectFit={"cover"} />
-            <Text>{text}</Text>
-        </Button>
-    )
-}
-
-const Card = ({ image, description, link, title }) => {
-    return (
-        <Flex h='120px' p={4} gap={4} bg='white' p='2%' boxSizing='border-box' alignItems='stretch' border='1px solid #F8F8F8' borderRadius={4} cursor='pointer'>
-            <Image h='100%' src={image} />
-            <Flex flexDirection='column' >
-                <Heading fontFamily='Avenir' fontSize='md'>{title}</Heading>
-                <Text color='text' fontSize='md' lineHeight='1'>{description}</Text>
+            <Image position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
+                _groupHover={{ opacity: '1' }} zIndex='1'
+                src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
+            <Flex position='relative' w='100%' h='auto' bg='secondary.50' borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+                < Image w='70%' h='auto' src={image} />
+                <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg='white' p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
+                    <Image
+                        h='18px' mr='4px' src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fstar.svg?alt=media&token=bd8355fc-f2e2-4fdf-9a88-afcabb788aef' />
+                    <Text mt='3px' fontSize='sm'>4.5 </Text>
+                </Flex>
+            </Flex >
+            <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
+                <Heading fontFamily='Avenir' fontSize='xl'>{title}</Heading>
+                <Text color='text' fontSize={{ base: 'md', lg: 'lg' }} lineHeight='1.2'>{description}</Text>
             </Flex>
-            {/* <Flex alignItems='center'>
-                <a href={link}>
-                    <Button colorScheme='gray' variant='ghost' size='xs'>
-                        Ver más
-                    </Button>
-                </a>
-            </Flex> */}
-        </Flex>
+        </Flex >
     )
 }

@@ -12,7 +12,7 @@ export default function Footer() {
             opacity={".6"}
             w={'100vw'}
             textAlign={"center"}
-            py='80px'
+            py={{ base: '40px', lg: '80px' }}
         >
 
             <Flex

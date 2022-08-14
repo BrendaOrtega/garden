@@ -2,19 +2,24 @@ import { Container, Flex, Box, ControlBox } from "@chakra-ui/react";
 
 export default function Layout({ list, body }) {
     return (
-        <Container
-            maxW={"container.xxl"}
-            pt={{ base: '20', lg: '40' }}
-            px={{ base: '8', lg: '20' }}
+        <Box
         >
-            <Flex
+            <Container
+                maxW={"container.xxl"}
+                px={{ base: '8', lg: '20' }}
             >
-                {body}
-            </Flex>
-            <Flex justifyContent='center'>
-                {list}
-            </Flex>
-        
-        </Container >
+                <Flex
+                    mt={{
+                        base: '80px', lg: '16%'
+                    }}
+                >
+                    {body}
+                </Flex>
+                <Flex justifyContent='center'>
+                    {list}
+                </Flex>
+
+            </Container >
+        </Box >
     );
 }

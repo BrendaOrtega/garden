@@ -23,18 +23,21 @@ const Body = () => {
             paddingBottom={{ base: '0', lg: '10' }}
             flexWrap={["wrap", "wrap", "nowrap"]}
             flexDirection={{ base: 'column-reverse', lg: 'inherit' }}
+            justifyContent='center'
+            pt='60px'
         >
             <Box
+
                 w={{ base: "100%", lg: '50%' }}
                 h={{ base: "auto", lg: '65vh' }}
                 paddingRight={{ base: '0', lg: '20' }}
-                pt={{ base: '10', lg: 'inherit' }}
+                pt={{ base: '10', lg: '0px' }}
             >
                 {/* <Image src={michi} alt="cat driking coffe" /> */}
-                <Heading size="4xl">
+                <Heading fontSize="6xl">
                     🐝
                 </Heading>
-                <Heading fontSize={{ base: 'xl', lg: '2xl' }} marginY={4} lineHeight="base">
+                <Heading fontSize={{ base: 'xl', lg: '4xl' }} marginY={4} lineHeight="base">
                     About me
                 </Heading>
                 <Text color="text" fontSize={{ base: 'xl', lg: '2xl' }}>

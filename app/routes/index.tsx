@@ -24,6 +24,7 @@ const Body = () => {
       h={["auto", "500px"]}
       px={{ base: '0', lg: '20' }}
       py={{ base: '0', lg: 'inherit' }}
+      mt={{ base: '80px', lg: 'inherit' }}
     >
       <Heading size='2xl' lineHeight={"tall"}>
         👋 Hello, I'm Brenda.
@@ -43,12 +44,12 @@ const List = () => {
       spacing={{ base: '0', lg: '4' }}
       align='stretch'
       marginTop={{ base: '10', lg: '12' }}
-      maxW='container.xl'
+
     >
       <Card
         name="Covalto App"
         description="Credit Card Aplication & Internal Management Platform | Fitech"
-        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2F71.png?alt=media&token=45550d18-ba7f-4371-baed-369706c70174"
+        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fcovalto-portada2.png?alt=media&token=895e7b5f-9740-47fb-8a2f-b2ff4d49f879"
       />
       <Card
         name="Webdive"

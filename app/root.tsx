@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { ChakraProvider } from '@chakra-ui/react';
+import { Box, ChakraProvider } from '@chakra-ui/react';
 import theme from "~/theme"
 import Nav from "~/components/Nav"
 import Footer from "~/components/Footer"
@@ -27,9 +27,13 @@ export default function App() {
       </head>
       <body>
         <ChakraProvider theme={theme}>
-          <Nav />
-          <Outlet />
-          <Footer />
+          <Box bgImage='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fpatron_1.svg?alt=media&token=9102da54-4ff1-42a8-b1c3-25c03ca6f2a9'
+            backgroundSize='contain'
+          >
+            <Nav />
+            <Outlet />
+            <Footer />
+          </Box>
         </ChakraProvider>
         <ScrollRestoration />
         <Scripts />

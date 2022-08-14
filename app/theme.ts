@@ -62,6 +62,22 @@ const theme = extendTheme({
         '2xl': '110em',
     },
 
+    fontSizes: {
+        xs: "10px",
+        sm: "14px",
+        md: "16px",
+        lg: "18px",
+        xl: "20px",
+        "2xl": "24px",
+        "3xl": "32px",
+        "4xl": "36px",
+        "5xl": "48px",
+        "6xl": "64px",
+        "7xl": "80px",
+        "8xl": "6rem",
+        "9xl": "8rem",
+    },
+
     semanticTokens: {
         colors: {
             text: {
@@ -82,6 +98,11 @@ const theme = extendTheme({
             500: '#A3A8B0',
             800: '#4D5562',
             900: '#1C1F25',
+        },
+        secondary: {
+            50: '#E9EDF6',
+            100: '#E0E7F7',
+            900: "#373C50"
         },
         brand: {
             50: "#f7de93",

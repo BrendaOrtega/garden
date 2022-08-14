@@ -1,0 +1,67 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #121826;
+    width: 480px;
+    height: 70px;
+    border-radius: 35px;
+    color: white;
+    padding: 0 16px;
+    margin: 54px auto 0;
+    font-family: "Avenir Book";
+    z-index: 0;
+}
+
+
+.toggleButton.selectorButton {
+    background-color: white;
+    color: #121826;
+}
+
+.toggleButton.active {
+    color: #121826;
+}
+
+.toggleButton {
+    width: 240px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 23px;
+    padding: 0 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: "Avenir Book";
+    font-size: 16px;
+    transition: all .2s ease;
+    z-index: 0;
+}
+
+.selector {
+    position: absolute;
+    z-index: 0;
+    left: 1rem;
+    box-sizing: border-box;
+    transition: all .4s ease-in-out;
+}
+
+@media(max-width: 1100px) {
+    .container {
+        width: 480px;
+    }
+
+}
+
+@media(max-width: 960px) {
+    .wrap {
+        width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .container {
+        margin: 24px auto 0;
+    }
+}
