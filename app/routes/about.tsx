@@ -32,10 +32,10 @@ const Body = () => {
                 paddingRight={{ base: '0', lg: '20' }}
                 pt={{ base: '10', lg: '0px' }}
             >
-                <Heading fontSize="6xl">
+                <Heading fontSize="6xl" >
                     🐝
                 </Heading>
-                <Heading fontSize={{ base: 'xl', lg: '4xl' }} marginY={4} lineHeight="base">
+                <Heading fontSize={{ base: '4xl', lg: '5xl' }} marginY={4} lineHeight="base">
                     About me
                 </Heading>
                 <Text color="text" fontSize={{ base: 'xl', lg: '2xl' }}>

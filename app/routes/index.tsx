@@ -1,4 +1,4 @@
-import { Heading, Image, Text, Box, VStack, Flex } from "@chakra-ui/react";
+import { Heading, Image, Text, Box, VStack, Flex, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
 import Layout from "~/components/Layout"
 
@@ -26,7 +26,7 @@ const Body = () => {
       py={{ base: '0', lg: 'inherit' }}
       mt={{ base: '80px', lg: '0px' }}
     >
-      <Heading size='2xl' lineHeight={"tall"}>
+      <Heading size='2xl' lineHeight={"tall"} color='title'>
         👋 Hello, I'm Brenda.
         <br />
         I'm a Product Designer <br /> based in México.
@@ -94,7 +94,8 @@ const Card = ({ image, name, description }) => {
         overflow="hidden"
         boxShadow='lg'
         marginY={{ base: '4', lg: '8' }}
-        bg="white"
+        bg={useColorModeValue('white', 'blue')}
+
         _hover={{ boxShadow: 'xl' }}
       >
         <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>

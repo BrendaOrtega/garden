@@ -1,14 +1,14 @@
 import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
+import { mode } from '@chakra-ui/theme-tools'
 
 
 
 const theme = extendTheme({
     styles: {
-        global: {
+        global: (props) => ({
             // styles for the `body`
             body: {
-                bg: 'white',
-                color: 'black',
+                bg: props.colorMode === 'light' ? 'white' : 'black',
             },
             // styles for the `a`  from remix
             // a: {
@@ -17,7 +17,7 @@ const theme = extendTheme({
             //         color: 'rgba(77,85,98,.7)'
             //     }
             // }
-        },
+        }),
     },
     fonts: {
         body: "Avenir",
@@ -35,7 +35,7 @@ const theme = extendTheme({
                     gap: '4px',
                     display: 'flex',
                     justifyContent: 'flex-start',
-                    _hover: { bg: 'gray.200' },
+                    _hover: { bg: 'secondary.50' },
                     _focus: { border: 'none' },
                 },
                 'ghost': {
@@ -84,13 +84,18 @@ const theme = extendTheme({
                 default: '#4D5562',
                 _dark: '#A3A8B0',
             },
+            title: {
+                default: 'black',
+                _dark: 'gray.100',
+            }
         },
     },
-
     colors: {
+        white: '#F4F4F4',
         tooltip: '#BBC3D1',
         transparent: 'transparent',
-        black: '#07192B',
+        black: '#0B0E18',
+        blue: '#121620',
         secondary: "#4966F6",
         gray: {
             100: '#F1F2F6',
