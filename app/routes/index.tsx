@@ -24,7 +24,7 @@ const Body = () => {
       h={["auto", "500px"]}
       px={{ base: '0', lg: '20' }}
       py={{ base: '0', lg: 'inherit' }}
-      mt={{ base: '80px', lg: 'inherit' }}
+      mt={{ base: '80px', lg: '0px' }}
     >
       <Heading size='2xl' lineHeight={"tall"}>
         👋 Hello, I'm Brenda.

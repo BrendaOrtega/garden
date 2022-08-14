@@ -27,13 +27,11 @@ const Body = () => {
             pt='60px'
         >
             <Box
-
                 w={{ base: "100%", lg: '50%' }}
                 h={{ base: "auto", lg: '65vh' }}
                 paddingRight={{ base: '0', lg: '20' }}
                 pt={{ base: '10', lg: '0px' }}
             >
-                {/* <Image src={michi} alt="cat driking coffe" /> */}
                 <Heading fontSize="6xl">
                     🐝
                 </Heading>
