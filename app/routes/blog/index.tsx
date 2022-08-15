@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, Box, Image, Container, VStack, Button, Divider, Spacer } from "@chakra-ui/react"
+import { Flex, Heading, Text, Box, Image, Container, VStack, Button, Divider, Spacer, useColorModeValue } from "@chakra-ui/react"
 import { LoaderFunction } from "@remix-run/node"
 import { Link, Links, useLoaderData } from "@remix-run/react"
 import Layout from "~/components/Layout"
@@ -9,7 +9,6 @@ export const loader: LoaderFunction = async () => {
     const db = await dbConnection()
     const posts = await db.Post.find({ main: false })
     const main = await db.Post.findOne({ main: true })
-    console.log(posts.length)
     return { posts, main }
 }
 
@@ -36,7 +35,7 @@ export default function blog() {
 
                     }
                 </Flex>
-                <Divider h='2px' bg='#E0E7F7' my='40px' display={{ base: 'none', lg: 'inherit' }} />
+                <Divider h='2px' bg={useColorModeValue('rgba(224, 231, 247,1)', 'rgba(224, 231, 247,.1)')} my='40px' display={{ base: 'none', lg: 'inherit' }} />
                 <Flex marginTop={{ base: '40px', lg: '40px' }} justifyContent={{ base: 'center', lg: 'flex-start' }} gap={{ base: '16', lg: '8' }} flexWrap='wrap' >
                     {posts.map((post: PostType) => (
                         <CardPost
@@ -83,7 +82,7 @@ const CardBlog = ({ image, description, title, tag, slug }) => {
     return (
         <Link to={slug}>
             <Flex>
-                <Image src={image} objectFit='cover' w='50%' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: 'rgb(204 204 204 / 80%) 0px 8px 32px 0px' }} />
+                <Image src={image} objectFit='cover' w='50%' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', ' box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.8)') }} />
                 <Flex flexDir='column' gap='4' px='32px'>
                     <Heading fontFamily='Avenir' fontSize='3xl' margin='24px 0px 4px 0px' color='title'>{title}</Heading>
                     <Text color='text' fontSize='xl'>

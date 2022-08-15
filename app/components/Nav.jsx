@@ -27,29 +27,29 @@ export default function Nav() {
                     <Link to="/">
                         <Box alignItems='center'>
                             <Image display={{ base: 'unset', lg: 'none' }} src='/images/michis.svg' h="28px" alt="Brenda's logo" marginRight={4} />
-                            <Image display={{ base: 'none', lg: 'inherit' }} src='/images/michi-name.svg' h="36px" alt="Brenda's isotipo" marginRight={4} />
+                            <Image display={{ base: 'none', lg: 'inherit' }} src={useColorModeValue('/images/michi-name.svg', '/images/michi-name-dark.svg')} h="36px" alt="Brenda's isotipo" marginRight={4} />
                         </Box>
                     </Link>
                     <Spacer />
                     <Flex gap={{ base: '0', lg: '4' }}>
                         <Link to="/about">
-                            <Box h={10} _hover={{ bg: 'rgba(163,168,176,.2)' }} px={{ base: '8px', lg: '16px' }} display='flex' alignItems='center' borderRadius={4}>
-                                <Text fontSize='lg' >About</Text>
+                            <Box h={10} _hover={{ bg: useColorModeValue('rgba(233,237,246,.9)', 'rgba(233,237,246,.1)') }} px={{ base: '8px', lg: '16px' }} display='flex' alignItems='center' borderRadius={4}>
+                                <Text fontSize='lg' color='title'>About</Text>
                             </Box>
                         </Link>
                         <Link to="/blog">
-                            <Box h={10} _hover={{ bg: 'rgba(163,168,176,.2)' }} px={{ base: '8px', lg: '16px' }} display='flex' alignItems='center' borderRadius={4}>
-                                <Text fontSize='lg'>Blog</Text>
+                            <Box h={10} _hover={{ bg: useColorModeValue('rgba(233,237,246,.9)', 'rgba(233,237,246,.1)') }} px={{ base: '8px', lg: '16px' }} display='flex' alignItems='center' borderRadius={4}>
+                                <Text fontSize='lg' color='title'>Blog</Text>
                             </Box>
                         </Link>
                         <Link to="/resources">
-                            <Box h={10} _hover={{ bg: 'rgba(163,168,176,.2)' }} px={{ base: '8px', lg: '16px' }} display='flex' alignItems='center' borderRadius={4}>
-                                <Text fontSize='lg'>Resources</Text>
+                            <Box h={10} _hover={{ bg: useColorModeValue('rgba(233,237,246,.9)', 'rgba(233,237,246,.1)') }} px={{ base: '8px', lg: '16px' }} display='flex' alignItems='center' borderRadius={4}>
+                                <Text fontSize='lg' color='title'>Resources</Text>
                             </Box>
                         </Link>
                         <Button
                             onClick={toggleColorMode}
-                            borderRadius='24px' bg='secondary.50' >
+                            borderRadius='24px' bg={useColorModeValue('second.50', 'black')} >
                             {colorMode === 'light' ?
                                 <Image w='100%' src='/images/sol.svg' />
                                 :

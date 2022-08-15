@@ -35,7 +35,7 @@ const theme = extendTheme({
                     gap: '4px',
                     display: 'flex',
                     justifyContent: 'flex-start',
-                    _hover: { bg: 'secondary.50' },
+                    _hover: { bg: 'second.50' },
                     _focus: { border: 'none' },
                 },
                 'ghost': {
@@ -81,18 +81,22 @@ const theme = extendTheme({
     semanticTokens: {
         colors: {
             text: {
-                default: '#4D5562',
-                _dark: '#A3A8B0',
+                default: 'second.700',
+                _dark: 'second.500',
             },
             title: {
                 default: 'black',
-                _dark: 'gray.100',
+                _dark: 'gray.50',
+            },
+            tooltip: {
+                defauk: 'second.700',
+                _dark: 'second.400'
             }
+
         },
     },
     colors: {
         white: '#ffffff',
-        tooltip: '#BBC3D1',
         transparent: 'transparent',
         black: '#0B0E18',
         blue: '#121620',
@@ -104,10 +108,14 @@ const theme = extendTheme({
             800: '#4D5562',
             900: '#1C1F25',
         },
-        secondary: {
+        second: {
             50: '#E9EDF6',
             100: '#E0E7F7',
-            900: "#373C50"
+            400: '#BBC3D1',
+            500: '#7D869B',
+            700: '#373C50',
+            800: '#1D2130',
+            900: "#121620",
         },
         brand: {
             50: "#f7de93",

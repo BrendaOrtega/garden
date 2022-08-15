@@ -100,7 +100,7 @@ const BookCard = ({ image, description, link, title }) => {
             <Image position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
                 _groupHover={{ opacity: '1' }} zIndex='1'
                 src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
-            <Flex position='relative' w='100%' h='auto' bg='secondary.50' borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+            <Flex position='relative' w='100%' h='auto' bg='second.50' borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
                 < Image w='70%' h='auto' src={image} />
                 <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg='white' p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
                     <Image

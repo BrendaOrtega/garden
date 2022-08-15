@@ -1,7 +1,7 @@
 import { Heading, Image, Text, Box, VStack, Flex, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
 import Layout from "~/components/Layout"
-
+import LazyLoad from 'react-lazyload';
 export default function Index() {
   return (
     <Layout
@@ -31,9 +31,11 @@ const Body = () => {
         <br />
         I'm a Product Designer <br /> based in México.
       </Heading>
-      <Image
-        w={{ base: '0px', md: '240px', lg: "240px" }}
-        src="/images/emoji.png" />
+      <LazyLoad height={200}>
+        <Image
+          w={{ base: '0px', md: '240px', lg: "240px" }}
+          src="/images/emoji.png" />
+      </LazyLoad>
     </Flex>
   </>
 }
@@ -105,7 +107,7 @@ const Card = ({ image, name, description }) => {
           <Box
             padding={4}
           >
-            <Heading size="md">
+            <Heading size="md" color='title'>
               {name}
             </Heading>
             <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
