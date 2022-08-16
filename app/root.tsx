@@ -15,6 +15,7 @@ import {
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "Brenda González Ortega | Product & UX Designer",
+  description: "Hello, I'm Brenda. I'm a Product Designer based in México.",
   viewport: "width=device-width,initial-scale=1",
 });
 
