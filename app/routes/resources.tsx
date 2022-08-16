@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, Box, Image, Container, VStack, Button, Divider } from "@chakra-ui/react"
+import { Flex, Heading, Text, Image, Container, VStack } from "@chakra-ui/react"
 import { Link, Links } from "@remix-run/react"
 import Layout from "~/components/Layout"
 import TabBar from "~/components/TabBar"
@@ -97,13 +97,14 @@ const BookCard = ({ image, description, link, title }) => {
         <Flex flexDir='column' w={{ base: '80%', lg: '260px' }} h='auto' alignItems='center' position='relative'
             role='group'
         >
-            <Image position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
+            <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
                 _groupHover={{ opacity: '1' }} zIndex='1'
                 src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
             <Flex position='relative' w='100%' h='auto' bg='second.50' borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
-                < Image w='70%' h='auto' src={image} />
+                < Image w='70%' h='auto' src={image} alt='stars' />
                 <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg='white' p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
                     <Image
+                        alt='rank icon'
                         h='18px' mr='4px' src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fstar.svg?alt=media&token=bd8355fc-f2e2-4fdf-9a88-afcabb788aef' />
                     <Text mt='3px' fontSize='sm'>4.5 </Text>
                 </Flex>

@@ -34,6 +34,7 @@ const Body = () => {
       <LazyLoad height={200}>
         <Image
           w={{ base: '0px', md: '240px', lg: "240px" }}
+          alt='brendas emoji 3d'
           src="/images/emoji.png" />
       </LazyLoad>
     </Flex>
@@ -101,7 +102,7 @@ const Card = ({ image, name, description }) => {
         _hover={{ boxShadow: 'xl' }}
       >
         <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
-          <Image loading="lazy" src={image} objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
+          <Image loading="lazy" src={image} alt='project hero' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
         </Flex>
         <Flex>
           <Box

@@ -51,9 +51,9 @@ export default function Nav() {
                             onClick={toggleColorMode}
                             borderRadius='24px' bg={useColorModeValue('second.50', 'black')} >
                             {colorMode === 'light' ?
-                                <Image w='100%' src='/images/sol.svg' />
+                                <Image w='100%' src='/images/sol.svg' alt='sun blue icon' />
                                 :
-                                <Image w='100%' src='/images/luna.svg' />
+                                <Image w='100%' src='/images/luna.svg' alt='moon white icon' />
                             }
                         </Button>
                     </Flex>

@@ -98,10 +98,10 @@ export default function () {
                         >{post.createdAt}</Text>
                     </Flex>
                     <Flex bg='pìnk' gap='2'>
-                        <Image w='24px' transition='all 1s ease' _hover={{ opacity: '1', }} cursor='pointer' opacity='.3' src={twitter} />
-                        <Image w='24px' transition='all 1s ease' opacity='.3' _hover={{ opacity: '1', }} cursor='pointer' src={facebook} />
-                        <Image w='24px' transition='all 1s ease' opacity='.3' _hover={{ opacity: '1', }} cursor='pointer' src={linkedin} />
-                        <Image w='24px' transition='all 1s ease' opacity='.3' _hover={{ opacity: '1', }} cursor='pointer' src={link} />
+                        <Image w='24px' transition='all 1s ease' _hover={{ opacity: '1', }} cursor='pointer' opacity='.3' src={twitter} alt='twitter icon' />
+                        <Image w='24px' transition='all 1s ease' opacity='.3' _hover={{ opacity: '1', }} cursor='pointer' src={facebook} alt='facebook icon' />
+                        <Image w='24px' transition='all 1s ease' opacity='.3' _hover={{ opacity: '1', }} cursor='pointer' src={linkedin} alt='linkedin icon' />
+                        <Image w='24px' transition='all 1s ease' opacity='.3' _hover={{ opacity: '1', }} cursor='pointer' src={link} alt='copy link icon' />
                     </Flex>
                 </Flex>
                 <Divider bg='#373C50' />

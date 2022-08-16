@@ -15,7 +15,7 @@ export default function covalto() {
                         Proyecto 1
                     </Heading >
                     <Text color='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quis error.</Text>
-                    <Image src='https://i.imgur.com/tf5AyMJ.png' w='50%' margin='48px auto' />
+                    <Image src='https://i.imgur.com/tf5AyMJ.png' w='50%' margin='48px auto' alt='covalto project hero' />
                 </Box>
                 <Box p='5%' borderRadius='24px' bg='#F1F2F6' my='80px' >
                     <Heading fontSize='36px' m='0px 0 80px 0' textAlign='center'>
@@ -48,7 +48,7 @@ export default function covalto() {
                         <Heading size='xl' mb={4} textAlign='left'>
                             0.1 Empathy
                         </Heading >
-                        <Image w='160px' src='./images/mark3.svg' />
+                        <Image w='160px' src='./images/mark3.svg' alt='mark' />
                     </Box>
                     <Box>
                         <Text mb={4} color='text'>User research is intended to deepen the understanding of users, their frustrations and expectations, their needs, limitations, reasoning and objectives.</Text>
