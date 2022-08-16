@@ -84,7 +84,7 @@ const List = () => {
       <Card
         name="Unikko"
         description="Website & Property Management Application | Real State "
-        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Funiks.png?alt=media&token=5f83e5b3-8de2-4d28-91c6-7f70c75cf156"
+        image="/images/projects/uniks.png"
       />
     </VStack >
   )
