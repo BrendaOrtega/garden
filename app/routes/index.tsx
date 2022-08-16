@@ -101,7 +101,7 @@ const Card = ({ image, name, description }) => {
         _hover={{ boxShadow: 'xl' }}
       >
         <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
-          <Image src={image} objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
+          <Image loading="lazy" src={image} objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
         </Flex>
         <Flex>
           <Box

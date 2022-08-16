@@ -18,16 +18,16 @@ export default function Footer() {
                 justifyContent={"center"}
             >
                 <a href="https://twitter.com/brendaojs" target="_blank" rel="noopener noreferrer" >
-                    <Image src={useColorModeValue('{twitter}', '/images/twitter-blue-dark.svg')} w="24px" marginX={2} alt="twitter logo blue" />
+                    <Image src={useColorModeValue('/images/twitter-blue.svg', '/images/twitter-blue-dark.svg')} w="24px" marginX={2} alt="twitter logo blue" />
                 </a>
                 <a href="https://www.linkedin.com/in/brenda-ort/" target="_blank" rel="noopener noreferrer" >
-                    <Image src={useColorModeValue('{linkedin}', '/images/in-blue-dark.svg')} w="24px" marginX={2} alt="linkedin logo blue" />
+                    <Image src={useColorModeValue('/images/in-blue.svg', '/images/in-blue-dark.svg')} w="24px" marginX={2} alt="linkedin logo blue" />
                 </a>
                 <a href="https://www.instagram.com/brenda_orteg/" target="_blank" rel="noopener noreferrer" >
-                    <Image src={useColorModeValue('{instagram}', '/images/insta-blue-dark.svg')} w="24px" marginX={2} alt="instagram logo blue" />
+                    <Image src={useColorModeValue('/images/insta-blue.svg', '/images/insta-blue-dark.svg')} w="24px" marginX={2} alt="instagram logo blue" />
                 </a>
                 <a href="https://www.behance.net/bremin112093" target="_blank" rel="noopener noreferrer" >
-                    <Image src={useColorModeValue('{behance}', '/images/be-blue-dark.svg')} w="28px" marginX={2} alt="behance logo blue" />
+                    <Image src={useColorModeValue('/images/be-blue.svg', '/images/be-blue-dark.svg')} w="28px" marginX={2} alt="behance logo blue" />
                 </a>
             </Flex>
             <Text color="tooltip" marginTop={4}>© 2022 Brenda González Ortega - All rights reserved.</Text>
