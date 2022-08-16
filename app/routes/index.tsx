@@ -33,10 +33,11 @@ const Body = () => {
       </Heading>
       <LazyLoad height={200}>
         <Image
-          w={{ base: '0px', md: '240px', lg: "240px" }}
           h='auto'
-          alt='brendas emoji 3d'
-          src="/images/emoji.png" />
+          w={{ base: '0px', md: '240px', lg: "240px" }}
+          src="/images/emoji.png"
+          alt='brenda emoji 3d'
+        />
       </LazyLoad>
     </Flex>
   </>
@@ -63,17 +64,17 @@ const List = () => {
       <Card
         name="Santander Móvil"
         description="Banking Mobile Aplication | Banking"
-        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fsantander.png?alt=media&token=1285dbee-e120-4354-9480-64bfa2cbf988"
+        image="/images/projects/santander.png"
       />
       <Card
         name="Santander Personal"
         description="Banking Mobile Aplication & Internal Management Application | Banking"
-        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fbook-personal%201.png?alt=media&token=88991925-7fef-4ef5-9277-8f06232f7002"
+        image="/images/projects/personal.png"
       />
       <Card
         name="FixterGeek"
         description="Website & Learning platform | Education"
-        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Ffixter-book%402x.png?alt=media&token=8559b5f4-4d45-40aa-bc52-63012c248759"
+        image="/images/projects/fixter.png"
       />
       <Card
         name="SurveyUp"
@@ -103,7 +104,7 @@ const Card = ({ image, name, description }) => {
         _hover={{ boxShadow: 'xl' }}
       >
         <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
-          <Image loading="lazy" src={image} alt='project hero' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
+          <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
         </Flex>
         <Flex>
           <Box
