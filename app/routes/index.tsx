@@ -34,6 +34,7 @@ const Body = () => {
       <LazyLoad height={200}>
         <Image
           w={{ base: '0px', md: '240px', lg: "240px" }}
+          h='auto'
           alt='brendas emoji 3d'
           src="/images/emoji.png" />
       </LazyLoad>
