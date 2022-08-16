@@ -26,8 +26,8 @@ export default function Nav() {
                 >
                     <Link to="/">
                         <Box alignItems='center'>
-                            <Image display={{ base: 'unset', lg: 'none' }} src='/images/michis.svg' w='auto' h="28px" alt="Brenda's logo" marginRight={4} />
-                            <Image display={{ base: 'none', lg: 'inherit' }} src={useColorModeValue('/images/michi-name.svg', '/images/michi-name-dark.svg')} w='44px' h="36px" alt="Brenda's isotipo" marginRight={4} />
+                            <Image display={{ base: 'unset', lg: 'none' }} src='/images/michis.svg' w='44px' h="28px" alt="Brenda's logo" marginRight={4} />
+                            <Image display={{ base: 'none', lg: 'inherit' }} src={useColorModeValue('/images/michi-name.svg', '/images/michi-name-dark.svg')} w='auto' h="36px" alt="Brenda's isotipo" marginRight={4} />
                         </Box>
                     </Link>
                     <Spacer />
