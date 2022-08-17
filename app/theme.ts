@@ -2,7 +2,6 @@ import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
 import { mode } from '@chakra-ui/theme-tools'
 
 
-
 const theme = extendTheme({
     styles: {
         global: (props) => ({
@@ -112,10 +111,11 @@ const theme = extendTheme({
             50: '#E9EDF6',
             100: '#E0E7F7',
             400: '#BBC3D1',
-            500: '#7D869B',
+            500: '#A1A8BB',
+            600: '#1F222A',
             700: '#373C50',
             800: '#1D2130',
-            900: "#121620",
+            900: "#141823",
         },
         brand: {
             50: "#f7de93",

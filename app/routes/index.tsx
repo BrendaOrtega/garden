@@ -53,32 +53,32 @@ const List = () => {
       <Card
         name="Covalto App"
         description="Credit Card Aplication & Internal Management Platform | Fitech"
-        image="/images/projects/covalto-portada2.webp"
+        image="/images/projects/covalto-portada2.png"
       />
       <Card
         name="Santander Móvil"
         description="Banking Mobile Aplication | Banking"
-        image="/images/projects/santander.webp"
+        image="/images/projects/santander.png"
       />
       <Card
         name="Santander Personal"
         description="Banking Mobile Aplication & Internal Management Application | Banking"
-        image="/images/projects/personal.webp"
+        image="/images/projects/personal.png"
       />
       <Card
         name="FixterGeek"
         description="Website & Learning platform | Education"
-        image="/images/projects/fixter.webp"
+        image="/images/projects/fixter.png"
       />
       <Card
         name="SurveyUp"
         description="Surveys web application & Management Platform | Market Research"
-        image="/images/projects/survi2.webp"
+        image="/images/projects/survi2.png"
       />
       <Card
         name="Unikko"
         description="Website & Property Management Application | Real State "
-        image="/images/projects/uniks.webp"
+        image="/images/projects/uniks.png"
       />
     </VStack >
   )
@@ -93,7 +93,7 @@ const Card = ({ image, name, description }) => {
         overflow="hidden"
         boxShadow='lg'
         marginY={{ base: '4', lg: '8' }}
-        bg={useColorModeValue('white', 'blue')}
+        bg={useColorModeValue('white', 'second.900')}
 
         _hover={{ boxShadow: 'xl' }}
       >

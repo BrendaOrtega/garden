@@ -1,4 +1,4 @@
-import { Flex, Box, Text, Container } from "@chakra-ui/react";
+import { Flex, Box, Text, Container, useColorModeValue } from "@chakra-ui/react";
 
 export default function Nav() {
     return (
@@ -16,7 +16,7 @@ export default function Nav() {
 
 const TabActive = ({ text }) => {
     return (
-        <Flex w='138px' bg='white' h={10} alignItems='center' textAlign='center' justifyContent='center' borderRadius='20px'>
+        <Flex cursor='pointer' w='138px' bg={useColorModeValue('white', 'rgba(255,255,255,.05)')} h={10} alignItems='center' textAlign='center' justifyContent='center' borderRadius='20px'>
             <Text as='span'>
                 {text}
             </Text>

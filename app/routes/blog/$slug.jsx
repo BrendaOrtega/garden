@@ -28,7 +28,6 @@ export async function loader({ params }) {
 
 export default function () {
     const { post } = useLoaderData()
-    console.log("not null", post)
     return (
         <Box>
             <Box
