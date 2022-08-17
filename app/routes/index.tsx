@@ -18,7 +18,6 @@ const Body = () => {
       w='container.xl'
       justifyContent={{ base: 'center', lg: 'space-between' }}
       flexWrap={["wrap", "wrap", "nowrap"]}
-      // flexDirection={["column", "row", "row-reverse", "column", "row"]}
       gap={{ base: '4', lg: '10' }}
       alignItems="center"
       h={["auto", "500px"]}
@@ -55,11 +54,6 @@ const List = () => {
         name="Covalto App"
         description="Credit Card Aplication & Internal Management Platform | Fitech"
         image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fcovalto-portada2.png?alt=media&token=895e7b5f-9740-47fb-8a2f-b2ff4d49f879"
-      />
-      <Card
-        name="Webdive"
-        description="Web Application | SaaS"
-        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fportada-covalto.png?alt=media&token=f442985a-f817-4b97-a063-9f25af7fc583"
       />
       <Card
         name="Santander Móvil"

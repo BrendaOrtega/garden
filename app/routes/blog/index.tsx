@@ -61,7 +61,7 @@ const CardPost = ({ image, description, title, tag, slug }) => {
     return (
         <Link to={slug}>
             <Box w={{ base: '100%', lg: '360px' }} borderRadius='16px' cursor='pointer' transition='all 1s ease'>
-                <Image src={image} w='100%' h='180px' objectFit='cover' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: 'rgb(204 204 204 / 80%) 0px 8px 32px 0px' }} />
+                <Image src={image} alt='blog post main banner' w='100%' h='180px' objectFit='cover' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: 'rgb(204 204 204 / 80%) 0px 8px 32px 0px' }} />
 
                 <Heading fontFamily='Avenir' fontSize='xl' margin='24px 0px 4px 0px' color='title'>{title}</Heading>
                 <Text color='text' fontSize='md'>
@@ -82,7 +82,7 @@ const CardBlog = ({ image, description, title, tag, slug }) => {
     return (
         <Link to={slug}>
             <Flex>
-                <Image src={image} objectFit='cover' w='50%' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', ' box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.8)') }} />
+                <Image src={image} alt='blog post banner' objectFit='cover' w='50%' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', ' box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.8)') }} />
                 <Flex flexDir='column' gap='4' px='32px'>
                     <Heading fontFamily='Avenir' fontSize='3xl' margin='24px 0px 4px 0px' color='title'>{title}</Heading>
                     <Text color='text' fontSize='xl'>
