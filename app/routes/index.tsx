@@ -53,32 +53,32 @@ const List = () => {
       <Card
         name="Covalto App"
         description="Credit Card Aplication & Internal Management Platform | Fitech"
-        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fcovalto-portada2.png?alt=media&token=895e7b5f-9740-47fb-8a2f-b2ff4d49f879"
+        image="/images/projects/covalto-portada2.webp"
       />
       <Card
         name="Santander Móvil"
         description="Banking Mobile Aplication | Banking"
-        image="/images/projects/santander.png"
+        image="/images/projects/santander.webp"
       />
       <Card
         name="Santander Personal"
         description="Banking Mobile Aplication & Internal Management Application | Banking"
-        image="/images/projects/personal.png"
+        image="/images/projects/personal.webp"
       />
       <Card
         name="FixterGeek"
         description="Website & Learning platform | Education"
-        image="/images/projects/fixter.png"
+        image="/images/projects/fixter.webp"
       />
       <Card
         name="SurveyUp"
         description="Surveys web application & Management Platform | Market Research"
-        image="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fsurvi2.png?alt=media&token=8a2c42a8-82f2-41e8-bc00-eb7343cb4cee"
+        image="/images/projects/survi2.webp"
       />
       <Card
         name="Unikko"
         description="Website & Property Management Application | Real State "
-        image="/images/projects/uniks.png"
+        image="/images/projects/uniks.webp"
       />
     </VStack >
   )
