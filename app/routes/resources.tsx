@@ -1,10 +1,29 @@
-import { Flex, Heading, Text, Image, Container, VStack, useColorModeValue } from "@chakra-ui/react"
+import { Flex, Heading, Text, Image, Container, VStack, useColorModeValue, Button } from "@chakra-ui/react"
 import { Link, Links } from "@remix-run/react"
 import Layout from "~/components/Layout"
 import TabBar from "~/components/TabBar"
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 
 export default function Resources() {
+
+    const [active, setActive] = useState(0)
+
+    const handleSelection = (index: number) => {
+        setActive(index)
+    }
+
+    const activeSection = useMemo(() => {
+        switch (active) {
+            case 3:
+                return <Papers />
+            case 2:
+                return <Blogs />
+            case 1:
+                return <Courses />
+            default:
+                return <Books />
+        }
+    }, [active])
 
     return (
         <>
@@ -15,84 +34,185 @@ export default function Resources() {
                 <Heading textAlign='center' fontSize={{ base: '4xl', lg: '5xl' }} color='title'>
                     My best recommendations on ux resources
                 </Heading>
-                <TabBar />
-                <Flex gap={10} justifyContent='center' flexWrap='wrap'>
-                    <BookCard
-                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
-                        title='Emotional design'
-                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-                        link='https://www.fixtergeek.com.ms'
-                    />
-                    <BookCard
-                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
-                        title='Emotional design'
-                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-                        link='https://www.fixtergeek.com.ms'
-                    />
-                    <BookCard
-                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
-                        title='Emotional design'
-                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-                        link='https://www.fixtergeek.com.ms'
-                    />
-                    <BookCard
-                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
-                        title='Emotional design'
-                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-                        link='https://www.fixtergeek.com.ms'
-                    />
-                    <BookCard
-                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
-                        title='Emotional design'
-                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-                        link='https://www.fixtergeek.com.ms'
-                    />
-                    <BookCard
-                        image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
-                        title='Emotional design'
-                        description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-                        link='https://www.fixtergeek.com.ms'
-                    />
-                </Flex>
+                <TabBar onClick={handleSelection} active={active} />
+                {activeSection}
             </Container>
         </>
     )
 }
 
+const Books = () => (
+    <Flex gap={10} justifyContent='center' flexWrap='wrap'>
+        <BookCard
+            image='https://i.imgur.com/hEHoqE2.jpg'
+            title='Dont make me think'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='5'
+        />
+        <BookCard
+            image='https://i.imgur.com/dGWNkGa.jpg'
+            title='Haz fácil lo imposible'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='5'
+        />
+        <BookCard
+            image='https://i.imgur.com/WBELSMr.jpg'
+            title='Lean UX'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4'
+        />
+        <BookCard
+            image='https://i.imgur.com/pdtkrye.jpg'
+            title='Emotional design'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
+        <BookCard
+            image='https://i.imgur.com/Ss38sgD.jpg'
+            title='El diseño como storytelling'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='5'
+        />
+        <BookCard
+            image='https://i.imgur.com/Pr4k3x9.jpg'
+            title='The user experience team of one'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
+        <BookCard
+            image='https://i.imgur.com/Dste1xW.jpg'
+            title='Writing is Designing'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='5'
+        />
+        <BookCard
+            image='https://i.imgur.com/Ka1NTwB.jpg'
+            title='Microcopy'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='5'
+        />
+        <BookCard
+            image='https://i.imgur.com/VZaMp0o.jpg'
+            title='Experiencia de Usuario'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4'
+        />
+        <BookCard
+            image='https://i.imgur.com/JKFzKao.jpg'
+            title='SCRUM'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4'
+        />
+    </Flex>
+)
 
 
-const Cathegories = () => {
+
+const Courses = () => (
+    <Flex gap={10} justifyContent='center' flexWrap='wrap'>
+        <CourseCard
+            image='/images/resources/curso-ux.png'
+            title='Diseño de producto digital con Lean y UX'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+        />
+        <CourseCard
+            image='https://i.imgur.com/hIOsTlw.png'
+            title='Certificado profesional de Diseño de experiencia del usuario (UX) de Google'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+        />
+    </Flex>
+)
+
+
+const Blogs = () => (
+    <Flex gap={10} justifyContent='center' flexWrap='wrap'>
+        <BookCard
+            image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
+            title='Emotional design'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+        />
+    </Flex>
+)
+
+const Papers = () => (
+    <Flex gap={10} justifyContent='center' flexWrap='wrap'>
+        <DocsCard
+            image='https://i.imgur.com/uetu8B8.png'
+            title='Emotional design'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e'
+        />
+    </Flex>
+)
+
+
+
+
+
+const BookCard = ({ image, description, link, title, score }) => {
     return (
-        <VStack
-            w='220px'
-            align='stretch'
-            marginTop={20}
-            borderRight='2px solid rgba(77,85,98,.2)'
-            paddingRight={4}
-            marginRight={8}
+        <Flex flexDir='column' w={{ base: '80%', lg: '260px' }} h='auto' alignItems='center' position='relative'
+            role='group' mb='24px'
         >
-            <Type
-                text="Libros"
-                icon="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Ficons8-open-book-emoji.svg?alt=media&token=66a821e7-d1ea-4971-b146-de62ff8818ec"
-            />
-            <Type
-                text="Cursos"
-                icon="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Ficons8-movie-camera.svg?alt=media&token=3a2f5203-947d-49e2-a143-b584f1dcef72"
-            />
-            <Type
-                text="Papers"
-                icon="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Ficons8-bookmark-tabs.svg?alt=media&token=07ad2996-2b64-499c-8e73-8b62dc45e935"
-            />
-            <Type
-                text="Blogs"
-                icon="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Ficons8-card-index.svg?alt=media&token=e1232955-48da-4d22-8572-252d018ff0f1"
-            />
-
-        </VStack >
+            <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
+                _groupHover={{ opacity: '1' }} zIndex='1'
+                src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
+            <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', '#141823')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+                < Image w='auto' h='100%' src={image} alt='stars' />
+                <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
+                    <Image
+                        alt='rank icon'
+                        h='24px' mr='4px' src='./images/coffee.png' />
+                    <Text mt='3px' fontSize='sm' color={useColorModeValue('black', 'gray.500')}>{score} </Text>
+                </Flex>
+            </Flex >
+            <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
+                <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
+                <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text>
+            </Flex>
+        </Flex >
+    )
+}
+const CourseCard = ({ image, description, link, title }) => {
+    return (
+        <Flex flexDir='column' w={{ base: '80%', lg: '320px' }} h='auto' alignItems='center' position='relative'
+            role='group'
+        >
+            <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
+                _groupHover={{ opacity: '1' }} zIndex='1'
+                src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
+            <Flex position='relative' w='100%' h='240px' bg={useColorModeValue('second.50', '#141823')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+                < Image w='100%' h='auto' src={image} alt='stars' objectFit='cover' borderRadius='16px' />
+                <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
+                    <Image
+                        alt='rank icon'
+                        h='24px' mr='4px' src='./images/coffee.png' />
+                    <Text mt='3px' fontSize='sm' color={useColorModeValue('black', 'gray.500')}>4.5 </Text>
+                </Flex>
+            </Flex >
+            <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
+                <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
+                <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text>
+            </Flex>
+        </Flex >
     )
 }
 
-const BookCard = ({ image, description, link, title }) => {
+
+const DocsCard = ({ image, description, link, title }) => {
     return (
         <Flex flexDir='column' w={{ base: '80%', lg: '260px' }} h='auto' alignItems='center' position='relative'
             role='group'
@@ -100,19 +220,16 @@ const BookCard = ({ image, description, link, title }) => {
             <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
                 _groupHover={{ opacity: '1' }} zIndex='1'
                 src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
-            <Flex position='relative' w='100%' h='auto' bg={useColorModeValue('second.50', '#141823')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
-                < Image w='70%' h='auto' src={image} alt='stars' />
-                <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
-                    <Image
-                        alt='rank icon'
-                        h='18px' mr='4px' src={useColorModeValue('/images/star-light.svg', '/images/star-dark.svg')} />
-                    <Text mt='3px' fontSize='sm' color={useColorModeValue('black', 'gray.500')}>4.5 </Text>
-                </Flex>
+            <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', '#141823')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+                < Image w='90%' h='auto' src={image} alt='stars' />
             </Flex >
             <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
-                <Heading fontFamily='Avenir' fontSize='xl'>{title}</Heading>
-                <Text color='text' fontSize={{ base: 'md', lg: 'lg' }} lineHeight='1.2'>{description}</Text>
+                <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
+                <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text>
             </Flex>
+            <a href='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e' target='_blank' rel="noopener noreferrer">
+                <Button>Download</Button>
+            </a>
         </Flex >
     )
 }

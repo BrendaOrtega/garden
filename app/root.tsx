@@ -3,6 +3,7 @@ import { Box, ChakraProvider, useColorMode, useColorModeValue } from '@chakra-ui
 import theme from "~/theme"
 import Nav from "~/components/Nav"
 import Footer from "~/components/Footer"
+import useGoogleTM from './utils/hooks/useGoogleTM';
 import {
   Links,
   LiveReload,
@@ -20,6 +21,7 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
+  useGoogleTM();
   return (
     <html lang="en">
       <head>

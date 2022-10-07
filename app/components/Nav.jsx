@@ -1,6 +1,7 @@
 
 import { Text, Container, Flex, Link as Anchor, Image, Box, Button, Spacer, useColorModeValue, useColorMode } from "@chakra-ui/react";
 import { Link, Links } from "@remix-run/react";
+import Gato from './Gato'
 
 const logo = "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fmichis.svg?alt=media&token=2bbd2928-0306-4475-919a-aea70c84f250"
 
@@ -25,10 +26,12 @@ export default function Nav() {
                     alignItems='center'
                 >
                     <Link to="/">
-                        <Box alignItems='center'>
-                            <Image display={{ base: 'unset', lg: 'none' }} src='/images/michis.svg' w='44px' h="28px" alt="Brenda's logo" marginRight={4} />
-                            <Image display={{ base: 'none', lg: 'inherit' }} src={useColorModeValue('/images/michi-name.svg', '/images/michi-name-dark.svg')} w='auto' h="36px" alt="Brenda's isotipo" marginRight={4} />
-                        </Box>
+                        <Flex alignItems='center' justifyContent='flex-start'>
+                            {/* <Image display={{ base: 'unset', lg: 'none' }} src='/images/michis.svg' w='44px' h="28px" alt="Brenda's logo" marginRight={4} /> */}
+                            <Gato />
+                            <Image h='20px' ml='16px' src='./images/name.svg' />
+                            {/* <Image display={{ base: 'none', lg: 'inherit' }} src={useColorModeValue('/images/michi-animado.svg', '/images/michi-name-dark.svg')} w='auto' h="36px" alt="Brenda's isotipo" marginRight={4} /> */}
+                        </Flex>
                     </Link>
                     <Spacer />
                     <Flex gap={{ base: '0', lg: '4' }}>

@@ -9,6 +9,20 @@ const theme = extendTheme({
             body: {
                 bg: props.colorMode === 'light' ? 'white' : 'black',
             },
+
+            p: {
+                _selection: {
+                    background: '#FFF2C8',
+                    color: 'blue'
+                }
+            },
+            h2: {
+                _selection: {
+                    background: '#FFF2C8',
+                    color: 'blue'
+                }
+            }
+
             // styles for the `a`  from remix
             // a: {
             //     color: '#4D5562',
