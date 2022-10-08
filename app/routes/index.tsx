@@ -25,7 +25,7 @@ const Body = () => {
       py={{ base: '0', lg: 'inherit' }}
       mt={{ base: '80px', lg: '0px' }}
     >
-      <Heading size='2xl' lineHeight={"tall"} color='title'>
+      <Heading size='2xl' lineHeight={"tall"} color='title' fontFamily='Proxima Nova'>
         👋 Hello, I'm Brenda.
         <br />
         I'm a Product Designer <br /> based in México.

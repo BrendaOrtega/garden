@@ -20,11 +20,13 @@ export const meta: MetaFunction = () => ({
   viewport: "width=device-width,initial-scale=1",
 });
 
+
 export default function App() {
   useGoogleTM();
   return (
     <html lang="en">
       <head>
+        <link href="/styles/main.css" rel="stylesheet" />
         <Meta />
         <Links />
       </head>
