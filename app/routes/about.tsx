@@ -30,9 +30,7 @@ const Body = () => {
                 paddingRight={{ base: '0', lg: '20' }}
                 pt={{ base: '10', lg: '0px' }}
             >
-                <Heading fontSize="6xl" >
-                    🐝
-                </Heading>
+                <Image w='100px' src='/images/yarn.png' />
                 <Heading fontSize={{ base: '4xl', lg: '5xl' }} marginY={4} lineHeight="base" color='title'>
                     About me
                 </Heading>
