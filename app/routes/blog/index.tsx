@@ -28,7 +28,7 @@ export default function blog() {
                         <CardBlog
                             {...main}
                             key={main.slug}
-                            image={main.cover}
+                            image={main.metaImage}
                             description={main.body}
                             tag='#Accesibilidad'
                         />
@@ -41,7 +41,8 @@ export default function blog() {
                         <CardPost
                             {...post}
                             key={post.slug}
-                            image={post.cover}
+                            image={post.metaImage}
+                            cover={post.image}
                             title={post.title}
                             description={post.body}
                             tag='#Accesibilidad'
@@ -59,20 +60,21 @@ const CardPost = ({ image, description, title, tag, slug }) => {
         return str.split(' ').splice(start, no_words).join(' ') + '...';
     };
     return (
-        <Link to={slug}>
-            <Box w={{ base: '100%', lg: '360px' }} borderRadius='16px' cursor='pointer' transition='all 1s ease'>
-                <Image src={image} alt='blog post main banner' w='100%' h='180px' objectFit='cover' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', 'box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }} />
-
-                <Heading fontFamily='Avenir' fontSize='xl' margin='24px 0px 4px 0px' color='title'>{title}</Heading>
-                <Text color='text' fontSize='md'>
-                    {truncate(description, 36)}
-                </Text>
-                <Flex mt='16px' gap='2'>
-                    <Text as='span' bg={useColorModeValue('gray.200', 'second.600')} p='2px 12px' borderRadius='4px' >🎯 Accesibilidad</Text>
-                    <Text as='span' bg={useColorModeValue('gray.200', 'second.600')} p='2px 12px' borderRadius='4px' >🔎 SEO</Text>
-                </Flex>
-            </Box>
-        </Link>
+        <Box style={{ flexGrow: 1, width: '320px' }} >
+            <Link to={slug}>
+                <Box borderRadius='16px' cursor='pointer' transition='all 1s ease'>
+                    <Image src={image} alt='blog post main banner' w='100%' h='220px' objectFit='cover' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', 'box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }} />
+                    <Heading fontFamily='Avenir' fontSize='xl' margin='24px 0px 4px 0px' color='title'>{title}</Heading>
+                    <Text color='text' fontSize='md'>
+                        {truncate(description, 36)}
+                    </Text>
+                    <Flex mt='16px' gap='2'>
+                        <Text as='span' bg={useColorModeValue('gray.200', 'second.600')} p='2px 12px' borderRadius='4px' >🎯 Accesibilidad</Text>
+                        <Text as='span' bg={useColorModeValue('gray.200', 'second.600')} p='2px 12px' borderRadius='4px' >🔎 SEO</Text>
+                    </Flex>
+                </Box>
+            </Link>
+        </Box>
     )
 }
 const CardBlog = ({ image, description, title, tag, slug }) => {

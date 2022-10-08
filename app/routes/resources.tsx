@@ -113,6 +113,62 @@ const Books = () => (
             link='https://www.fixtergeek.com.ms'
             score='4'
         />
+        <BookCard
+            image='https://i.imgur.com/l9hq1cC.jpg'
+            title='Design Sprint'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
+        <BookCard
+            image='https://i.imgur.com/BhJPsXc.jpg'
+            title='Jobs to be Done'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
+        <BookCard
+            image='https://i.imgur.com/nHTvfT1.jpg'
+            title='Hooked'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
+        <BookCard
+            image='https://i.imgur.com/cXgnJRK.jpg'
+            title='This is Service Design Thinking'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
+        <BookCard
+            image='https://i.imgur.com/IY2p2d8.jpg'
+            title='The experience economy'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
+        <BookCard
+            image='https://i.imgur.com/JD5Pf7n.jpg'
+            title='Designing for Behavior Change'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
+        <BookCard
+            image='https://i.imgur.com/Kt48boE.jpg'
+            title='The Design of Everyday Things'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
+        <BookCard
+            image='https://i.imgur.com/KzcDdYL.jpg'
+            title='Ortotipografía para diseñadores'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.fixtergeek.com.ms'
+            score='4.5'
+        />
     </Flex>
 )
 
@@ -154,6 +210,14 @@ const Papers = () => (
             title='Emotional design'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e'
+            cta='Download'
+        />
+        <DocsCard
+            image='https://i.imgur.com/uetu8B8.png'
+            title='The Basics of User Experience Design'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e'
+            cta='Visit'
         />
     </Flex>
 )
@@ -164,7 +228,7 @@ const Papers = () => (
 
 const BookCard = ({ image, description, link, title, score }) => {
     return (
-        <Flex flexDir='column' w={{ base: '80%', lg: '260px' }} h='auto' alignItems='center' position='relative'
+        <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' alignItems='center' position='relative'
             role='group' mb='24px'
         >
             <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
@@ -188,7 +252,7 @@ const BookCard = ({ image, description, link, title, score }) => {
 }
 const CourseCard = ({ image, description, link, title }) => {
     return (
-        <Flex flexDir='column' w={{ base: '80%', lg: '320px' }} h='auto' alignItems='center' position='relative'
+        <Flex flexDir='column' w={{ base: '80%', md: '320px' }} h='auto' alignItems='center' position='relative'
             role='group'
         >
             <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
@@ -212,23 +276,23 @@ const CourseCard = ({ image, description, link, title }) => {
 }
 
 
-const DocsCard = ({ image, description, link, title }) => {
+const DocsCard = ({ image, description, link, title, cta }) => {
     return (
-        <Flex flexDir='column' w={{ base: '80%', lg: '260px' }} h='auto' alignItems='center' position='relative'
+        <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' alignItems='center' position='relative'
             role='group'
         >
             <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
                 _groupHover={{ opacity: '1' }} zIndex='1'
                 src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
             <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', '#141823')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
-                < Image w='90%' h='auto' src={image} alt='stars' />
+                < Image w='auto' h='100%' src={image} alt='stars' />
             </Flex >
             <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
                 <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
                 <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text>
             </Flex>
             <a href='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e' target='_blank' rel="noopener noreferrer">
-                <Button>Download</Button>
+                <Button>{cta}</Button>
             </a>
         </Flex >
     )

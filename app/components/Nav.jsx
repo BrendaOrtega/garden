@@ -26,11 +26,13 @@ export default function Nav() {
                     alignItems='center'
                 >
                     <Link to="/">
-                        <Flex alignItems='center' justifyContent='flex-start'>
-                            {/* <Image display={{ base: 'unset', lg: 'none' }} src='/images/michis.svg' w='44px' h="28px" alt="Brenda's logo" marginRight={4} /> */}
+                        <Flex alignItems='center' justifyContent='flex-start' display={useColorModeValue('flex', 'none')}>
                             <Gato />
-                            <Image h='20px' ml='16px' src='./images/name.svg' />
-                            {/* <Image display={{ base: 'none', lg: 'inherit' }} src={useColorModeValue('/images/michi-animado.svg', '/images/michi-name-dark.svg')} w='auto' h="36px" alt="Brenda's isotipo" marginRight={4} /> */}
+                            <Image display={{ base: 'none', lg: 'inherit' }} h='20px' ml='16px' src='./images/name.svg' />
+                        </Flex>
+                        <Flex alignItems='center' justifyContent='flex-start' display={useColorModeValue('none', 'flex')}>
+                            <Gato />
+                            <Image display={{ base: 'none', lg: 'inherit' }} h='20px' ml='16px' src='./images/name-white.svg' />
                         </Flex>
                     </Link>
                     <Spacer />

@@ -35,7 +35,8 @@ export default function () {
                 minH={{ base: '280px', lg: '540px' }}
                 bgSize="cover"
                 bgPos={"center"}
-                bgImg={"https://images.pexels.com/photos/161863/edinburgh-carlton-hill-landscape-scotland-161863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"}
+                bgImg={post.cover}
+                filter='grayscale(90%)'
             // bgImg={loaderData.coverImage} 
             />
             <Container
