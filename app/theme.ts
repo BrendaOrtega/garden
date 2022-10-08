@@ -34,7 +34,7 @@ const theme = extendTheme({
     },
     fonts: {
         body: "Avenir",
-        heading: "Proxima Nova", "Avenir",
+        heading: ["Proxima Nova", "Avenir"],
         mono: "Menlo, monospace",
     },
 
