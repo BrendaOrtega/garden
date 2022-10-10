@@ -60,11 +60,11 @@ const CardPost = ({ image, description, title, tag, slug }) => {
         return str.split(' ').splice(start, no_words).join(' ') + '...';
     };
     return (
-        <Box style={{ flexGrow: 1, width: '320px' }} >
+        <Box style={{ flexGrow: 1, width: '320px' }} role='group'>
             <Link to={slug}>
                 <Box borderRadius='16px' cursor='pointer' transition='all 1s ease'>
-                    <Image src={image} alt='blog post main banner' w='100%' h='220px' objectFit='cover' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', 'box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }} />
-                    <Heading fontFamily='Avenir' fontSize='xl' margin='24px 0px 4px 0px' color='title'>{title}</Heading>
+                    <Image src={image} alt='blog post main banner' w='100%' h='220px' objectFit='cover' transition='all .5s ease' borderRadius='8px' _groupHover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', 'box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }} />
+                    <Heading fontFamily='Avenir' fontSize='xl' margin='24px 0px 4px 0px' color='title' _groupHover={{ color: '#6273BA' }}>{title}</Heading>
                     <Text color='text' fontSize='md'>
                         {truncate(description, 36)}
                     </Text>
@@ -83,10 +83,10 @@ const CardBlog = ({ image, description, title, tag, slug }) => {
     };
     return (
         <Link to={slug}>
-            <Flex>
-                <Image src={image} alt='blog post banner' objectFit='cover' w='50%' transition='all .5s ease' borderRadius='8px' _hover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', ' box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }} />
+            <Flex role='group' >
+                <Image src={image} alt='blog post banner' objectFit='cover' w='50%' transition='all .5s ease' borderRadius='8px' _groupHover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', ' box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }} />
                 <Flex flexDir='column' gap='4' px='32px'>
-                    <Heading fontFamily='Avenir' fontSize='3xl' margin='24px 0px 4px 0px' color='title'>{title}</Heading>
+                    <Heading fontFamily='Avenir' fontSize='3xl' margin='24px 0px 4px 0px' color='title' _groupHover={{ color: '#6273BA' }}>{title}</Heading>
                     <Text color='text' fontSize='xl'>
                         {truncate(description, 45)}
                     </Text>

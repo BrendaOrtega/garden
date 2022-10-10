@@ -207,16 +207,16 @@ const Papers = () => (
     <Flex gap={10} justifyContent='center' flexWrap='wrap'>
         <DocsCard
             image='https://i.imgur.com/uetu8B8.png'
-            title='Emotional design'
+            title='Jakob’s Ten Usability Heuristics'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e'
             cta='Download'
         />
         <DocsCard
-            image='https://i.imgur.com/uetu8B8.png'
-            title='The Basics of User Experience Design'
+            image='https://i.imgur.com/qMJcq8U.png'
+            title='The Basics of User Experience Design by IDEO'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-            link='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e'
+            link='https://www.free-ebooks.net/computer-internet/The-Basics-of-User-Experience-Design/pdf?dl&preview'
             cta='Visit'
         />
     </Flex>
@@ -234,7 +234,7 @@ const BookCard = ({ image, description, link, title, score }) => {
             <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
                 _groupHover={{ opacity: '1' }} zIndex='1'
                 src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
-            <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', '#141823')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+            <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', '#18202E')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
                 < Image w='auto' h='100%' src={image} alt='stars' />
                 <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
                     <Image
@@ -258,7 +258,7 @@ const CourseCard = ({ image, description, link, title }) => {
             <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
                 _groupHover={{ opacity: '1' }} zIndex='1'
                 src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
-            <Flex position='relative' w='100%' h='240px' bg={useColorModeValue('second.50', '#141823')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+            <Flex position='relative' w='100%' h='240px' bg={useColorModeValue('second.50', '#18202E')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
                 < Image w='100%' h='auto' src={image} alt='stars' objectFit='cover' borderRadius='16px' />
                 <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
                     <Image
@@ -284,7 +284,7 @@ const DocsCard = ({ image, description, link, title, cta }) => {
             <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
                 _groupHover={{ opacity: '1' }} zIndex='1'
                 src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
-            <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', '#141823')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+            <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', '#18202E')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
                 < Image w='auto' h='100%' src={image} alt='stars' />
             </Flex >
             <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
@@ -292,7 +292,7 @@ const DocsCard = ({ image, description, link, title, cta }) => {
                 <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text>
             </Flex>
             <a href='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e' target='_blank' rel="noopener noreferrer">
-                <Button>{cta}</Button>
+                <Button mt='16px'>{cta}</Button>
             </a>
         </Flex >
     )

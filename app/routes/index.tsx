@@ -44,11 +44,11 @@ const Body = () => {
 
 const List = () => {
   return (
-    <VStack
-      spacing={{ base: '0', lg: '4' }}
-      align='stretch'
+    <Flex
+      gap={8}
       marginTop={{ base: '10', lg: '12' }}
-
+      display='flex'
+      flexWrap='wrap'
     >
       <Card
         name="Covalto App"
@@ -76,41 +76,53 @@ const List = () => {
         image="/images/projects/survi2.png"
       />
       <Card
+        name="Webdive"
+        description="Website & Property Management Application | Real State "
+        image="/images/projects/uniks.png"
+      />
+      <Card
+        name="Real state"
+        description="Website & Property Management Application | Real State "
+        image="/images/projects/uniks.png"
+      />
+      <Card
         name="Unikko"
         description="Website & Property Management Application | Real State "
         image="/images/projects/uniks.png"
       />
-    </VStack >
+    </Flex >
   )
 }
 
 const Card = ({ image, name, description }) => {
   return (
-    <Link to='/'>
-      <Flex
-        flexDir={"column"}
-        borderRadius='lg'
-        overflow="hidden"
-        boxShadow='lg'
-        marginY={{ base: '4', lg: '8' }}
-        bg={useColorModeValue('white', 'second.900')}
+    <Flex w={{ base: '100%', lg: '500px' }} flexGrow='1'>
+      <Link to='/'>
+        <Flex
+          flexDir={"column"}
+          borderRadius='lg'
+          overflow="hidden"
+          boxShadow='lg'
+          marginY={{ base: '4', lg: '8' }}
+          bg={useColorModeValue('white', 'second.900')}
 
-        _hover={{ boxShadow: 'xl' }}
-      >
-        <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
-          <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
-        </Flex>
-        <Flex>
-          <Box
-            padding={4}
-          >
-            <Heading size="md" color='title'>
-              {name}
-            </Heading>
-            <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
-          </Box>
-        </Flex>
-      </Flex >
-    </Link >
+          _hover={{ boxShadow: 'xl' }}
+        >
+          <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
+            <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
+          </Flex>
+          <Flex>
+            <Box
+              padding={4}
+            >
+              <Heading size="md" color='title'>
+                {name}
+              </Heading>
+              <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
+            </Box>
+          </Flex>
+        </Flex >
+      </Link >
+    </Flex>
   )
 }

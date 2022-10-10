@@ -2,3 +2,8 @@
     font-family: "Proxima Nova";
     src: url("/fonts/ProximaNovaBold.otf");
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}

@@ -25,14 +25,14 @@ export default function Nav({ onClick, active }: { active: number, onClick: (arg
 const TabActive = ({ onClick, text, isActive }: { onClick: () => void; text: string, isActive: boolean }) => {
     const activeBg = useColorModeValue('white', 'rgba(255,255,255,.05)')
     const inactiveBg = 'transparent'
-    const activeColor = useColorModeValue('blue', 'black')
-    const inactiveColor = useColorModeValue('white', 'black')
+    const activeColor = useColorModeValue('blue', 'gray.500')
+    const inactiveColor = useColorModeValue('gray.500', 'gray.500')
     return (
         <Flex
             onClick={onClick}
             color={isActive ? activeColor : inactiveColor}
             cursor='pointer' w='138px' bg={isActive ? activeBg : inactiveBg} h={10} alignItems='center' textAlign='center' justifyContent='center' borderRadius='20px'>
-            <Text as='span'>
+            <Text as='span' >
                 {text}
             </Text>
         </Flex>
