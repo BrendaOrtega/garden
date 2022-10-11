@@ -35,16 +35,16 @@ const Body = () => {
                     About me
                 </Heading>
                 <Text color="text" fontSize={{ base: 'xl', lg: '2xl' }}>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis omnis ex accusamus ea a veniam modi aliquid laboriosam. Quas voluptatum aut harum unde ad quis qui iusto, aliquid quos consequuntur.
+                    I’m Brenda, I am Product & UX Designer. I’ve been working on web and mobile applications for 6 years and I absolutely love what I do.
                     <br />
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla laborum sapiente porro ipsa aliquam dolorum facere impedit magni laboriosam, ullam quos fugiat est ipsam sint hic ea, omnis maxime.
+                    I studied economics, when i fall in love with technology. I learned software development for the curiosity of knowing how things work, I am currently passionate about User Center Design.
                 </Text>
                 <Flex my={{ base: '6', lg: '48px' }}>
                     <a href="mailto:brenda@fixter.org" aria-label="Mail" rel="noopener noreferrer">
                         <Text color='text' fontSize={{ base: 'md', lg: 'xl' }}> ✉️ Write me </Text>
                     </a>
                     <hr style={{ backgroundColor: '#A3A8B0', width: '1px', height: '24px', margin: '0 8px' }} />
-                    <a href="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2FProductDesigner_Brenda%20Gonzalez.pdf?alt=media&token=3a199ddc-1de1-4cf9-a9e4-efd4bb300d74" target='_blank'>
+                    <a href="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2FBrenda%20Gonzalez_Product%20Designer.pdf?alt=media&token=5e77f3f8-144a-48c0-93fc-e48211d5f119" target='_blank'>
                         <Text color='text' fontSize={{ base: 'md', lg: 'xl' }}> 📝 Download my CV </Text>
                     </a>
                 </Flex>
@@ -58,7 +58,7 @@ const Body = () => {
                         borderRadius='2xl'
                         objectFit="cover"
                         alt='brendas profile photo'
-                        src="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2F290392402_1155660754995788_4128669087143201483_n.jpg?alt=media&token=80873c39-44cb-4177-b216-6eef6a5d3f42" alt="brenda's profile photo" />
+                        src="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2F290392402_1155660754995788_4128669087143201483_n.jpg?alt=media&token=80873c39-44cb-4177-b216-6eef6a5d3f42" />
 
                 </a>
             </Box>

@@ -60,10 +60,10 @@ const CardPost = ({ image, description, title, tag, slug }) => {
         return str.split(' ').splice(start, no_words).join(' ') + '...';
     };
     return (
-        <Box style={{ flexGrow: 1, width: '320px' }} role='group'>
+        <Box w='360px' flexGrow={{ base: '1', lg: 'inherit' }} role='group'>
             <Link to={slug}>
                 <Box borderRadius='16px' cursor='pointer' transition='all 1s ease'>
-                    <Image src={image} alt='blog post main banner' w='100%' h='220px' objectFit='cover' transition='all .5s ease' borderRadius='8px' _groupHover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', 'box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }} />
+                    <Image src={image} alt='blog post main banner' w='100%' h='200px' objectFit='cover' transition='all .5s ease' borderRadius='8px' _groupHover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', 'box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }} />
                     <Heading fontFamily='Avenir' fontSize='xl' margin='24px 0px 4px 0px' color='title' _groupHover={{ color: '#6273BA' }}>{title}</Heading>
                     <Text color='text' fontSize='md'>
                         {truncate(description, 36)}

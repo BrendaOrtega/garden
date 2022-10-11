@@ -80,7 +80,7 @@ const List = () => {
         description="Website & Property Management Application | Real State "
         image="/images/projects/uniks.png"
       />
-      <Card
+      {/* <Card
         name="Real state"
         description="Website & Property Management Application | Real State "
         image="/images/projects/uniks.png"
@@ -89,7 +89,7 @@ const List = () => {
         name="Unikko"
         description="Website & Property Management Application | Real State "
         image="/images/projects/uniks.png"
-      />
+      /> */}
     </Flex >
   )
 }

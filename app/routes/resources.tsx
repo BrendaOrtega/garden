@@ -192,13 +192,22 @@ const Courses = () => (
 )
 
 
+
 const Blogs = () => (
     <Flex gap={10} justifyContent='center' flexWrap='wrap'>
-        <BookCard
-            image='https://http2.mlstatic.com/D_NQ_NP_2X_865978-MLM45816618689_052021-F.webp'
-            title='Emotional design'
+        <BlogCard
+            image='https://i.imgur.com/c1cnvxV.png'
+            title='N/N Group'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-            link='https://www.fixtergeek.com.ms'
+            link='https://www.nngroup.com/articles/'
+            cta='Follow'
+        />
+        <BlogCard
+            image='https://i.imgur.com/2JVshun.png'
+            title='UX Collective'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://uxdesign.cc/'
+            cta='Follow'
         />
     </Flex>
 )
@@ -245,7 +254,7 @@ const BookCard = ({ image, description, link, title, score }) => {
             </Flex >
             <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
                 <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
-                <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text>
+                {/* <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text> */}
             </Flex>
         </Flex >
     )
@@ -269,8 +278,30 @@ const CourseCard = ({ image, description, link, title }) => {
             </Flex >
             <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
                 <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
-                <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text>
+                {/* <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text> */}
             </Flex>
+        </Flex >
+    )
+}
+
+const BlogCard = ({ image, description, link, title, cta }) => {
+    return (
+        <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' alignItems='center' position='relative'
+            role='group'
+        >
+            <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
+                _groupHover={{ opacity: '1' }} zIndex='1'
+                src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
+            <Flex position='relative' w='260px' h='260px' borderRadius='50%' bg={useColorModeValue('second.50', '#18202E')} cursor='pointer' p='32px 24px' justifyContent='center' >
+                < Image w='auto' h='100%' src={image} alt='stars' />
+            </Flex >
+            <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
+                <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title} </Heading>
+                {/* <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text> */}
+            </Flex>
+            <a href={link} target='_blank' rel="noopener noreferrer">
+                <Button mt='16px'>{cta}</Button>
+            </a>
         </Flex >
     )
 }
@@ -289,7 +320,7 @@ const DocsCard = ({ image, description, link, title, cta }) => {
             </Flex >
             <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
                 <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
-                <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text>
+                {/* <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text> */}
             </Flex>
             <a href='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e' target='_blank' rel="noopener noreferrer">
                 <Button mt='16px'>{cta}</Button>
