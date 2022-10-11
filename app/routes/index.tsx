@@ -97,32 +97,32 @@ const List = () => {
 const Card = ({ image, name, description }) => {
   return (
     <Flex w={{ base: '100%', lg: '500px' }} flexGrow='1'>
-      <Link to='/'>
-        <Flex
-          flexDir={"column"}
-          borderRadius='lg'
-          overflow="hidden"
-          boxShadow='lg'
-          marginY={{ base: '4', lg: '8' }}
-          bg={useColorModeValue('white', 'second.900')}
+      {/* <Link to='/'> */}
+      <Flex
+        flexDir={"column"}
+        borderRadius='lg'
+        overflow="hidden"
+        boxShadow='lg'
+        marginY={{ base: '4', lg: '8' }}
+        bg={useColorModeValue('white', 'second.900')}
 
-          _hover={{ boxShadow: 'xl' }}
-        >
-          <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
-            <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
-          </Flex>
-          <Flex>
-            <Box
-              padding={4}
-            >
-              <Heading size="md" color='title'>
-                {name}
-              </Heading>
-              <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
-            </Box>
-          </Flex>
-        </Flex >
-      </Link >
+        _hover={{ boxShadow: 'xl' }}
+      >
+        <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
+          <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
+        </Flex>
+        <Flex>
+          <Box
+            padding={4}
+          >
+            <Heading size="md" color='title'>
+              {name}
+            </Heading>
+            <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
+          </Box>
+        </Flex>
+      </Flex >
+      {/* </Link > */}
     </Flex>
   )
 }
