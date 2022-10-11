@@ -25,14 +25,17 @@ export default function Nav() {
                     h='100%'
                     alignItems='center'
                 >
-                    <Link to="/">
+
+                    <Link to="/" >
                         <Flex alignItems='center' justifyContent='flex-start' display={useColorModeValue('flex', 'none')}>
                             <Gato />
                             <Image display={{ base: 'none', lg: 'inherit' }} h='20px' ml='16px' src='./images/name.svg' />
+                            <Image display={{ base: 'inherit', lg: 'none' }} h='20px' ml='16px' src='./images/BG.svg' />
                         </Flex>
                         <Flex alignItems='center' justifyContent='flex-start' display={useColorModeValue('none', 'flex')}>
                             <Gato />
                             <Image display={{ base: 'none', lg: 'inherit' }} h='20px' ml='16px' src='./images/name-white.svg' />
+                            <Image display={{ base: 'inherit', lg: 'none' }} h='20px' ml='16px' src='./images/BG-DARK.svg' />
                         </Flex>
                     </Link>
                     <Spacer />
