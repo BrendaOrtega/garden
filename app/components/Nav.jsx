@@ -25,34 +25,35 @@ export default function Nav() {
                     h='100%'
                     alignItems='center'
                 >
-
                     <Link to="/" >
-                        <Flex alignItems='center' justifyContent='flex-start' display={useColorModeValue('flex', 'none')}>
-                            <Gato />
+                        <Flex bg='transparent' alignItems='center' justifyContent='flex-start' display={useColorModeValue('flex', 'none')} >
+                            <div style={{
+                                zIndex: "-1"
+                            }}>
+                                <Gato />
+                            </div>
                             <Image display={{ base: 'none', lg: 'inherit' }} h='20px' ml='16px' src='./images/name.svg' />
-                            <Image display={{ base: 'inherit', lg: 'none' }} h='20px' ml='16px' src='./images/BG.svg' />
                         </Flex>
                         <Flex alignItems='center' justifyContent='flex-start' display={useColorModeValue('none', 'flex')}>
                             <Gato />
                             <Image display={{ base: 'none', lg: 'inherit' }} h='20px' ml='16px' src='./images/name-white.svg' />
-                            <Image display={{ base: 'inherit', lg: 'none' }} h='20px' ml='16px' src='./images/BG-DARK.svg' />
                         </Flex>
                     </Link>
                     <Spacer />
                     <Flex gap={{ base: '0', lg: '4' }}>
                         <Link to="/about">
                             <Box h={10} _hover={{ bg: useColorModeValue('rgba(233,237,246,.9)', 'rgba(233,237,246,.1)') }} px={{ base: '8px', lg: '16px' }} display='flex' alignItems='center' borderRadius={4}>
-                                <Text fontSize='lg' color='title'>About</Text>
+                                <Text fontSize={{ base: 'md', md: 'lg' }} color='title'>About</Text>
                             </Box>
                         </Link>
                         <Link to="/blog">
                             <Box h={10} _hover={{ bg: useColorModeValue('rgba(233,237,246,.9)', 'rgba(233,237,246,.1)') }} px={{ base: '8px', lg: '16px' }} display='flex' alignItems='center' borderRadius={4}>
-                                <Text fontSize='lg' color='title'>Blog</Text>
+                                <Text fontSize={{ base: 'md', md: 'lg' }} color='title'>Blog</Text>
                             </Box>
                         </Link>
                         <Link to="/resources">
                             <Box h={10} _hover={{ bg: useColorModeValue('rgba(233,237,246,.9)', 'rgba(233,237,246,.1)') }} px={{ base: '8px', lg: '16px' }} display='flex' alignItems='center' borderRadius={4}>
-                                <Text fontSize='lg' color='title'>Resources</Text>
+                                <Text fontSize={{ base: 'md', md: 'lg' }} color='title'>Resources</Text>
                             </Box>
                         </Link>
                         <Button

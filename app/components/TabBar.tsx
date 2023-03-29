@@ -3,7 +3,7 @@ import { Flex, Box, Text, Container, useColorModeValue } from "@chakra-ui/react"
 export default function Nav({ onClick, active }: { active: number, onClick: (arg0: number) => void }) {
     return (
         <Box overflowX={{ base: 'scroll', lg: 'inherit' }} m={{ base: '32px auto 40px', lg: '54px auto 80px' }}>
-            <Container bg='second.900' p='8px 12px' borderRadius='40px' display='flex' w={{ base: '500px', lg: 'auto' }}>
+            <Container bg='#141823' p='8px 12px' borderRadius='40px' display='flex' w={{ base: '500px', lg: 'auto' }}>
                 <TabActive
                     onClick={() => onClick(0)}
                     isActive={active === 0} text='📖 Libros' />
@@ -23,9 +23,9 @@ export default function Nav({ onClick, active }: { active: number, onClick: (arg
 
 
 const TabActive = ({ onClick, text, isActive }: { onClick: () => void; text: string, isActive: boolean }) => {
-    const activeBg = useColorModeValue('white', 'rgba(255,255,255,.05)')
+    const activeBg = useColorModeValue('white', 'white')
     const inactiveBg = 'transparent'
-    const activeColor = useColorModeValue('blue', 'gray.500')
+    const activeColor = useColorModeValue('blue', 'blue')
     const inactiveColor = useColorModeValue('gray.500', 'gray.500')
     return (
         <Flex

@@ -35,17 +35,20 @@ const Body = () => {
                     About me
                 </Heading>
                 <Text color="text" fontSize={{ base: 'xl', lg: '2xl' }}>
-                    I’m Brenda, I am Product & UX Designer. I’ve been working on web and mobile applications for 6 years and I absolutely love what I do.
-                    <br />
-                    I studied economics, when i fall in love with technology. I learned software development for the curiosity of knowing how things work, I am currently passionate about User Center Design.
+                    I’m Brenda, I am Product & UX Designer. I’ve been working on web and mobile applications for 8 years and I absolutely love what I do.
+                    <br />  <br />
+                    I studied economics, when i fall in love with technology. I learned software development for the curiosity of knowing how things work an now I am passionate about User Center Design.
+
                 </Text>
-                <Flex my={{ base: '6', lg: '48px' }}>
+                <Text color="text" mt={{ base: '6', lg: '48px' }} mb={{ base: '2', lg: '16px' }} fontSize={{ base: 'md', lg: 'xl' }}> Shall we start working together?</Text>
+                <Flex>
+
                     <a href="mailto:brenda@fixter.org" aria-label="Mail" rel="noopener noreferrer">
-                        <Text color='text' fontSize={{ base: 'md', lg: 'xl' }}> ✉️ Write me </Text>
+                        <Text color='text' fontSize={{ base: 'md', lg: 'lg' }}> ✉️ Write me </Text>
                     </a>
                     <hr style={{ backgroundColor: '#A3A8B0', width: '1px', height: '24px', margin: '0 8px' }} />
                     <a href="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2FBrenda%20Gonzalez_Product%20Designer.pdf?alt=media&token=5e77f3f8-144a-48c0-93fc-e48211d5f119" target='_blank'>
-                        <Text color='text' fontSize={{ base: 'md', lg: 'xl' }}> 📝 Download my CV </Text>
+                        <Text color='text' fontSize={{ base: 'md', lg: 'lg' }}> 📝 Download my CV </Text>
                     </a>
                 </Flex>
             </Box>

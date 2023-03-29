@@ -4,6 +4,7 @@ import theme from "~/theme"
 import Nav from "~/components/Nav"
 import Footer from "~/components/Footer"
 import useGoogleTM from './utils/hooks/useGoogleTM';
+import useHotjar from "./utils/hooks/useHotjar";
 import {
   Links,
   LiveReload,
@@ -23,6 +24,7 @@ export const meta: MetaFunction = () => ({
 
 export default function App() {
   useGoogleTM();
+  useHotjar();
   return (
     <html lang="en">
       <head>

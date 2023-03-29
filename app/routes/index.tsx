@@ -2,6 +2,11 @@ import { Heading, Image, Text, Box, VStack, Flex, useColorModeValue } from "@cha
 import { Link } from "@remix-run/react";
 import Layout from "~/components/Layout"
 import LazyLoad from 'react-lazyload';
+import styles from "~/styles/about.css"
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function Index() {
   return (
     <Layout
@@ -26,7 +31,7 @@ const Body = () => {
       mt={{ base: '80px', lg: '0px' }}
     >
       <Heading size='2xl' lineHeight={"tall"} color='title' fontFamily='Proxima Nova'>
-        👋 Hello, I'm Brenda.
+        👋🏻 Hello, I'm Brenda.
         <br />
         I'm a Product Designer <br /> based in México.
       </Heading>
@@ -45,41 +50,53 @@ const Body = () => {
 const List = () => {
   return (
     <Flex
-      gap={8}
-      marginTop={{ base: '10', lg: '12' }}
+      gap={{ lg: '0px 40px', xl: '0px 80px' }}
+      marginTop={{ base: '10', lg: '8', xl: '8' }}
       display='flex'
       flexWrap='wrap'
+      justifyContent='center'
     >
       <Card
+        className="box"
+        name="Flink"
+        description="Mobile app to make investments | Fitech"
+        image="/images/projects/flink.svg"
+      />
+      <Card
+        className="box"
         name="Covalto App"
         description="Credit Card Aplication & Internal Management Platform | Fitech"
-        image="/images/projects/covalto-portada2.png"
+        image="/images/projects/covalto.svg"
       />
       <Card
+        className="box"
         name="Santander Móvil"
         description="Banking Mobile Aplication | Banking"
-        image="/images/projects/santander.png"
+        image="/images/projects/sant.svg"
       />
       <Card
+        className="box"
         name="Santander Personal"
-        description="Banking Mobile Aplication & Internal Management Application | Banking"
-        image="/images/projects/personal.png"
+        description="Banking Mobile & Internal Management Application | Banking"
+        image="/images/projects/personal.svg"
       />
       <Card
+        className="box"
         name="FixterGeek"
         description="Website & Learning platform | Education"
-        image="/images/projects/fixter.png"
+        image="/images/projects/fixter.svg"
       />
       <Card
+        className="box"
         name="SurveyUp"
-        description="Surveys web application & Management Platform | Market Research"
-        image="/images/projects/survi2.png"
+        description="Surveys web & Management Platform | Market Research"
+        image="/images/projects/survyup.svg"
       />
-      <Card
+      {/* <Card
         name="Webdive"
         description="Website & Property Management Application | Real State "
         image="/images/projects/uniks.png"
-      />
+      /> */}
       {/* <Card
         name="Real state"
         description="Website & Property Management Application | Real State "
@@ -90,39 +107,63 @@ const List = () => {
         description="Website & Property Management Application | Real State "
         image="/images/projects/uniks.png"
       /> */}
+
     </Flex >
   )
 }
 
-const Card = ({ image, name, description }) => {
+const Card = ({ image, name, description, className }) => {
   return (
-    <Flex w={{ base: '100%', lg: '500px' }} flexGrow='1'>
-      {/* <Link to='/'> */}
+    <Flex
+      className={className}
+      w={{ base: '100%', lg: '360px', xl: '480px' }} h={{ base: '360px', lg: '700px' }}  >
       <Flex
         flexDir={"column"}
-        borderRadius='lg'
         overflow="hidden"
-        boxShadow='lg'
         marginY={{ base: '4', lg: '8' }}
-        bg={useColorModeValue('white', 'second.900')}
-
-        _hover={{ boxShadow: 'xl' }}
       >
-        <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
-          <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
+        <Flex h={{ base: '400px', lg: '700px' }} overflow='hidden' borderRadius='2xl' alignItems='center'>
+          <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="700px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
         </Flex>
         <Flex>
           <Box
-            padding={4}
+            paddingY={4}
           >
             <Heading size="md" color='title'>
               {name}
             </Heading>
-            <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
+            <Text fontSize='md' color='text' marginTop={'1'}>{description}</Text>
           </Box>
         </Flex>
       </Flex >
-      {/* </Link > */}
     </Flex>
+    // <Flex w={{ base: '100%', lg: '500px' }} flexGrow='1'>
+    //   {/* <Link to='/'> */}
+    //   <Flex
+    //     flexDir={"column"}
+    //     borderRadius='lg'
+    //     overflow="hidden"
+    //     boxShadow='lg'
+    //     marginY={{ base: '4', lg: '8' }}
+    //     bg={useColorModeValue('white', 'second.900')}
+
+    //     _hover={{ boxShadow: 'xl' }}
+    //   >
+    //     <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
+    //       <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
+    //     </Flex>
+    //     <Flex>
+    //       <Box
+    //         padding={4}
+    //       >
+    //         <Heading size="md" color='title'>
+    //           {name}
+    //         </Heading>
+    //         <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
+    //       </Box>
+    //     </Flex>
+    //   </Flex >
+    //   {/* </Link > */}
+    // </Flex>
   )
 }
