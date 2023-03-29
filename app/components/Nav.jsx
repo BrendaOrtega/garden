@@ -22,20 +22,25 @@ export default function Nav() {
                 boxShadow={useColorModeValue('0 10px 15px -3px rgba(204, 204, 204, 0.3),0 4px 6px -2px rgba(204, 204, 204, 0.05)', 'box-shadow: 0px 32px 32px 0px rgba(0, 0, 0, 0.25);')}
             >
                 <Flex
-                    h='100%'
+                    h={{ base: '64px', lg: '80px' }}
                     alignItems='center'
                 >
                     <Link to="/" >
-                        <Flex bg='transparent' alignItems='center' justifyContent='flex-start' display={useColorModeValue('flex', 'none')} >
+                        <Flex h={{ base: '64px', lg: '80px' }} alignItems='center' justifyContent='flex-start' display={useColorModeValue('flex', 'none')} >
                             <div style={{
-                                zIndex: "-1"
+
+                                zIndex: "-1",
                             }}>
                                 <Gato />
                             </div>
                             <Image display={{ base: 'none', lg: 'inherit' }} h='20px' ml='16px' src='./images/name.svg' />
                         </Flex>
                         <Flex alignItems='center' justifyContent='flex-start' display={useColorModeValue('none', 'flex')}>
-                            <Gato />
+                            <div style={{
+                                zIndex: "-1"
+                            }}>
+                                <Gato />
+                            </div>
                             <Image display={{ base: 'none', lg: 'inherit' }} h='20px' ml='16px' src='./images/name-white.svg' />
                         </Flex>
                     </Link>
