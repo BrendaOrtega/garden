@@ -43,7 +43,7 @@ export default function Resources() {
 }
 
 const Books = () => (
-    <Flex gap={10} justifyContent='center' flexWrap='wrap'>
+    <Flex gap={10} justifyContent='center' flexWrap='wrap' >
         <BookCard
             image='https://i.imgur.com/hEHoqE2.jpg'
             title='Dont make me think'
@@ -55,7 +55,7 @@ const Books = () => (
         <BookCard
             image='https://i.imgur.com/dGWNkGa.jpg'
             title='Haz fácil lo imposible'
-            description='Aprende a realizar pruebas de usuario (estructura, herramientas, duración, guión, y más).'
+            description='Con este libro aprenderás a realizar pruebas de usuario (estructura, herramientas, duración, guión, y más).'
             link='https://www.fixtergeek.com.ms'
             score='5'
         />
@@ -69,7 +69,7 @@ const Books = () => (
         <BookCard
             image='https://i.imgur.com/pdtkrye.jpg'
             title='Emotional design'
-            description='El ser humano toma decisiones con base en 3 niveles de procesamiento, visceral, conductual y reflexivo. Conoce cómo funciona cada uno y cómo se relaciona con el diseño. '
+            description='El ser humano toma decisiones con base en 3 niveles de procesamiento, visceral, conductual y reflexivo. Aquí podrás conocer cómo funciona cada uno y cómo se relaciona con el diseño. '
             link='https://www.fixtergeek.com.ms'
             score='4.5'
         />
@@ -97,28 +97,28 @@ const Books = () => (
         <BookCard
             image='https://i.imgur.com/Ka1NTwB.jpg'
             title='Microcopy'
-            description='Aprende qué es el microcopy y cómo definirlo en tu interfaz digital.'
+            description='Aprende qué es el microcopy y qué lineamientos seguir para definirlo en tu interfaz digital.'
             link='https://www.fixtergeek.com.ms'
             score='5'
         />
         <BookCard
             image='https://i.imgur.com/VZaMp0o.jpg'
             title='Experiencia de Usuario'
-            description='Conoce la definición de la experiencia de usuario y todos los conceptos relacionados a ella. '
+            description='Conoce la definición de la experiencia de usuario y todos los conceptos básicos alrededor a ella. '
             link='https://www.fixtergeek.com.ms'
             score='4'
         />
         <BookCard
             image='https://i.imgur.com/JKFzKao.jpg'
             title='SCRUM'
-            description='Profundiza en la metodología y aprende cómo aplicarla.'
+            description='Con este libro conocerás las bases de la metodología y cómo aplicarla en tus proyectos.'
             link='https://www.fixtergeek.com.ms'
             score='4'
         />
         <BookCard
             image='https://i.imgur.com/l9hq1cC.jpg'
             title='Design Sprint'
-            description='Conoce la metodología, algunos casos de éxito y aplicala paso a paso.'
+            description='Conoce las bases de la metodología, sus historia, algunos casos aplicados y el paso a paso para aplicarla.'
             link='https://www.fixtergeek.com.ms'
             score='4.5'
         />
@@ -167,28 +167,28 @@ const Books = () => (
         <BookCard
             image='https://i.imgur.com/KzcDdYL.jpg'
             title='Ortotipografía para diseñadores'
-            description='Aprende a usar signos de puntuación correctamente y conoce reglas gramaticales que no conocías.'
+            description='Aprende reglas gramaticales que no conocías y sobre todo el uso correcto de signos de puntuación.'
             link='https://www.fixtergeek.com.ms'
             score='4.5'
         />
         <BookCard
             image='https://i.imgur.com/Wv9auql.jpg'
             title='Business Model Generation'
-            description='Conoce los distintos tipos de modelo de negocio, cómo son, cómo se aplican y aprende lo necesario para desarrollar el tuyo.'
+            description='En este libro aprende los distintos tipos de modelo de negocio, cómo son, cómo se aplican y aprende lo necesario para desarrollar el tuyo.'
             link='https://www.fixtergeek.com.ms'
             score='4.5'
         />
         <BookCard
             image='https://i.imgur.com/f2WtwLf.jpg'
             title='Más que diseño de experiencia'
-            description='Desde los conceptos hasta procesos, metologías y ética. Sumérgete en el mundo de la experiencia de usuario.'
+            description='Desde los conceptos hasta procesos, metologías y ética. Te servirá para dar un recorrido rápido por el mundo de la experiencia de usuario.'
             link='https://www.fixtergeek.com.ms'
             score='4.5'
         />
         <BookCard
             image='https://i.imgur.com/GwySmNv.jpg'
             title='Laws UX'
-            description='Conoce de forma simple y práctica las 10 leyes que te ayudarán a tomar decisiones al mapear y diseñar la experiencia de usuario.'
+            description='Conoce de forma simple y práctica las 10 leyes que te ayudarán a tomar decisiones al mapear y diseñar experiencias de usuario.'
             link='https://www.fixtergeek.com.ms'
             score='5'
         />
@@ -223,35 +223,35 @@ const Blogs = () => (
             title='N/N Group'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://www.nngroup.com/articles/'
-            cta='Follow'
+            cta='Visit'
         />
         <BlogCard
             image='https://i.imgur.com/TnJciqh.png'
             title='UX Planet'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://uxplanet.org/tagged/espa%C3%B1ol'
-            cta='Follow'
+            cta='Visit'
         />
         <BlogCard
             image='https://i.imgur.com/2JVshun.png'
             title='UX Collective'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://uxdesign.cc/'
-            cta='Follow'
+            cta='Visit'
         />
         <BlogCard
             image='https://i.imgur.com/dO4HsQz.png'
             title='UI from mars'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://www.uifrommars.com/blog/'
-            cta='Follow'
+            cta='Visit'
         />
         <BlogCard
             image='https://i.imgur.com/x46ZXJI.png'
             title='UI matters'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://www.uxmatters.com/top-articles.php'
-            cta='Follow'
+            cta='Visit'
         />
     </Flex>
 )
@@ -288,7 +288,7 @@ const BookCard = ({ image, description, link, title, score }) => {
             viewport={{ once: true, amount: 0.8 }}
             transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
         >
-            <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' alignItems='center' position='relative'
+            <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' ml={{ base: '10%', md: 'none' }} alignItems='center' position='relative'
                 role='group' mb='24px'
             >
                 <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
@@ -296,7 +296,7 @@ const BookCard = ({ image, description, link, title, score }) => {
                     src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
                 <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', 'rgba(233, 237, 246, 0.05)')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
                     < Image w='auto' h='100%' src={image} alt='stars' />
-                    <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
+                    <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', '#282C3F')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
                         <Image
                             alt='rank icon'
                             h='24px' mr='4px' src='./images/coffee.png' />
@@ -320,7 +320,7 @@ const CourseCard = ({ image, description, link, title }) => {
             viewport={{ once: true, amount: 0.8 }}
             transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
         >
-            <Flex flexDir='column' w={{ base: '80%', md: '320px' }} h='auto' alignItems='center' position='relative'
+            <Flex flexDir='column' w={{ base: '80%', md: '320px' }} ml={{ base: '10%', md: 'none' }} h='auto' alignItems='center' position='relative'
                 role='group'
             >
                 <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
@@ -353,7 +353,7 @@ const BlogCard = ({ image, description, link, title, cta }) => {
             viewport={{ once: true, amount: 0.8 }}
             transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
         >
-            <Flex flexDir='column' w={{ base: '80%', md: '260px', lg: '200px' }} h='auto' alignItems='center' position='relative'
+            <Flex flexDir='column' w={{ base: '80%', md: '260px', lg: '200px' }} ml={{ base: '10%', md: 'none' }} h='auto' alignItems='center' position='relative'
                 role='group'
             >
                 <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
@@ -384,7 +384,7 @@ const DocsCard = ({ image, description, link, title, cta }) => {
             viewport={{ once: true, amount: 0.8 }}
             transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
         >
-            <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' alignItems='center' position='relative'
+            <Flex flexDir='column' w={{ base: '80%', md: '260px' }} ml={{ base: '10%', md: 'none' }} h='auto' alignItems='center' position='relative'
                 role='group'
             >
                 <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'

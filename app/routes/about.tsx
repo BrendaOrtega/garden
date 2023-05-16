@@ -61,7 +61,7 @@ const Body = () => {
                         borderRadius='2xl'
                         objectFit="cover"
                         alt='brendas profile photo'
-                        src="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2F290392402_1155660754995788_4128669087143201483_n.jpg?alt=media&token=80873c39-44cb-4177-b216-6eef6a5d3f42" />
+                        src="https://i.imgur.com/eDktKC9.png" />
 
                 </a>
             </Box>

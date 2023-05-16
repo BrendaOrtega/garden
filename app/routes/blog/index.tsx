@@ -23,20 +23,7 @@ export default function blog() {
                 <Heading textAlign='center' fontSize={{ base: '4xl', lg: '5xl' }} color='title'>
                     Something to read today 📰
                 </Heading>
-                {/* <Flex marginTop={{ base: '40px', lg: '80px' }} justifyContent='flex-start' gap={8} flexWrap='wrap' display={{ base: 'none', lg: 'inherit' }}>
-                    {main &&
-                        <CardBlog
-                            {...main}
-                            key={main.slug}
-                            image={main.metaImage}
-                            description={main.body}
-                            tag='#Accesibilidad'
-                        />
-
-                    }
-                </Flex> */}
-                {/* <Divider h='2px' bg={useColorModeValue('rgba(224, 231, 247,1)', 'rgba(224, 231, 247,.1)')} my='40px' display={{ base: 'none', lg: 'inherit' }} /> */}
-                <Flex marginTop={{ base: '40px', lg: '108px' }} gap={{ base: '16px 16px', lg: '80px 48px' }} flexWrap='wrap'  >
+                <Flex marginTop={{ base: '40px', lg: '108px' }} gap={{ base: '48px', lg: '80px 48px' }} flexWrap='wrap'  >
                     {posts.map((post: PostType) => (
                         <CardPost
                             {...post}
@@ -78,21 +65,7 @@ const CardPost = ({ image, description, title, tag, slug, subTag }) => {
                 </Box>
             </Link>
         </Box>
-        // <Box w='360px' flexGrow={{ base: '1', lg: 'inherit' }} role='group'>
-        //     <Link to={slug}>
-        //         <Box borderRadius='16px' cursor='pointer' transition='all 1s ease'>
-        //             <Image src={image} alt='blog post main banner' w='100%' h='200px' objectFit='cover' transition='all .5s ease' borderRadius='8px' _groupHover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', 'box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }} />
-        //             <Heading fontFamily='Avenir' fontSize='xl' margin='24px 0px 4px 0px' color='title' _groupHover={{ color: '#6273BA' }}>{title}</Heading>
-        //             <Text color='text' fontSize='md'>
-        //                 {truncate(description, 36)}
-        //             </Text>
-        //             <Flex mt='16px' gap='2'>
-        //                 <Text as='span' bg={useColorModeValue('gray.200', 'second.600')} p='2px 12px' borderRadius='4px' >🎯 Accesibilidad</Text>
-        //                 <Text as='span' bg={useColorModeValue('gray.200', 'second.600')} p='2px 12px' borderRadius='4px' >🔎 SEO</Text>
-        //             </Flex>
-        //         </Box>
-        //     </Link>
-        // </Box>
+
     )
 }
 const CardBlog = ({ image, description, title, tag, slug }) => {

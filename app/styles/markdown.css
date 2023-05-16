@@ -84,6 +84,11 @@
     color: #A1A8BB;
 }
 
+.chakra-ui-dark .markdown a {
+    color: #9EACE7;
+}
+
+
 
 @media(max-width:545px) {
     .markdown h1 {
