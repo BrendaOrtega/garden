@@ -23,6 +23,7 @@ const Body = () => {
             flexWrap={["wrap", "wrap", "nowrap"]}
             justifyContent='center'
             pt='60px'
+            gap={{ base: '48px', md: 'none' }}
         >
             <Box
                 w={{ base: "100%", lg: '50%' }}
@@ -62,7 +63,6 @@ const Body = () => {
                         objectFit="cover"
                         alt='brendas profile photo'
                         src="https://i.imgur.com/eDktKC9.png" />
-
                 </a>
             </Box>
         </Flex>

@@ -3,6 +3,7 @@ import { LoaderFunction } from "@remix-run/node"
 import { Link, Links, useLoaderData } from "@remix-run/react"
 import Layout from "~/components/Layout"
 import dbConnection, { type PostType } from "~/db/db.server"
+import { motion } from "framer-motion"
 
 
 export const loader: LoaderFunction = async () => {
@@ -23,7 +24,7 @@ export default function blog() {
                 <Heading textAlign='center' fontSize={{ base: '4xl', lg: '5xl' }} color='title'>
                     Something to read today 📰
                 </Heading>
-                <Flex marginTop={{ base: '40px', lg: '108px' }} gap={{ base: '48px', lg: '80px 48px' }} flexWrap='wrap'  >
+                <Flex w={{ base: '90%', md: '100%' }} margin='0 auto' marginTop={{ base: '40px', lg: '108px' }} gap={{ base: '48px', lg: '80px 48px' }} flexWrap='wrap'  >
                     {posts.map((post: PostType) => (
                         <CardPost
                             {...post}
@@ -47,24 +48,34 @@ const CardPost = ({ image, description, title, tag, slug, subTag }) => {
         return str.split(' ').splice(start, no_words).join(' ') + '...';
     };
     return (
-        <Box role='group' w={{ base: '100%', md: '300px' }} flexGrow='1'>
-            <Link to={slug}>
-                <Box borderRadius='16px' cursor='pointer' transition='all 1s ease' position='relative' transition='all .5s ease' _groupHover={{ transform: 'translateY(-16px)' }}>
-                    <Box >
-                        <Box bg='white' w='40px' h='40px' borderRadius='full' position='absolute' top='16px' zIndex='10' right='16px' display='flex' alignItems='center' justifyContent='center'>
-                            <Image w='24px' src="https://i.imgur.com/b83Tl9L.png" />
-                        </Box>
-                        <Image src={image} alt='blog post main banner' w='100%' h='400px' objectFit='cover' borderRadius='8px' />
-                    </Box>
-                    <Flex mt='16px' gap='4'>
-                        <Text as='span' fontSize='sm' borderRadius='4px' >{tag}</Text>
-                        <Text as='span' fontSize='sm' borderRadius='4px' >{subTag}</Text>
-                    </Flex>
-                    <Heading fontFamily='Avenir' fontSize='xl' margin='8px 0px 4px 0px' color='title' _groupHover={{ color: '#6273BA' }}>{title}</Heading>
 
-                </Box>
-            </Link>
+        <Box role='group' w={{ base: '100%', md: '300px' }} flexGrow='1' >
+            <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                // initial="offscreen"
+                viewport={{ once: true, amount: 0.8 }}
+                transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
+            >
+                <Link to={slug}>
+                    <Box borderRadius='16px' cursor='pointer' transition='all 1s ease' position='relative' transition='all .5s ease' _groupHover={{ transform: 'translateY(-16px)' }}>
+                        <Box >
+                            <Box bg='white' w='40px' h='40px' borderRadius='full' position='absolute' top='16px' zIndex='10' right='16px' display='flex' alignItems='center' justifyContent='center'>
+                                <Image w='24px' src="https://i.imgur.com/b83Tl9L.png" />
+                            </Box>
+                            <Image src={image} alt='blog post main banner' w='100%' h='400px' objectFit='cover' borderRadius='8px' />
+                        </Box>
+                        <Flex mt='16px' gap='4'>
+                            <Text as='span' fontSize='sm' borderRadius='4px' >{tag}</Text>
+                            <Text as='span' fontSize='sm' borderRadius='4px' >{subTag}</Text>
+                        </Flex>
+                        <Heading fontFamily='Avenir' fontSize='xl' margin='8px 0px 4px 0px' color='title' _groupHover={{ color: '#6273BA' }}>{title}</Heading>
+
+                    </Box>
+                </Link>
+            </motion.div>
         </Box>
+
 
     )
 }

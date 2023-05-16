@@ -103,8 +103,8 @@ const List = () => {
         className="box"
         name="FixterGeek"
         description="Website & Learning platform | Education"
-        image="/images/projects/FIXTER.png"
-        lowSrc="https://i.imgur.com/nRhOA5Lt.png"
+        image="/images/projects/fix.png"
+        lowSrc="https://i.imgur.com/nRhOA5Ls.png"
       />
       <Card
         className="box"
