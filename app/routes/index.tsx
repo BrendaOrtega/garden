@@ -4,6 +4,7 @@ import Layout from "~/components/Layout"
 import LazyLoad from 'react-lazyload';
 import styles from "~/styles/about.css"
 import { BlurImage } from "~/utils/hooks/useBlurImage";
+import { motion } from "framer-motion"
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
@@ -32,7 +33,18 @@ const Body = () => {
       mt={{ base: '80px', lg: '0px' }}
     >
       <Heading w={{ base: '100%', lg: "50%" }} size='2xl' lineHeight={"tall"} color='title' fontFamily='Proxima Nova' >
-        👋🏻 Hello, I'm Brenda.
+        <motion.div
+          style={{ transformOrigin: "center", display: 'inline-block', marginRight: "16px" }}
+          animate={{ rotate: 20 }}
+          transition={{
+            yoyo: 6,
+            from: 0,
+            duration: 0.4,
+            ease: 'easeInOut',
+            type: 'tween',
+          }}
+        >👋🏻</motion.div>
+        Hello, I'm Brenda.
         <br />
         I'm a Product Designer based in México.
       </Heading>
@@ -148,33 +160,8 @@ const Card = ({ image, name, description, className, lowSrc }) => {
         </Flex>
       </Flex >
     </Flex>
-    // <Flex w={{ base: '100%', lg: '500px' }} flexGrow='1'>
-    //   {/* <Link to='/'> */}
-    //   <Flex
-    //     flexDir={"column"}
-    //     borderRadius='lg'
-    //     overflow="hidden"
-    //     boxShadow='lg'
-    //     marginY={{ base: '4', lg: '8' }}
-    //     bg={useColorModeValue('white', 'second.900')}
 
-    //     _hover={{ boxShadow: 'xl' }}
-    //   >
-    //     <Flex h={{ base: '200px', lg: '400px' }} overflow='hidden' borderRadius='lg lg none none' alignItems='center'>
-    //       <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="400px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
-    //     </Flex>
-    //     <Flex>
-    //       <Box
-    //         padding={4}
-    //       >
-    //         <Heading size="md" color='title'>
-    //           {name}
-    //         </Heading>
-    //         <Text fontSize='md' color='text' marginTop={'2'}>{description}</Text>
-    //       </Box>
-    //     </Flex>
-    //   </Flex >
-    //   {/* </Link > */}
-    // </Flex>
+
+
   )
 }

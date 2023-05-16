@@ -3,6 +3,7 @@ import { Link, Links } from "@remix-run/react"
 import Layout from "~/components/Layout"
 import TabBar from "~/components/TabBar"
 import { useMemo, useState } from 'react'
+import { motion } from "framer-motion"
 
 export default function Resources() {
 
@@ -280,94 +281,126 @@ const Papers = () => (
 
 const BookCard = ({ image, description, link, title, score }) => {
     return (
-        <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' alignItems='center' position='relative'
-            role='group' mb='24px'
+        <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            // initial="offscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
         >
-            <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
-                _groupHover={{ opacity: '1' }} zIndex='1'
-                src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
-            <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', 'rgba(233, 237, 246, 0.05)')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
-                < Image w='auto' h='100%' src={image} alt='stars' />
-                <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
-                    <Image
-                        alt='rank icon'
-                        h='24px' mr='4px' src='./images/coffee.png' />
-                    <Text mt='3px' fontSize='sm' color={useColorModeValue('#12141D', 'gray.500')} fontWeight={"medium"}>{score} </Text>
+            <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' alignItems='center' position='relative'
+                role='group' mb='24px'
+            >
+                <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
+                    _groupHover={{ opacity: '1' }} zIndex='1'
+                    src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
+                <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', 'rgba(233, 237, 246, 0.05)')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+                    < Image w='auto' h='100%' src={image} alt='stars' />
+                    <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
+                        <Image
+                            alt='rank icon'
+                            h='24px' mr='4px' src='./images/coffee.png' />
+                        <Text mt='3px' fontSize='sm' color={useColorModeValue('#12141D', 'gray.500')} fontWeight={"medium"}>{score} </Text>
+                    </Flex>
+                </Flex >
+                <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
+                    <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
+                    <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text>
                 </Flex>
             </Flex >
-            <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
-                <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
-                <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text>
-            </Flex>
-        </Flex >
+        </motion.div>
     )
 }
 const CourseCard = ({ image, description, link, title }) => {
     return (
-        <Flex flexDir='column' w={{ base: '80%', md: '320px' }} h='auto' alignItems='center' position='relative'
-            role='group'
+        <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            // initial="offscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
         >
-            <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
-                _groupHover={{ opacity: '1' }} zIndex='1'
-                src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
-            <Flex position='relative' w='100%' h='240px' bg={useColorModeValue('second.50', 'rgba(233, 237, 246, 0.05)')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
-                < Image w='100%' h='auto' src={image} alt='stars' objectFit='cover' borderRadius='16px' />
-                <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
-                    <Image
-                        alt='rank icon'
-                        h='24px' mr='4px' src='./images/coffee.png' />
-                    <Text mt='3px' fontSize='sm' color={useColorModeValue('black', 'gray.500')}>4.5 </Text>
+            <Flex flexDir='column' w={{ base: '80%', md: '320px' }} h='auto' alignItems='center' position='relative'
+                role='group'
+            >
+                <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
+                    _groupHover={{ opacity: '1' }} zIndex='1'
+                    src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
+                <Flex position='relative' w='100%' h='240px' bg={useColorModeValue('second.50', 'rgba(233, 237, 246, 0.05)')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+                    < Image w='100%' h='auto' src={image} alt='stars' objectFit='cover' borderRadius='16px' />
+                    <Flex _groupHover={{ transform: 'scale(1.1)' }} transition='all .2s ease-out' bg={useColorModeValue('white', 'second.900')} p='1% 2%' position='absolute' bottom='48px' right='32px' borderRadius='4px' alignItems='center'>
+                        <Image
+                            alt='rank icon'
+                            h='24px' mr='4px' src='./images/coffee.png' />
+                        <Text mt='3px' fontSize='sm' color={useColorModeValue('black', 'gray.500')}>4.5 </Text>
+                    </Flex>
+                </Flex >
+                <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
+                    <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
+                    {/* <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text> */}
                 </Flex>
             </Flex >
-            <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
-                <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
-                {/* <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text> */}
-            </Flex>
-        </Flex >
+        </motion.div>
     )
 }
 
 const BlogCard = ({ image, description, link, title, cta }) => {
     return (
-        <Flex flexDir='column' w={{ base: '80%', md: '260px', lg: '200px' }} h='auto' alignItems='center' position='relative'
-            role='group'
+        <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            // initial="offscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
         >
-            <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
-                _groupHover={{ opacity: '1' }} zIndex='1'
-                src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
-            <Flex position='relative' w='200px' h='200px' borderRadius='50%' bg={useColorModeValue('second.50', 'rgba(233, 237, 246, 0.05)')} cursor='pointer' p='32px 24px' justifyContent='center' >
-                < Image w='auto' h='100%' src={image} alt='stars' />
+            <Flex flexDir='column' w={{ base: '80%', md: '260px', lg: '200px' }} h='auto' alignItems='center' position='relative'
+                role='group'
+            >
+                <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
+                    _groupHover={{ opacity: '1' }} zIndex='1'
+                    src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
+                <Flex position='relative' w='200px' h='200px' borderRadius='50%' bg={useColorModeValue('second.50', 'rgba(233, 237, 246, 0.05)')} cursor='pointer' p='32px 24px' justifyContent='center' >
+                    < Image w='auto' h='100%' src={image} alt='stars' />
+                </Flex >
+                <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
+                    <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title} </Heading>
+                    {/* <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text> */}
+                </Flex>
+                <a href={link} target='_blank' rel="noopener noreferrer">
+                    <Button mt='16px'>{cta}</Button>
+                </a>
             </Flex >
-            <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
-                <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title} </Heading>
-                {/* <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text> */}
-            </Flex>
-            <a href={link} target='_blank' rel="noopener noreferrer">
-                <Button mt='16px'>{cta}</Button>
-            </a>
-        </Flex >
+        </motion.div>
     )
 }
 
 
 const DocsCard = ({ image, description, link, title, cta }) => {
     return (
-        <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' alignItems='center' position='relative'
-            role='group'
+        <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            // initial="offscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
         >
-            <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
-                _groupHover={{ opacity: '1' }} zIndex='1'
-                src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
-            <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', 'rgba(233, 237, 246, 0.05)')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
-                < Image w='auto' h='100%' src={image} alt='stars' />
+            <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' alignItems='center' position='relative'
+                role='group'
+            >
+                <Image alt='book cover' position='absolute' right='40px' top='24px' w='80px' h='80px' opacity='0'
+                    _groupHover={{ opacity: '1' }} zIndex='1'
+                    src='https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869' />
+                <Flex position='relative' w='100%' h='300px' bg={useColorModeValue('second.50', 'rgba(233, 237, 246, 0.05)')} borderRadius='32px' cursor='pointer' p='32px 24px' justifyContent='center' >
+                    < Image w='auto' h='100%' src={image} alt='stars' />
+                </Flex >
+                <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
+                    <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
+                    {/* <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text> */}
+                </Flex>
+                <a href={link} target='_blank' rel="noopener noreferrer">
+                    <Button mt='16px'>{cta}</Button>
+                </a>
             </Flex >
-            <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
-                <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
-                {/* <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text> */}
-            </Flex>
-            <a href={link} target='_blank' rel="noopener noreferrer">
-                <Button mt='16px'>{cta}</Button>
-            </a>
-        </Flex >
+        </motion.div>
     )
 }
