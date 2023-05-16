@@ -47,7 +47,7 @@ const Body = () => {
                         <Text color='text' fontSize={{ base: 'md', lg: 'lg' }}> ✉️ Write me </Text>
                     </a>
                     <hr style={{ backgroundColor: '#A3A8B0', width: '1px', height: '24px', margin: '0 8px' }} />
-                    <a href="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2FBrenda%20Gonzalez_Product%20Designer.pdf?alt=media&token=5e77f3f8-144a-48c0-93fc-e48211d5f119" target='_blank'>
+                    <a href="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2FBrenda_CV.pdf?alt=media&token=51703c24-aced-42e5-8de0-52048a02e031" target='_blank'>
                         <Text color='text' fontSize={{ base: 'md', lg: 'lg' }}> 📝 Download my CV </Text>
                     </a>
                 </Flex>

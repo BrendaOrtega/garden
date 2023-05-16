@@ -21,7 +21,7 @@ export default function blog() {
                 padding={{ base: '160px 16px 80px 16px', lg: '240px  80px 120px 80px' }}
             >
                 <Heading textAlign='center' fontSize={{ base: '4xl', lg: '5xl' }} color='title'>
-                    Something to learn today 📰
+                    Something to read today 📰
                 </Heading>
                 {/* <Flex marginTop={{ base: '40px', lg: '80px' }} justifyContent='flex-start' gap={8} flexWrap='wrap' display={{ base: 'none', lg: 'inherit' }}>
                     {main &&

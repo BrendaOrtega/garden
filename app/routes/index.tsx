@@ -3,6 +3,7 @@ import { Link } from "@remix-run/react";
 import Layout from "~/components/Layout"
 import LazyLoad from 'react-lazyload';
 import styles from "~/styles/about.css"
+import { BlurImage } from "~/utils/hooks/useBlurImage";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
@@ -30,20 +31,22 @@ const Body = () => {
       py={{ base: '0', lg: 'inherit' }}
       mt={{ base: '80px', lg: '0px' }}
     >
-      <Heading size='2xl' lineHeight={"tall"} color='title' fontFamily='Proxima Nova'>
+      <Heading w={{ base: '100%', lg: "50%" }} size='2xl' lineHeight={"tall"} color='title' fontFamily='Proxima Nova' >
         👋🏻 Hello, I'm Brenda.
         <br />
-        I'm a Product Designer <br /> based in México.
+        I'm a Product Designer based in México.
       </Heading>
-      <LazyLoad height={200}>
-        <Image
-          h='auto'
-          w={{ base: '0px', md: '240px', lg: "240px" }}
-          src="/images/emoji.png"
-          alt='brenda emoji 3d'
-        />
-      </LazyLoad>
-    </Flex>
+      <Flex w={{ base: '100%', lg: "50%" }} justifyContent="flex-end">
+        <LazyLoad height={200} >
+          <Image
+            h='auto'
+            w={{ base: '0px', md: '240px', lg: "240px" }}
+            src="/images/emoji.png"
+            alt='brenda emoji 3d'
+          />
+        </LazyLoad>
+      </Flex>
+    </Flex >
   </>
 }
 
@@ -60,37 +63,43 @@ const List = () => {
         className="box"
         name="Flink"
         description="Mobile app to make investments | Fitech"
-        image="/images/projects/flink.svg"
+        image="/images/projects/flink.png"
+        lowSrc="https://i.imgur.com/THUxqt9t.png"
       />
       <Card
         className="box"
         name="Covalto App"
         description="Credit Card Aplication & Internal Management Platform | Fitech"
-        image="/images/projects/covalto.svg"
+        image="/images/projects/covalto.png"
+        lowSrc="https://i.imgur.com/16aC4jAt.png"
       />
       <Card
         className="box"
         name="Santander Móvil"
         description="Banking Mobile Aplication | Banking"
-        image="/images/projects/sant.svg"
+        image="/images/projects/sant.png"
+        lowSrc="https://i.imgur.com/pHbfSGEt.png"
       />
       <Card
         className="box"
         name="Santander Personal"
         description="Banking Mobile & Internal Management Application | Banking"
-        image="/images/projects/personal.svg"
+        image="/images/projects/personal.png"
+        lowSrc="https://i.imgur.com/fLdMmXKt.png"
       />
       <Card
         className="box"
         name="FixterGeek"
         description="Website & Learning platform | Education"
-        image="/images/projects/fixter.svg"
+        image="/images/projects/FIXTER.png"
+        lowSrc="https://i.imgur.com/nRhOA5Lt.png"
       />
       <Card
         className="box"
         name="SurveyUp"
         description="Surveys web & Management Platform | Market Research"
         image="/images/projects/survyup.svg"
+        lowSrc="https://i.imgur.com/kV8BJxQt.png"
       />
       {/* <Card
         name="Webdive"
@@ -112,18 +121,20 @@ const List = () => {
   )
 }
 
-const Card = ({ image, name, description, className }) => {
+const Card = ({ image, name, description, className, lowSrc }) => {
   return (
     <Flex
       className={className}
-      w={{ base: '100%', lg: '360px', xl: '480px' }} h={{ base: '360px', lg: '700px' }}  >
+      w={{ base: '100%', lg: '360px', xl: '480px' }} h={{ base: '360px', lg: '700px' }}
+    >
       <Flex
         flexDir={"column"}
         overflow="hidden"
         marginY={{ base: '4', lg: '8' }}
       >
         <Flex h={{ base: '400px', lg: '700px' }} overflow='hidden' borderRadius='2xl' alignItems='center'>
-          <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="700px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} />
+          <BlurImage src={image} lowSrc={lowSrc} full />
+          {/* <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="700px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} /> */}
         </Flex>
         <Flex>
           <Box
