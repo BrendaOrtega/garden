@@ -87,17 +87,17 @@ const List = () => {
       />
       <Card
         className="box"
-        name="Santander Móvil"
-        description="Banking Mobile Aplication | Banking"
-        image="/images/projects/sant.png"
-        lowSrc="https://i.imgur.com/pHbfSGEt.png"
-      />
-      <Card
-        className="box"
         name="Santander Personal"
         description="Banking Mobile & Internal Management Application | Banking"
         image="/images/projects/personal.png"
         lowSrc="https://i.imgur.com/fLdMmXKt.png"
+      />
+      <Card
+        className="box"
+        name="Santander Móvil"
+        description="Banking Mobile Aplication | Banking"
+        image="/images/projects/sant.png"
+        lowSrc="https://i.imgur.com/pHbfSGEt.png"
       />
       <Card
         className="box"
@@ -110,7 +110,7 @@ const List = () => {
         className="box"
         name="SurveyUp"
         description="Surveys web & Management Platform | Market Research"
-        image="/images/projects/survyup.svg"
+        image="/images/projects/survey.png"
         lowSrc="https://i.imgur.com/kV8BJxQt.png"
       />
       {/* <Card

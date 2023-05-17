@@ -22,7 +22,7 @@ export default function blog() {
                 padding={{ base: '160px 16px 80px 16px', lg: '240px  80px 120px 80px' }}
             >
                 <Heading textAlign='center' fontSize={{ base: '4xl', lg: '5xl' }} color='title'>
-                    Something to read today 📰
+                    📰 Something to read today
                 </Heading>
                 <Flex w={{ base: '90%', md: '100%' }} margin='0 auto' marginTop={{ base: '40px', lg: '108px' }} gap={{ base: '48px', lg: '80px 48px' }} flexWrap='wrap'  >
                     {posts.map((post: PostType) => (
@@ -55,7 +55,6 @@ const CardPost = ({ image, description, title, tag, slug, subTag }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 // initial="offscreen"
                 viewport={{ once: true, amount: 0.8 }}
-                transition={{ type: "spring", damping: 10, mass: 2, stiffness: 120, }}
             >
                 <Link to={slug}>
                     <Box borderRadius='16px' cursor='pointer' transition='all 1s ease' position='relative' transition='all .5s ease' _groupHover={{ transform: 'translateY(-16px)' }}>
