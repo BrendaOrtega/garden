@@ -203,13 +203,15 @@ const Courses = () => (
             image='/images/resources/curso-ux.png'
             title='Diseño de producto digital con Lean y UX'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-            link='https://www.fixtergeek.com.ms'
+            link='https://www.domestika.org/es/courses/1490-diseno-de-producto-digital-con-lean-y-ux'
+            cta='Ver'
         />
         <CourseCard
             image='https://i.imgur.com/hIOsTlw.png'
             title='Certificado profesional de Diseño de experiencia del usuario (UX) de Google'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-            link='https://www.fixtergeek.com.ms'
+            link='https://grow.google/intl/es-419_us/certificates/ux-design/#?modal_active=none'
+            cta='Ver'
         />
     </Flex>
 )
@@ -223,35 +225,35 @@ const Blogs = () => (
             title='N/N Group'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://www.nngroup.com/articles/'
-            cta='Visit'
+            cta='Ver'
         />
         <BlogCard
             image='https://i.imgur.com/TnJciqh.png'
             title='UX Planet'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://uxplanet.org/tagged/espa%C3%B1ol'
-            cta='Visit'
+            cta='Ver'
         />
         <BlogCard
             image='https://i.imgur.com/2JVshun.png'
             title='UX Collective'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://uxdesign.cc/'
-            cta='Visit'
+            cta='Ver'
         />
         <BlogCard
             image='https://i.imgur.com/dO4HsQz.png'
             title='UI from mars'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://www.uifrommars.com/blog/'
-            cta='Visit'
+            cta='Ver'
         />
         <BlogCard
             image='https://i.imgur.com/x46ZXJI.png'
             title='UI matters'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://www.uxmatters.com/top-articles.php'
-            cta='Visit'
+            cta='Ver'
         />
     </Flex>
 )
@@ -263,14 +265,14 @@ const Papers = () => (
             title='Jakob’s Ten Usability Heuristics'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://firebasestorage.googleapis.com/v0/b/garden-66daa.appspot.com/o/NNg%20Jakobs%20Usability%20Heuristics.pdf?alt=media&token=4427e01f-2ee3-4d7e-8f74-d459b2ebd25e'
-            cta='Download'
+            cta='Descargar'
         />
         <DocsCard
             image='https://i.imgur.com/qMJcq8U.png'
             title='The Basics of User Experience Design by IDEO'
             description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
             link='https://www.free-ebooks.net/computer-internet/The-Basics-of-User-Experience-Design/pdf?dl&preview'
-            cta='Visit'
+            cta='Ver'
         />
     </Flex>
 )
@@ -305,7 +307,7 @@ const BookCard = ({ image, description, link, title, score }) => {
                 </Flex >
                 <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
                     <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
-                    <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text>
+                    <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text>
                 </Flex>
             </Flex >
         </motion.div>
@@ -337,6 +339,9 @@ const CourseCard = ({ image, description, link, title }) => {
                 </Flex >
                 <Flex flexDirection='column' mt='16px' gap={2} textAlign='center' >
                     <Heading fontFamily='Avenir' fontSize='xl' color='title'>{title}</Heading>
+                    <a href={link} target='_blank' rel="noopener noreferrer">
+                        <Button mt='16px'>{cta}</Button>
+                    </a>
                     {/* <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text> */}
                 </Flex>
             </Flex >
