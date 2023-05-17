@@ -54,7 +54,8 @@ const CardPost = ({ image, description, title, tag, slug, subTag }) => {
                 initial={{ opacity: 0, y: -100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 // initial="offscreen"
-                viewport={{ once: true, amount: 0.8 }}
+                viewport={{ once: true, amount: .2 }}
+                transition={{ type: "spring" }}
             >
                 <Link to={slug}>
                     <Box borderRadius='16px' cursor='pointer' transition='all 1s ease' position='relative' transition='all .5s ease' _groupHover={{ transform: 'translateY(-16px)' }}>

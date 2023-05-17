@@ -285,7 +285,7 @@ const BookCard = ({ image, description, link, title, score }) => {
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
             // initial="offscreen"
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ type: "spring", damping: 10, mass: 1.5, stiffness: 120, }}
         >
             <Flex flexDir='column' w={{ base: '80%', md: '260px' }} h='auto' ml={{ base: '10%', md: 'none' }} alignItems='center' position='relative'

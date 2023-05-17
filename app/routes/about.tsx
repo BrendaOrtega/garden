@@ -22,12 +22,13 @@ const Body = () => {
             paddingBottom={{ base: '0', lg: '10' }}
             flexWrap={["wrap", "wrap", "nowrap"]}
             justifyContent='center'
-            pt='60px'
+            alignItems='center'
+            pt='10'
             gap={{ base: '48px', md: 'none' }}
         >
             <Box
                 w={{ base: "100%", lg: '50%' }}
-                h={{ base: "auto", lg: '65vh' }}
+                h={{ base: "auto", lg: 'auto' }}
                 paddingRight={{ base: '0', lg: '20' }}
                 pt={{ base: '10', lg: '0px' }}
             >
@@ -53,12 +54,14 @@ const Body = () => {
                     </a>
                 </Flex>
             </Box>
-            <Box w={{ base: "100%", lg: '50%' }} h={{ base: "auto", lg: '65vh' }}>
+            <Box w={{ base: "100%", lg: '50%' }} h={{ base: "auto", lg: '65vh' }} >
                 <a href='https://www.linkedin.com/in/brendago/' target="_blank" rel="noopener noreferrer" style={{ width: '100%' }}>
                     <Image
                         transition='all .5s ease'
                         _hover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', 'box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }}
                         h={{ base: "auto", lg: '65vh' }}
+                        width={{ base: '100%', md: '90%' }}
+                        ml={{ base: '0px', md: '5%' }}
                         borderRadius='2xl'
                         objectFit="cover"
                         alt='brendas profile photo'
