@@ -21,9 +21,13 @@ export const meta: MetaFunction = () => ({
   description: "Hello, I'm Brenda. I'm a Product & UX Consultant based in México. I enjoy creating user-centric experiences.  ",
   viewport: "width=device-width,initial-scale=1",
   'og:image': "https://i.imgur.com/DIp1Xzf.png",
-  'og:type': "card",
   'og:description': "Hello, I'm Brenda. I'm a Product & UX Consultant based in México. I enjoy creating user-centric experiences.  ",
   'og:title': "Brenda González Ortega | Product & UX Designer",
+  'twitter:image': "https://i.imgur.com/DIp1Xzf.png",
+  'twitter:card': "summary",
+  'twitter:description': "Hello, I'm Brenda. I'm a Product & UX Consultant based in México. I enjoy creating user-centric experiences.  ",
+  'twitter:title': "Brenda González Ortega | Product & UX Designer",
+  'twitter:url': 'https://www.brendago.design/'
 });
 
 

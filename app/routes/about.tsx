@@ -61,7 +61,7 @@ const Body = () => {
                         _hover={{ transform: 'translateY(-8px)', boxShadow: useColorModeValue('rgb(204 204 204 / 80%) 0px 8px 32px 0px', 'box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 1)') }}
                         h={{ base: "auto", lg: '65vh' }}
                         width={{ base: '100%', md: '90%' }}
-                        ml={{ base: '0px', md: '5%' }}
+                        ml={{ base: '0px', md: '10%' }}
                         borderRadius='2xl'
                         objectFit="cover"
                         alt='brendas profile photo'
