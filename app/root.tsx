@@ -20,6 +20,7 @@ export const meta: MetaFunction = () => ({
   title: "Brenda González Ortega | Product & UX Designer",
   description: "Hello, I'm Brenda. I'm a Product & UX Consultant based in México. I enjoy creating user-centric experiences.  ",
   viewport: "width=device-width,initial-scale=1",
+  'og:image': "https://i.imgur.com/DIp1Xzf.png",
 });
 
 
