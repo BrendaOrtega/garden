@@ -313,7 +313,7 @@ const BookCard = ({ image, description, link, title, score }) => {
         </motion.div>
     )
 }
-const CourseCard = ({ image, description, link, title }) => {
+const CourseCard = ({ image, description, cta, link, title }) => {
     return (
         <motion.div
             initial={{ opacity: 0, y: -40 }}
