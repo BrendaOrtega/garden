@@ -274,6 +274,13 @@ const Papers = () => (
             link='https://www.free-ebooks.net/computer-internet/The-Basics-of-User-Experience-Design/pdf?dl&preview'
             cta='Ver'
         />
+        <DocsCard
+            image='https://i.imgur.com/xGWtryB.png'
+            title='The field guide to Human Centered Design'
+            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
+            link='https://www.designkit.org/resources/1.html'
+            cta='Descargar'
+        />
     </Flex>
 )
 
