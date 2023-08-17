@@ -7,7 +7,7 @@
   "scripts": {
     "build": "remix build",
     "dev": "remix dev",
-    "postinstall": "remix setup node"
+    "postinstall": "remix setup node && npx prisma generate"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.8.8",
@@ -29,7 +29,8 @@
     "react-lazy-load-image-component": "^1.5.5",
     "react-lazyload": "^3.2.0",
     "react-markdown": "^6.0.0",
-    "react-syntax-highlighter": "^15.4.5"
+    "react-syntax-highlighter": "^15.4.5",
+    "remix": "^1.19.3"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.4.0",

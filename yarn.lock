@@ -7438,6 +7438,11 @@
     "mdast-util-to-hast" "^11.0.0"
     "unified" "^10.0.0"
 
+"remix@^1.19.3":
+  "integrity" "sha512-r6zA1NFWgzKof2XZPyKr5C6MINrSEhehcA8+M9vaAGwIAB3FTm4dd37PM8ojPDPhZ2QCVN0ZvsipP+0Vkw3wdQ=="
+  "resolved" "https://registry.npmjs.org/remix/-/remix-1.19.3.tgz"
+  "version" "1.19.3"
+
 "repeat-element@^1.1.2":
   "integrity" "sha512-LFiNfRcSu7KK3evMyYOuCzv3L10TW7yC1G2/+StMjK8Y6Vqd2MG7r/Qjw4ghtuCOjFvlnms/iMmLqpvW/ES/WQ=="
   "resolved" "https://registry.npmjs.org/repeat-element/-/repeat-element-1.1.4.tgz"
