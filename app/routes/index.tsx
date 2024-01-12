@@ -90,7 +90,7 @@ const List = () => {
       <Card
         className="box"
         name="Costructoken"
-        description="Mobile app to save money to build your house | Fitech"
+        description="Mobile app to save money to build your house | Fintech"
         image="/images/projects/token.png"
         lowSrc="https://i.imgur.com/y9b0S4Sm.png"
       />
@@ -104,14 +104,14 @@ const List = () => {
       <Card
         className="box"
         name="Flink"
-        description="Mobile app to make investments | Fitech"
+        description="Mobile app to make investments | Fintech"
         image="/images/projects/flink.png"
         lowSrc="https://i.imgur.com/THUxqt9t.png"
       />
       <Card
         className="box"
         name="Covalto App"
-        description="Credit Card Aplication & Internal Management Platform | Fitech"
+        description="Credit Card Aplication & Internal Management Platform | Fintech"
         image="/images/projects/covalto.png"
         lowSrc="https://i.imgur.com/16aC4jAt.png"
       />
@@ -195,12 +195,7 @@ const Card = ({ image, name, description, className, lowSrc }) => {
           borderRadius="2xl"
           alignItems="center"
         >
-          <BlurImage
-            src={image}
-            lowSrc={lowSrc}
-            full
-            _hover={{ transform: "scale(1.1)" }}
-          />
+          <BlurImage src={image} lowSrc={lowSrc} full />
           {/* <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="700px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} /> */}
         </Flex>
         <Flex>
