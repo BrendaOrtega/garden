@@ -15,11 +15,13 @@ module.exports = {
         black: "#0E0E11",
         iron: {
           300: "#A1A8BB",
+          400: "#959595",
           500: "#373C50",
           800: "#1D1C20",
         },
         brand: {
-          500: "#6273BA",
+          200: "#F1AFAA",
+          500: "#E9786E",
         },
       },
       backgroundImage: {

@@ -1,20 +1,9 @@
-import {
-  Heading,
-  Image,
-  Text,
-  Box,
-  VStack,
-  Flex,
-  useColorModeValue,
-} from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
 import Layout from "~/components/Layout";
 import LazyLoad from "react-lazyload";
 import styles from "~/styles/about.css";
 import { BlurImage } from "~/utils/hooks/useBlurImage";
 import { motion } from "framer-motion";
-import { SparklesCore } from "~/components/sparkles";
-import { DirectionAwareHover } from "~/components/DirectionAwareHover";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
@@ -25,45 +14,43 @@ export default function Index() {
 
 const Body = () => {
   return (
-    <>
-      <section className="flex max-w-7xl justify-center lg:justify-between flex-wrap lg:flex-nowrap gap-2 lg:gap-10 items-center h-auto md:h-[500px] px-0 lg:px-20 py-0 lg:py-auto mt-2 lg:mt-0 ">
-        <div>
-          <h1 className="text-black dark:text-white text-5xl  leading-normal	font-bold">
-            {" "}
-            <motion.div
-              style={{
-                transformOrigin: "center",
-                display: "inline-block",
-                marginRight: "16px",
-              }}
-              animate={{ rotate: 20 }}
-              transition={{
-                yoyo: 6,
-                from: 0,
-                duration: 0.4,
-                ease: "easeInOut",
-                type: "tween",
-              }}
-            >
-              👋🏻
-            </motion.div>
-            Hello, I'm Brenda.
-            <br />
-            I'm a Product Designer based in México.
-          </h1>
-        </div>
+    <section className=" min-h-auto md:min-h-[70vh] w-[90%] md:w-full mx-auto  flex  justify-center lg:justify-between flex-wrap-reverse md:flex-wrap lg:flex-nowrap gap-2 lg:gap-10 items-center h-auto md:h-[500px] px-0 lg:px-20 pt-[120px] lg:py-auto mt-2 lg:mt-0 ">
+      <div className="mt-10 md:mt-0">
+        <h1 className="text-black dark:text-white text-4xl md:text-5xl  leading-normal	font-bold">
+          {" "}
+          <motion.div
+            style={{
+              transformOrigin: "center",
+              display: "inline-block",
+              marginRight: "16px",
+            }}
+            animate={{ rotate: 20 }}
+            transition={{
+              yoyo: 6,
+              from: 0,
+              duration: 0.4,
+              ease: "easeInOut",
+              type: "tween",
+            }}
+          >
+            👋🏻
+          </motion.div>
+          Hello, I'm Brenda.
+          <br />
+          I'm a Product Designer based in México.
+        </h1>
+      </div>
 
-        <div className="w-full lg:w-[50%] justify-end flex">
-          <LazyLoad height={200}>
-            <img
-              className="h-auto w-0 md:w-[240px]"
-              src="/images/emoji.png"
-              alt="brenda emoji 3d"
-            />
-          </LazyLoad>
-        </div>
-      </section>
-    </>
+      <div className="w-full lg:w-[50%] justify-left md:justify-end flex">
+        <LazyLoad height={200}>
+          <img
+            className="h-auto w-[160px]  md:w-[240px]"
+            src="/images/emoji.png"
+            alt="brenda emoji 3d"
+          />
+        </LazyLoad>
+      </div>
+    </section>
   );
 };
 

@@ -28,7 +28,7 @@ export default function Nav({
         <TabActive
           onClick={() => onClick(0)}
           isActive={active === 0}
-          text="📖 Libros"
+          text="📖 Books"
         />
         <TabActive
           onClick={() => onClick(1)}
@@ -61,7 +61,7 @@ const TabActive = ({
 }) => {
   const activeBg = useColorModeValue("white", "white");
   const inactiveBg = "transparent";
-  const activeColor = useColorModeValue("blue", "blue");
+  const activeColor = useColorModeValue("black", "black");
   const inactiveColor = useColorModeValue("gray.500", "gray.500");
   return (
     <Flex

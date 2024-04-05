@@ -1,13 +1,13 @@
 .title {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .box:nth-child(even) {
-    margin-top: 64px;
+  margin-top: 64px;
 }
 
 @media (max-width: 768px) {
-    .box:nth-child(even) {
-        margin-top: 0px;
-    }
+  .box:nth-child(even) {
+    margin-top: 0px;
+  }
 }

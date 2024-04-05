@@ -1,9 +1,26 @@
 @font-face {
-    font-family: "Proxima Nova";
-    src: url("/fonts/ProximaNovaBold.otf");
+  font-family: "Proxima Nova";
+  src: url("/fonts/ProximaNovaBold.otf");
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.otf");
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat";
+}
+p {
+  font-family: "Satoshi";
 }

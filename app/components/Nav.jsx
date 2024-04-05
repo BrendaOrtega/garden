@@ -28,7 +28,7 @@ export default function Nav() {
         bg={useColorModeValue("white", "#0E0E11")}
         borderRadius="40px"
         h={{ base: "64px", lg: "80px" }}
-        zIndex="1"
+        zIndex="100"
         marginTop={{ base: "16px", lg: "32px" }}
         boxShadow={useColorModeValue(
           "0 10px 15px -3px rgba(204, 204, 204, 0.3),0 4px 6px -2px rgba(204, 204, 204, 0.05)",
@@ -71,9 +71,9 @@ export default function Nav() {
               </div>
               <Image
                 display={{ base: "none", lg: "inherit" }}
-                h="20px"
+                h="28px"
                 ml="16px"
-                src="./images/name-white.svg"
+                src="./name.png"
               />
             </Flex>
           </Link>
@@ -85,13 +85,13 @@ export default function Nav() {
                 _hover={{
                   bg: useColorModeValue(
                     "rgba(233,237,246,.9)",
-                    "rgba(233,237,246,.1)"
+                    "rgba(233,237,246,.03)"
                   ),
                 }}
                 px={{ base: "8px", lg: "16px" }}
                 display="flex"
                 alignItems="center"
-                borderRadius={4}
+                borderRadius="28px"
               >
                 <Text fontSize={{ base: "md", md: "lg" }} color="title">
                   About
@@ -104,13 +104,13 @@ export default function Nav() {
                 _hover={{
                   bg: useColorModeValue(
                     "rgba(233,237,246,.9)",
-                    "rgba(233,237,246,.1)"
+                    "rgba(233,237,246,.03)"
                   ),
                 }}
                 px={{ base: "8px", lg: "16px" }}
                 display="flex"
                 alignItems="center"
-                borderRadius={4}
+                borderRadius="28px"
               >
                 <Text fontSize={{ base: "md", md: "lg" }} color="title">
                   Blog
@@ -123,13 +123,13 @@ export default function Nav() {
                 _hover={{
                   bg: useColorModeValue(
                     "rgba(233,237,246,.9)",
-                    "rgba(233,237,246,.1)"
+                    "rgba(233,237,246,.03)"
                   ),
                 }}
                 px={{ base: "8px", lg: "16px" }}
                 display="flex"
                 alignItems="center"
-                borderRadius={4}
+                borderRadius="28px"
               >
                 <Text fontSize={{ base: "md", md: "lg" }} color="title">
                   Resources
