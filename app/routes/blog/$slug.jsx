@@ -16,6 +16,8 @@ import styles from "~/styles/markdown.css";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
 import dbConnection from "~/db/db.server";
 import { TracingBeam } from "../../components/TracingBeam";
+import { Parallax } from "react-parallax";
+
 const twitter =
   "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fmedia%2Ftwitter.svg?alt=media&token=8cc3ffaa-806f-420b-a50d-957511961cd8";
 const facebook =
@@ -43,7 +45,11 @@ export default function () {
   const { post } = useLoaderData();
   return (
     <Box>
-      <Box
+      <div
+        style={{ backgroundImage: `url('${post.cover}')` }}
+        className="w-full h-[280px] lg:h-[540px] bg-cover bg-bottom bg-fixed	 grayscale-[80%]"
+      />
+      {/* <Box
         w="100%"
         minH={{ base: "280px", lg: "540px" }}
         bgSize="cover"
@@ -51,7 +57,13 @@ export default function () {
         bgImg={post.cover}
         filter="grayscale(90%)"
         // bgImg={loaderData.coverImage}
-      />
+      /> */}
+      {/* <Parallax
+        className=" w-full h-[280px] lg:h-[540px] bg-cover bg-bottom	 grayscale-[80%] "
+        bgImage={post.cover}
+        bgImageAlt="the cat"
+        strength={200}
+      ></Parallax> */}
       <TracingBeam className="px-6 ">
         <Container paddingY={"8"} maxW={"container.sm"} position="relative">
           <Link to="/blog">
