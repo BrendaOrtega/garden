@@ -37,7 +37,7 @@ export default function Nav() {
       >
         <Flex h={{ base: "64px", lg: "80px" }} alignItems="center">
           <Link to="/">
-            <Flex
+            {/* <Flex
               h={{ base: "64px", lg: "80px" }}
               alignItems="center"
               justifyContent="flex-start"
@@ -56,26 +56,13 @@ export default function Nav() {
                 ml="16px"
                 src="./images/name.svg"
               />
-            </Flex>
-            <Flex
-              alignItems="center"
-              justifyContent="flex-start"
-              display={useColorModeValue("none", "flex")}
-            >
-              <div
-                style={{
-                  zIndex: "-1",
-                }}
-              >
+            </Flex> */}
+            <div className="flex items-center justify-center">
+              <div className="-z-10">
                 <Gato />
               </div>
-              <Image
-                display={{ base: "none", lg: "inherit" }}
-                h="28px"
-                ml="16px"
-                src="./name.png"
-              />
-            </Flex>
+              <img className="h-[28px] ml-4" src="/name.png" />
+            </div>
           </Link>
           <Spacer />
           <Flex gap={{ base: "0", lg: "4" }}>

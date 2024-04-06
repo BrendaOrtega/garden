@@ -16,7 +16,10 @@ const Body = () => {
   return (
     <section className=" min-h-auto md:min-h-[70vh] w-[90%] md:w-full mx-auto  flex  justify-center lg:justify-between flex-wrap-reverse md:flex-wrap lg:flex-nowrap gap-2 lg:gap-10 items-center h-auto md:h-[500px] px-0 lg:px-20 pt-[120px] lg:py-auto mt-2 lg:mt-0 ">
       <div className="mt-10 md:mt-0">
-        <h1 className="text-black dark:text-white text-4xl md:text-5xl  leading-normal	font-bold">
+        <h1
+          style={{ lineHeight: "140%" }}
+          className="text-black dark:text-white text-4xl md:text-5xl	font-bold"
+        >
           {" "}
           <motion.div
             style={{
@@ -36,7 +39,7 @@ const Body = () => {
             👋🏻
           </motion.div>
           Hello, I'm Brenda.
-          <br />
+          <br className="mt-4" />
           I'm a Product Designer based in México.
         </h1>
       </div>
@@ -56,21 +59,23 @@ const Body = () => {
 
 const List = () => {
   return (
-    <div className="gap-10 lg:gap-20 mt-10 lg:mt-8 flex flex-wrap justify-center">
+    <div className=" gap-10 lg:gap-20 mt-10 lg:mt-8 flex flex-wrap justify-center">
       <Card
-        link="/projects/flink"
+        link="/projects/constructoken"
         name="Costructoken"
         description="Mobile app to save money to build your house | Fintech"
         image="/images/projects/token.png"
         lowSrc="https://i.imgur.com/y9b0S4Sm.png"
       />
-      <Card
-        link="/projects/flink"
-        name="Formmy"
-        description="Web app to add contact forms to your website | Saas"
-        image="/images/projects/formmy.png"
-        lowSrc="https://i.imgur.com/pC19NU5m.png"
-      />
+      <div className="mt-20">
+        <Card
+          link="/projects/formmt"
+          name="Formmy"
+          description="Web app to add contact forms to your website | Saas"
+          image="/images/projects/formmy.png"
+          lowSrc="https://i.imgur.com/pC19NU5m.png"
+        />
+      </div>
       <Card
         link="/projects/flink"
         name="Flink"
@@ -78,57 +83,63 @@ const List = () => {
         image="/images/projects/flink.png"
         lowSrc="https://i.imgur.com/THUxqt9t.png"
       />
+      <div className="mt-20">
+        <Card
+          link="/projects/covalto"
+          name="Covalto App"
+          description="Credit Card Aplication | Fintech"
+          image="/images/projects/covalto.png"
+          lowSrc="https://i.imgur.com/16aC4jAt.png"
+        />
+      </div>
       <Card
-        link="/projects/flink"
-        name="Covalto App"
-        description="Credit Card Aplication | Fintech"
-        image="/images/projects/covalto.png"
-        lowSrc="https://i.imgur.com/16aC4jAt.png"
-      />
-
-      <Card
-        link="/projects/flink"
+        link="/projects/santander"
         name="Santander Personal"
         description="Banking Mobile & Internal Management Application | Banking"
         image="/images/projects/personal.png"
         lowSrc="https://i.imgur.com/fLdMmXKt.png"
       />
+      <div className="mt-20">
+        <Card
+          link="/projects/santander"
+          name="Santander Móvil"
+          description="Banking Mobile Aplication | Banking"
+          image="/images/projects/sant.png"
+          lowSrc="https://i.imgur.com/pHbfSGEt.png"
+        />
+      </div>
       <Card
-        link="/projects/flink"
-        name="Santander Móvil"
-        description="Banking Mobile Aplication | Banking"
-        image="/images/projects/sant.png"
-        lowSrc="https://i.imgur.com/pHbfSGEt.png"
-      />
-      <Card
-        link="/projects/flink"
+        link="/projects/fixter"
         name="Fixter.org"
         description="Website & Learning platform | Software"
         image="/images/projects/org.png"
         lowSrc="https://i.imgur.com/w8YzbTG.png"
       />
+      <div className="mt-20">
+        <Card
+          link="/projects/fixtergeek"
+          name="FixterGeek"
+          description="Website & Learning platform | Education"
+          image="/images/projects/fix.png"
+          lowSrc="https://i.imgur.com/nRhOA5Ls.png"
+        />
+      </div>
       <Card
-        link="/projects/flink"
-        name="FixterGeek"
-        description="Website & Learning platform | Education"
-        image="/images/projects/fix.png"
-        lowSrc="https://i.imgur.com/nRhOA5Ls.png"
-      />
-
-      <Card
-        link="/projects/flink"
+        link="/projects/lastplay"
         name="LastPlay"
         description="Website & Learning platform | Education"
         image="/images/projects/play.png"
         lowSrc="https://i.imgur.com/HqWDIw3.png"
       />
-      <Card
-        link="/projects/flink"
-        name="SurveyUp"
-        description="Surveys web & Management Platform | Market Research"
-        image="/images/projects/survey.png"
-        lowSrc="https://i.imgur.com/MoNpbBT.png"
-      />
+      <div className="mt-20">
+        <Card
+          link="/"
+          name="SurveyUp"
+          description="Surveys web & Management Platform | Market Research"
+          image="/images/projects/survey.png"
+          lowSrc="https://i.imgur.com/MoNpbBT.png"
+        />
+      </div>
       {/* <Card
         name="Webdive"
         description="Website & Property Management Application | Real State "
