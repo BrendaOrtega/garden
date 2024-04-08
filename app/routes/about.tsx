@@ -198,21 +198,24 @@ export default function about() {
           <h2 className="text-4xl md:text-5xl font-bold mt-8">About me</h2>
           <p className="text-xl md:text-2xl text-iron-400 mt-8">
             {" "}
-            I’m Brenda, I am Product & UX Designer. I’ve been working on web and
-            mobile applications for 8 years and I absolutely love what I do.
-            <br /> <br />I studied economics, when i fall in love with
-            technology. I learned software development for the curiosity of
-            knowing how things work an now I am passionate about User Center
-            Design.
+            I’m Brenda, I am Product & UX Designer based on Mexico. I studied
+            economics before start my tech career as frontend developer. So,
+            I’ve been working on web and mobile applications for more than 8
+            years, and I absolutely love what I do.
           </p>
           <p className="text-xl md:text-2xl mt-8 text-iron-400 ">
-            {" "}
-            I’m Brenda, I am Product & UX Designer. I’ve been working on web and
-            mobile applications for 8 years and I absolutely love what I do.
-            <br /> <br />I studied economics, when i fall in love with
-            technology. I learned software development for the curiosity of
-            knowing how things work an now I am passionate about User Center
-            Design.
+            I focus on designing complex and functional products that help user
+            and business reach their goals. I really enjoy create experiences
+            that users find useful and easy to understand.
+          </p>
+          <p className="text-xl md:text-2xl mt-8 text-iron-400 ">
+            If you want to know more about me, know more about what I’m working
+            on, or talk about working together, feel free to{" "}
+            <a href="mailto:bremin11.20.93@gmail.com">
+              {" "}
+              <span className="text-brand-500 font-semibold">email me</span>
+            </a>
+            .
           </p>
         </div>
       </div>

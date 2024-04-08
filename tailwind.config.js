@@ -14,7 +14,7 @@ module.exports = {
       colors: {
         black: "#0E0E11",
         iron: {
-          300: "#A1A8BB",
+          300: "#a1a1a1",
           400: "#959595",
           500: "#373C50",
           800: "#1D1C20",

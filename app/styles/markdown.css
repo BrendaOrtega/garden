@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 .markdown h2,
 .markdown h1,
@@ -8,103 +8,118 @@
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-    font-family: 'Proxima Nova';
-    font-weight: bold;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 
 .markdown h1 {
-    font-size: 3rem;
-    margin: 20px 0;
+  font-size: 3rem;
+  margin: 20px 0;
 }
 
 .markdown h2 {
-    font-size: 2.5rem;
-    margin-top: 48px;
-    margin-bottom: -16px;
+  font-size: 2.5rem;
+  margin-top: 48px;
+  margin-bottom: 0px;
 }
 
 .markdown h3 {
-    font-size: 2rem;
-    margin-top: 32px;
-    margin-bottom: -16px;
+  font-size: 2rem;
+  margin-top: 32px;
+  margin-bottom: -16px;
 }
 
 .markdown p {
-    font-family: 'Avenir';
-    font-size: 1.25rem;
-    margin: 20px 0;
-    color: #373C50;
+  font-family: "Satoshi";
+
+  font-size: 1.25rem;
+  margin: 20px 0;
+  color: #373c50;
 }
 
 .markdown li {
-    font-family: 'Avenir';
-    font-size: 1.25rem;
-    margin-left: 16px;
+  font-family: "Satoshi";
+  font-size: 1.25rem;
+  margin-left: 16px;
+  color: #a1a1a1;
+}
+.markdown li::marker {
+  color: #a1a1a1;
 }
 
 .markdown code {
-    /* background: linear-gradient(90deg, #F1BB23 0%, #67316a 100%);
+  /* background: linear-gradient(90deg, #F1BB23 0%, #67316a 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; */
-    /* font-weight: 550; */
-    background: #E0E7F7;
-    color: #373C50;
+  /* font-weight: 550; */
+  background-clip: text;
+  font-family: "Satoshi";
+  background: -webkit-linear-gradient(#9346ed, #e9786e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .markdown [data="highlight"] {
-    border-left: 8px solid #F1BB23;
-    background: #E0E7F7;
-    margin: 0 -0.8rem;
-    padding: 0 0.6rem;
+  /* border-left: 8px solid #f1bb23;
+  background: #fdd7d4;
+  margin: 0 -0.8rem;
+  padding: 0 0.6rem;
+  font-size: 72px; */
+  background-clip: text;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.markdown blockquote {
-    border-left: 8px solid #F1BB23;
-    padding: 0 1.5rem;
-    background: #FDF8E8;
-    margin: 8px;
-    padding: 8px 4px 8px 24px;
-    color: #373C50;
+.markdown blockquote p {
+  /* border-left: 8px solid #f1bb23;
+  padding: 0 1.5rem;
+  background: #fdf8e8;
+  margin: 8px;
+  padding: 8px 4px 8px 24px;
+  color: #373c50; */
+  background-clip: text;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .markdown a {
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    color: #6273BA;
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: #6273ba;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .chakra-ui-dark .markdown p {
-    color: #A1A8BB;
+  color: #a1a1a1;
 }
 
 .chakra-ui-dark .markdown strong {
-    color: #A1A8BB;
+  color: #a1a1a1;
 }
 
 .chakra-ui-dark .markdown a {
-    color: #9EACE7;
+  color: #e9786e;
 }
 
+@media (max-width: 545px) {
+  .markdown h1 {
+    font-size: 2.2rem;
+  }
 
+  .markdown h2 {
+    font-size: 28px;
+  }
 
-@media(max-width:545px) {
-    .markdown h1 {
-        font-size: 2.2rem;
-    }
-
-    .markdown h2 {
-        font-size: 28px;
-    }
-
-    .markdown p,
-    .markdown li {
-        font-size: 16px;
-    }
+  .markdown p,
+  .markdown li {
+    font-size: 16px;
+  }
 }

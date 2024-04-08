@@ -80,9 +80,10 @@ export default function Nav() {
                 alignItems="center"
                 borderRadius="28px"
               >
-                <Text fontSize={{ base: "md", md: "lg" }} color="title">
+                <p className="text-md lg:text-lg text-white font-medium">
                   About
-                </Text>
+                </p>
+                <Text fontSize={{ base: "md", md: "lg" }} color="title"></Text>
               </Box>
             </Link>
             <Link to="/blog">
@@ -123,7 +124,7 @@ export default function Nav() {
                 </Text>
               </Box>
             </Link>
-            <Button
+            {/* <Button
               onClick={toggleColorMode}
               borderRadius="24px"
               bg={useColorModeValue("second.50", "black")}
@@ -143,7 +144,7 @@ export default function Nav() {
                   alt="moon white icon"
                 />
               )}
-            </Button>
+            </Button> */}
           </Flex>
         </Flex>
       </Container>

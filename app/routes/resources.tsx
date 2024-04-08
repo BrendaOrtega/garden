@@ -493,7 +493,7 @@ const DocsCard = ({ image, description, link, title, cta }) => {
           zIndex="1"
           src="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869"
         />
-        <div className="relative flex w-full h-[300px] border-[1px] border-[#1A1A1A] bg-black cursor-pointer rounded-lg py-8 px-6 justify-center">
+        <div className="relative flex w-full h-[300px]  bg-black cursor-pointer rounded-lg py-8 px-6 justify-center">
           <Image w="auto" h="100%" src={image} alt="stars" />
         </div>
 

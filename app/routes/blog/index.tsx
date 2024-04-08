@@ -29,39 +29,37 @@ export default function blog() {
   const { posts, main } = useLoaderData();
   console.log(posts);
   return (
-    <>
-      <Container
-        maxW={"container.xxl"}
-        padding={{ base: "160px 16px 80px 16px", lg: "240px  80px 120px 80px" }}
+    <Container
+      maxW={"container.xxl"}
+      padding={{ base: "160px 16px 80px 16px", lg: "240px  80px 120px 80px" }}
+    >
+      <Heading
+        textAlign="center"
+        fontSize={{ base: "4xl", lg: "5xl" }}
+        color="title"
       >
-        <Heading
-          textAlign="center"
-          fontSize={{ base: "4xl", lg: "5xl" }}
-          color="title"
-        >
-          📰 Something to read today
-        </Heading>
-        <Flex
-          w={{ base: "90%", md: "100%" }}
-          margin="0 auto"
-          marginTop={{ base: "40px", lg: "108px" }}
-          gap={{ base: "48px", lg: "80px 48px" }}
-          flexWrap="wrap"
-        >
-          {posts.map((post: PostType) => (
-            <CardPost
-              {...post}
-              key={post.slug}
-              image={post.metaImage}
-              cover={post.image}
-              title={post.title}
-              description={post.body}
-              tag={post.tag}
-            />
-          ))}
-        </Flex>
-      </Container>
-    </>
+        📰 Something to read today
+      </Heading>
+      <Flex
+        w={{ base: "90%", md: "100%" }}
+        margin="0 auto"
+        marginTop={{ base: "40px", lg: "108px" }}
+        gap={{ base: "48px", lg: "80px 48px" }}
+        flexWrap="wrap"
+      >
+        {posts.map((post: PostType) => (
+          <CardPost
+            {...post}
+            key={post.slug}
+            image={post.metaImage}
+            cover={post.image}
+            title={post.title}
+            description={post.body}
+            tag={post.tag}
+          />
+        ))}
+      </Flex>
+    </Container>
   );
 }
 
@@ -101,7 +99,7 @@ const CardPost = ({ image, description, title, tag, slug, subTag }) => {
     return str.split(" ").splice(start, no_words).join(" ") + "...";
   };
   return (
-    <div className=" group border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[33rem]">
+    <div className=" group border bg-black border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[33rem]">
       <Icon className="transition-all absolute group-hover:hidden h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="transition-all absolute group-hover:hidden h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
       <Icon className="transition-all absolute group-hover:hidden h-6 w-6 -top-3 -right-3 dark:text-white text-black" />

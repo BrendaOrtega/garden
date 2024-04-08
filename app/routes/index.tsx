@@ -161,23 +161,23 @@ const List = () => {
 
 const Card = ({ image, name, description, lowSrc, link }) => {
   return (
-    <Link to={link}>
-      <div className="flex box w-full lg:w-[480px] xl:w-[480px] h-[360px] lg:h-[700px] group">
-        <div className="flex flex-col overflow-hidden my-4 lg:my-8">
-          <div className="h-[400px] lg:h-[700px] overflow-hidden rounded-2xl items-center transition-all">
-            <BlurImage src={image} lowSrc={lowSrc} full />
-          </div>
-          <div className="group-hover:pl-6 transition-all">
-            <h2 className="text-xl text-black dark:text-white font-bold mt-4">
-              {name}
-            </h2>
-            <p className="text-base text-iron-500 dark:text-iron-300  mt-1">
-              {" "}
-              {description}
-            </p>
-          </div>
+    // <Link to={link}>
+    <div className="flex box w-full lg:w-[480px] xl:w-[480px] h-[360px] lg:h-[700px] group">
+      <div className="flex flex-col overflow-hidden my-4 lg:my-8">
+        <div className="h-[400px] lg:h-[700px] overflow-hidden rounded-2xl items-center transition-all">
+          <BlurImage src={image} lowSrc={lowSrc} full />
+        </div>
+        <div className="group-hover:pl-6 transition-all">
+          <h2 className="text-xl text-black dark:text-white font-bold mt-4">
+            {name}
+          </h2>
+          <p className="text-base text-iron-500 dark:text-iron-300  mt-1">
+            {" "}
+            {description}
+          </p>
         </div>
       </div>
-    </Link>
+    </div>
+    // </Link>
   );
 };
