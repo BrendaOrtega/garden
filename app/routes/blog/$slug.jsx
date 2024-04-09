@@ -48,7 +48,7 @@ export default function () {
     <section>
       <div
         style={{ backgroundImage: `url('${post.cover}')` }}
-        className="w-full h-[280px] lg:h-[540px] bg-cover bg-bottom bg-fixed grayscale-[80%]"
+        className="w-full h-[280px] lg:h-[540px] bg-cover bg-center  grayscale-[80%]"
       />
       <TracingBeam className="px-6">
         <div className="py-8 max-w-xl relative mx-auto">

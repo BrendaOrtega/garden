@@ -13,8 +13,8 @@ export default function Index() {
 
 const Body = () => {
   return (
-    <section className="dark min-h-auto md:min-h-[70vh] w-[90%] md:w-full mx-auto  flex  justify-center lg:justify-between flex-wrap-reverse md:flex-wrap lg:flex-nowrap gap-2 lg:gap-10 items-center h-auto md:h-[500px] px-0 lg:px-20 pt-[120px] lg:py-auto mt-2 lg:mt-0 ">
-      <div className="mt-10 md:mt-0">
+    <section className="dark min-h-auto md:min-h-[70vh] w-[90%] md:w-full mx-auto  flex  justify-center lg:justify-between flex-wrap-reverse  lg:flex-nowrap gap-2 lg:gap-10 items-center h-auto md:h-[500px] px-0 lg:px-20 pt-[120px] lg:py-auto mt-2 lg:mt-0 ">
+      <div className="mt-10 md:mt-0  px-4 md:px-10 lg:px-auto ">
         <h1
           style={{ lineHeight: "140%" }}
           className="text-black dark:text-white text-4xl md:text-5xl font-bold "
@@ -44,7 +44,7 @@ const Body = () => {
         </h1>
       </div>
 
-      <div className="w-full lg:w-[50%] justify-left md:justify-end flex">
+      <div className="w-full lg:w-[50%] justify-left lg:justify-end flex">
         <img
           className="h-auto w-[160px]  md:w-[240px]"
           src="/images/emoji.png"
@@ -57,7 +57,7 @@ const Body = () => {
 
 const List = () => {
   return (
-    <div className=" gap-10 lg:gap-20 mt-10 lg:mt-8 flex flex-wrap justify-center">
+    <div className="cardList gap-10 lg:gap-20 mt-10 lg:mt-8 px-4 md:px-10 lg:px-auto flex flex-wrap justify-center">
       <Card
         link="/projects/constructoken"
         name="Costructoken"
@@ -65,15 +65,15 @@ const List = () => {
         image="/images/projects/token.png"
         lowSrc="https://i.imgur.com/y9b0S4Sm.png"
       />
-      <div className="mt-20">
-        <Card
-          link="/projects/formmt"
-          name="Formmy"
-          description="Web app to add contact forms to your website | Saas"
-          image="/images/projects/formmy.png"
-          lowSrc="https://i.imgur.com/pC19NU5m.png"
-        />
-      </div>
+
+      <Card
+        link="/projects/formmt"
+        name="Formmy"
+        description="Web app to add contact forms to your website | Saas"
+        image="/images/projects/formmy.png"
+        lowSrc="https://i.imgur.com/pC19NU5m.png"
+      />
+
       <Card
         link="/projects/flink"
         name="Flink"
@@ -81,15 +81,15 @@ const List = () => {
         image="/images/projects/flink.png"
         lowSrc="https://i.imgur.com/THUxqt9t.png"
       />
-      <div className="mt-20">
-        <Card
-          link="/projects/covalto"
-          name="Covalto App"
-          description="Credit Card Aplication | Fintech"
-          image="/images/projects/covalto.png"
-          lowSrc="https://i.imgur.com/16aC4jAt.png"
-        />
-      </div>
+
+      <Card
+        link="/projects/covalto"
+        name="Covalto App"
+        description="Credit Card Aplication | Fintech"
+        image="/images/projects/covalto.png"
+        lowSrc="https://i.imgur.com/16aC4jAt.png"
+      />
+
       <Card
         link="/projects/santander"
         name="Santander Personal"
@@ -97,15 +97,15 @@ const List = () => {
         image="/images/projects/personal.png"
         lowSrc="https://i.imgur.com/fLdMmXKt.png"
       />
-      <div className="mt-20">
-        <Card
-          link="/projects/santander"
-          name="Santander Móvil"
-          description="Banking Mobile Aplication | Banking"
-          image="/images/projects/sant.png"
-          lowSrc="https://i.imgur.com/pHbfSGEt.png"
-        />
-      </div>
+
+      <Card
+        link="/projects/santander"
+        name="Santander Móvil"
+        description="Banking Mobile Aplication | Banking"
+        image="/images/projects/sant.png"
+        lowSrc="https://i.imgur.com/pHbfSGEt.png"
+      />
+
       <Card
         link="/projects/fixter"
         name="Fixter.org"
@@ -113,15 +113,15 @@ const List = () => {
         image="/images/projects/org.png"
         lowSrc="https://i.imgur.com/w8YzbTG.png"
       />
-      <div className="mt-20">
-        <Card
-          link="/projects/fixtergeek"
-          name="FixterGeek"
-          description="Website & Learning platform | Education"
-          image="/images/projects/fix.png"
-          lowSrc="https://i.imgur.com/nRhOA5Ls.png"
-        />
-      </div>
+
+      <Card
+        link="/projects/fixtergeek"
+        name="FixterGeek"
+        description="Website & Learning platform | Education"
+        image="/images/projects/fix.png"
+        lowSrc="https://i.imgur.com/nRhOA5Ls.png"
+      />
+
       <Card
         link="/projects/lastplay"
         name="LastPlay"
@@ -129,15 +129,14 @@ const List = () => {
         image="/images/projects/play.png"
         lowSrc="https://i.imgur.com/HqWDIw3.png"
       />
-      <div className="mt-20">
-        <Card
-          link="/"
-          name="SurveyUp"
-          description="Surveys web & Management Platform | Market Research"
-          image="/images/projects/survey.png"
-          lowSrc="https://i.imgur.com/MoNpbBT.png"
-        />
-      </div>
+
+      <Card
+        link="/"
+        name="SurveyUp"
+        description="Surveys web & Management Platform | Market Research"
+        image="/images/projects/survey.png"
+        lowSrc="https://i.imgur.com/MoNpbBT.png"
+      />
     </div>
   );
 };
@@ -145,9 +144,9 @@ const List = () => {
 const Card = ({ image, name, description, lowSrc, link }) => {
   return (
     // <Link to={link}>
-    <div className=" flex box w-full lg:w-[480px] xl:w-[480px] h-[360px] lg:h-[700px] group z-0">
-      <div className="flex flex-col overflow-hidden my-4 lg:my-8">
-        <div className="h-[400px] lg:h-[700px] overflow-hidden rounded-2xl items-center transition-all">
+    <div className=" flex box w-full  lg:w-[320px] xl:w-[480px] h-[360px] lg:h-[700px] group z-0">
+      <div className="flex flex-col overflow-hidden my-4 lg:my-8 w-full ">
+        <div className="h-[400px] lg:h-[700px] w-full overflow-hidden rounded-2xl items-center transition-all">
           <BlurImage src={image} lowSrc={lowSrc} full />
         </div>
         <div className="group-hover:pl-6 transition-all">

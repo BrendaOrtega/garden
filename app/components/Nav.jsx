@@ -1,10 +1,12 @@
 import { Link } from "@remix-run/react";
 import Gato from "./Gato";
-
+import ToggleButton from "../components/ToggleButton.tsx";
+import useTheme from "~/utils/hooks/useTheme";
 const logo =
   "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Fmichis.svg?alt=media&token=2bbd2928-0306-4475-919a-aea70c84f250";
 
 export default function Nav() {
+  const { theme, setDarkTheme, setLightTheme } = useTheme("dark");
   return (
     <section className="flex justify-center  w-full h-20 min-w-7xl fixed z-50">
       <div className=" mx-auto w-[1280px] flex items-center justify-between   px-4 md_px-8 bg-black rounded-full h-16 md:h-20  mt-4 md:mt-8 shadow-[ 0px_4px_16px_0px_rgba(0, 0, 0, 0.80)]">
@@ -35,28 +37,16 @@ export default function Nav() {
             </p>
           </Link>
         </div>
-
-        {/* <Button
-              onClick={toggleColorMode}
-              borderRadius="24px"
-              bg={useColorModeValue("second.50", "black")}
-            >
-              {colorMode === "light" ? (
-                <Image
-                  w="18px"
-                  h="18px"
-                  src="/images/sol.svg"
-                  alt="sun blue icon"
-                />
-              ) : (
-                <Image
-                  w="18px"
-                  h="18px"
-                  src="/images/luna.svg"
-                  alt="moon white icon"
-                />
-              )}
-            </Button> */}
+        {/* <ToggleButton
+          defaultValue={theme}
+          onChange={(value) => {
+            if (value) {
+              setDarkTheme();
+            } else {
+              setLightTheme();
+            }
+          }}
+        /> */}
       </div>
     </section>
   );

@@ -199,13 +199,16 @@ export default function about() {
         />
         <div className="bg-transparent md:bg-black px-0 md:px-10 pt-0 md:pt-10 -ml-0 md:-ml-16 mt-0 md:mt-[400px] rounded-3xl">
           <img className="w-[100px]" src="/images/yarn.png" />
-          <h2 className="text-4xl md:text-5xl font-bold mt-8">About me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mt-8 text-white">
+            About me
+          </h2>
           <p className="text-xl md:text-2xl text-iron-400 mt-8">
             {" "}
             I’m Brenda, I am Product & UX Designer based on Mexico. I studied
-            economics before start my tech career as frontend developer. So,
-            I’ve been working on web and mobile applications for more than 8
-            years, and I absolutely love what I do.
+            economics before start my tech career as frontend developer to
+            eventually become a Product Designer. So, I’ve been working on web
+            and mobile applications for more than 8 years, and I absolutely love
+            what I do.
           </p>
           <p className="text-xl md:text-2xl mt-8 text-iron-400 ">
             I focus on designing complex and functional products that help user
@@ -232,7 +235,7 @@ export default function about() {
         <InfiniteMovingCards items={tags} direction="left" speed="slow" />
       </div>
       <div className="max-w-7xl w-[90%] md:w-full mx-auto text-center py-20 md:py-[160px]">
-        <h2 className="text-4xl md:text-5xl font-bold mt-8">
+        <h2 className="text-4xl md:text-5xl font-bold mt-8 text-white">
           Some companies I've worked with
         </h2>
         <p className="text-xl md:text-2xl mt-8 text-iron-400">
@@ -315,8 +318,8 @@ export default function about() {
         </div>
       </div>
 
-      {/* <div className="text-center py-20 md:py-[120px]">
-        <h2 className="text-4xl md:text-5xl font-bold mt-8">
+      <div className="text-center py-20 md:py-[120px]">
+        <h2 className="text-4xl md:text-5xl font-bold mt-8 text-white">
           Let's work together
         </h2>
         <p className="text-xl md:text-2xl mt-8 text-iron-400">
@@ -338,7 +341,7 @@ export default function about() {
             }}
           ></iframe>
         </section>{" "}
-      </div> */}
+      </div>
     </section>
   );
 }

@@ -34,7 +34,7 @@ export const BlurImage = ({
       style={{
         height: "100%",
         minWidth: full ? "100%" : 500,
-        transition: blur ? " all 1s ease" : "filter 2s ease-out",
+        transition: blur ? " all 1s ease" : "all 1s ease",
         filter: blur ? "blur(20px)" : "none",
         objectFit: "cover",
         clipPath: "inset(0px)",

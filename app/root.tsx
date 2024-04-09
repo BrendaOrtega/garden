@@ -53,10 +53,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <ChakraProvider theme={theme}>
-          <Main />
-        </ChakraProvider>
+      <body className="dark bg-black">
+        <Main />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
@@ -66,14 +64,8 @@ export default function App() {
 }
 
 const Main = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-  useEffect(() => {
-    if (colorMode === "light") {
-      toggleColorMode();
-    }
-  }, []);
   return (
-    <section className="dark bg-stars">
+    <section className="bg-stars bg-white dark:bg-black">
       <Nav />
       <Outlet />
       <Footer />

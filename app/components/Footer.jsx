@@ -1,28 +1,17 @@
-import { Text, Flex, Image, Box, useColorModeValue } from "@chakra-ui/react";
+import useTheme from "~/utils/hooks/useTheme";
 
 export default function Footer() {
   return (
-    <Box
-      opacity={useColorModeValue(".5", ".5")}
-      w={"100vw"}
-      textAlign={"center"}
-      py={{ base: "40px", lg: "80px" }}
-    >
-      <Flex justifyContent={"center"}>
+    <section className="w-full text-center py-10 lg:py-20">
+      <div className="flex justify-center">
         <a
           href="https://twitter.com/brendaojs"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            _hover={{ opacity: ".5" }}
-            src={useColorModeValue(
-              "/images/twitter-blue-dark.svg",
-              "/images/twitter-blue-dark.svg"
-            )}
-            w="24px"
-            h="28px"
-            marginX={2}
+          <img
+            src="/images/twitter-blue-dark.svg"
+            className="w-6 h-6 mx-2  opacity-50 hover:opacity-30"
             alt="twitter logo blue"
           />
         </a>
@@ -31,16 +20,10 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            _hover={{ opacity: ".7" }}
-            src={useColorModeValue(
-              "/images/in-blue-dark.svg",
-              "/images/in-blue-dark.svg"
-            )}
-            w="24px"
-            h="28px"
-            marginX={2}
-            alt="linkedin logo blue"
+          <img
+            src="/images/in-blue-dark.svg"
+            className="w-6 h-6 mx-2  opacity-50 hover:opacity-30"
+            alt="twitter logo blue"
           />
         </a>
         <a
@@ -48,16 +31,10 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            _hover={{ opacity: ".5" }}
-            src={useColorModeValue(
-              "/images/insta-blue-dark.svg",
-              "/images/insta-blue-dark.svg"
-            )}
-            w="24px"
-            h="28px"
-            marginX={2}
-            alt="instagram logo blue"
+          <img
+            src="/images/insta-blue-dark.svg"
+            className="w-6 h-6 mx-2  opacity-50 hover:opacity-30"
+            alt="twitter logo blue"
           />
         </a>
         <a
@@ -65,22 +42,17 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            _hover={{ opacity: ".5" }}
-            src={useColorModeValue(
-              "/images/git-dark.svg",
-              "/images/git-dark.svg"
-            )}
-            w="28px"
-            h="28px"
-            marginX={2}
-            alt="behance logo blue"
+          <img
+            src="/images/git-dark.svg"
+            className="w-6 h-6 mx-2  opacity-50 hover:opacity-30"
+            alt="twitter logo blue"
           />
         </a>
-      </Flex>
-      <p className="mt-4">
+      </div>
+
+      <p className="mt-4 text-white/50">
         © 2022 Brenda González Ortega - All rights reserved.
       </p>
-    </Box>
+    </section>
   );
 }

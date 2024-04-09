@@ -97,7 +97,7 @@ const CardPost = ({ image, description, title, tag, slug, subTag }) => {
             <span className="text-sm text-iron-400">{tag}</span>
             <span className="text-sm text-iron-400 ">{subTag}</span>
           </div>
-          <h2 className="text-xl mb-1 mt-2 transition-all h-[84px] flex items-center">
+          <h2 className="text-xl mb-1 mt-2 transition-all h-[84px] flex items-center text-white">
             {" "}
             {title}
           </h2>

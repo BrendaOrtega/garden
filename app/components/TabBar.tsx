@@ -54,7 +54,7 @@ const TabActive = ({
     <div
       onClick={onClick}
       className={`h-10 cursor-pointer w-[138px] flex items-center justify-center text-center rounded-full ${
-        isActive ? "bg-white text-black" : "bg-transparent"
+        isActive ? "bg-white text-black" : "bg-transparent text-white/50"
       }`}
     >
       <p className="h-10 flex items-center"> {text}</p>
