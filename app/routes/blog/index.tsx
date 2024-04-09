@@ -21,13 +21,13 @@ import { EvervaultCard, Icon } from "~/components/BaulCard";
 export const loader: LoaderFunction = async () => {
   const db = await dbConnection();
   const posts = await db.Post.find({ main: false }).sort({ index: -1 });
-  const main = await db.Post.findOne({ main: true });
-  return { posts, main };
+  // const main = await db.Post.findOne({ main: true });
+  return { posts };
 };
 
 export default function blog() {
-  const { posts, main } = useLoaderData();
-  console.log(posts);
+  const { posts } = useLoaderData();
+
   return (
     <Container
       maxW={"container.xxl"}
@@ -109,7 +109,7 @@ const CardPost = ({ image, description, title, tag, slug, subTag }) => {
       <IconHover className="transition-all absolute hidden group-hover:block h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
       <IconHover className="transition-all absolute hidden group-hover:block h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
 
-      <Link to={slug}>
+      <Link prefetch="intent" to={slug}>
         <Box
           borderRadius="16px"
           cursor="pointer"

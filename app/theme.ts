@@ -13,7 +13,7 @@ const theme = extendTheme(
       global: (props) => ({
         // styles for the `body`
         body: {
-          bg: props.colorMode === "light" ? "white" : "black",
+          bg: props.colorMode === "light" ? "black" : "black",
         },
 
         p: {
@@ -96,15 +96,15 @@ const theme = extendTheme(
     semanticTokens: {
       colors: {
         text: {
-          default: "second.700",
+          default: "second.500",
           _dark: "second.500",
         },
         title: {
-          default: "black",
+          default: "gray.50",
           _dark: "gray.50",
         },
         tooltip: {
-          defauk: "second.700",
+          defauk: "second.400",
           _dark: "second.400",
         },
       },

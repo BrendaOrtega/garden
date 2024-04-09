@@ -3,7 +3,7 @@ import { Text, Flex, Image, Box, useColorModeValue } from "@chakra-ui/react";
 export default function Footer() {
   return (
     <Box
-      opacity={useColorModeValue(".7", ".5")}
+      opacity={useColorModeValue(".5", ".5")}
       w={"100vw"}
       textAlign={"center"}
       py={{ base: "40px", lg: "80px" }}
@@ -15,9 +15,9 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <Image
-            _hover={{ opacity: ".7" }}
+            _hover={{ opacity: ".5" }}
             src={useColorModeValue(
-              "/images/twitter-blue.svg",
+              "/images/twitter-blue-dark.svg",
               "/images/twitter-blue-dark.svg"
             )}
             w="24px"
@@ -34,7 +34,7 @@ export default function Footer() {
           <Image
             _hover={{ opacity: ".7" }}
             src={useColorModeValue(
-              "/images/in-blue.svg",
+              "/images/in-blue-dark.svg",
               "/images/in-blue-dark.svg"
             )}
             w="24px"
@@ -49,9 +49,9 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <Image
-            _hover={{ opacity: ".7" }}
+            _hover={{ opacity: ".5" }}
             src={useColorModeValue(
-              "/images/insta-blue.svg",
+              "/images/insta-blue-dark.svg",
               "/images/insta-blue-dark.svg"
             )}
             w="24px"
@@ -66,9 +66,9 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <Image
-            _hover={{ opacity: ".7" }}
+            _hover={{ opacity: ".5" }}
             src={useColorModeValue(
-              "/images/git-blue.svg",
+              "/images/git-dark.svg",
               "/images/git-dark.svg"
             )}
             w="28px"
@@ -78,9 +78,7 @@ export default function Footer() {
           />
         </a>
       </Flex>
-      <Text color="tooltip" marginTop={4}>
-        © 2022 Brenda González Ortega - All rights reserved.
-      </Text>
+      <p marginTop={4}>© 2022 Brenda González Ortega - All rights reserved.</p>
     </Box>
   );
 }

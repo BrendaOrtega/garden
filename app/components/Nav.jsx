@@ -25,13 +25,13 @@ export default function Nav() {
         margin="0 auto"
         maxW={"container.xl"}
         px={{ base: "16px", lg: "24px" }}
-        bg={useColorModeValue("white", "#0E0E11")}
+        bg={useColorModeValue("#0E0E11", "#0E0E11")}
         borderRadius="40px"
         h={{ base: "64px", lg: "80px" }}
         zIndex="100"
         marginTop={{ base: "16px", lg: "32px" }}
         boxShadow={useColorModeValue(
-          "0 10px 15px -3px rgba(204, 204, 204, 0.3),0 4px 6px -2px rgba(204, 204, 204, 0.05)",
+          "box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.80)",
           "box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.80)"
         )}
       >
@@ -71,7 +71,7 @@ export default function Nav() {
                 h={10}
                 _hover={{
                   bg: useColorModeValue(
-                    "rgba(233,237,246,.9)",
+                    "rgba(233,237,246,.03)",
                     "rgba(233,237,246,.03)"
                   ),
                 }}
@@ -91,7 +91,7 @@ export default function Nav() {
                 h={10}
                 _hover={{
                   bg: useColorModeValue(
-                    "rgba(233,237,246,.9)",
+                    "rgba(233,237,246,.03)",
                     "rgba(233,237,246,.03)"
                   ),
                 }}
@@ -110,7 +110,7 @@ export default function Nav() {
                 h={10}
                 _hover={{
                   bg: useColorModeValue(
-                    "rgba(233,237,246,.9)",
+                    "rgba(233,237,246,.03)",
                     "rgba(233,237,246,.03)"
                   ),
                 }}
@@ -124,7 +124,7 @@ export default function Nav() {
                 </Text>
               </Box>
             </Link>
-            <Button
+            {/* <Button
               onClick={toggleColorMode}
               borderRadius="24px"
               bg={useColorModeValue("second.50", "black")}
@@ -144,7 +144,7 @@ export default function Nav() {
                   alt="moon white icon"
                 />
               )}
-            </Button>
+            </Button> */}
           </Flex>
         </Flex>
       </Container>

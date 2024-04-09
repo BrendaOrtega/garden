@@ -1,5 +1,10 @@
 import type { LinksFunction, MetaFunction } from "@remix-run/node";
-import { Box, ChakraProvider, useColorModeValue } from "@chakra-ui/react";
+import {
+  Box,
+  ChakraProvider,
+  useColorMode,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import theme from "~/theme";
 import tailwindcss from "./styles/style.css";
 import Nav from "~/components/Nav";
@@ -14,6 +19,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { useEffect } from "react";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -74,12 +80,15 @@ export default function App() {
 }
 
 const Main = () => {
-  const bgImage = useColorModeValue(
-    "/images/patron_3.svg",
-    "/assets/stars.png"
-  );
+  const bgImage = useColorModeValue("/assets/stars.png", "/assets/stars.png");
+  const { colorMode, toggleColorMode } = useColorMode();
+  useEffect(() => {
+    if (colorMode === "light") {
+      toggleColorMode();
+    }
+  }, []);
   return (
-    <Box bgImage={bgImage} backgroundSize="contain" className="dark">
+    <Box bgImage={bgImage} backgroundSize="contain">
       <Nav />
       <Outlet />
       <Footer />

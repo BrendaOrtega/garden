@@ -15,18 +15,21 @@
 .markdown h1 {
   font-size: 3rem;
   margin: 20px 0;
+  color: white;
 }
 
 .markdown h2 {
   font-size: 2.5rem;
   margin-top: 48px;
   margin-bottom: 0px;
+  color: white;
 }
 
 .markdown h3 {
   font-size: 2rem;
   margin-top: 32px;
   margin-bottom: -16px;
+  color: white;
 }
 
 .markdown p {
@@ -34,13 +37,13 @@
 
   font-size: 1.25rem;
   margin: 20px 0;
-  color: #373c50;
+  color: #a1a1a1;
 }
 
 .markdown li {
   font-family: "Satoshi";
   font-size: 1.25rem;
-  margin-left: 16px;
+  margin: 16px 0;
   color: #a1a1a1;
 }
 .markdown li::marker {
@@ -92,7 +95,7 @@
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  color: #6273ba;
+  color: #e9786e;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
