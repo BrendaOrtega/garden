@@ -3,6 +3,7 @@ import { mode } from "@chakra-ui/theme-tools";
 
 const theme = extendTheme(
   {
+    initialColorMode: "dark",
     styles: {
       global: (props) => ({
         // styles for the `body`
