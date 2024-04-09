@@ -1,6 +1,5 @@
 import { Link } from "@remix-run/react";
 import Layout from "~/components/Layout";
-import LazyLoad from "react-lazyload";
 import styles from "~/styles/about.css";
 import { BlurImage } from "~/utils/hooks/useBlurImage";
 import { motion } from "framer-motion";
@@ -45,13 +44,11 @@ const Body = () => {
       </div>
 
       <div className="w-full lg:w-[50%] justify-left md:justify-end flex">
-        <LazyLoad height={200}>
-          <img
-            className="h-auto w-[160px]  md:w-[240px]"
-            src="/images/emoji.png"
-            alt="brenda emoji 3d"
-          />
-        </LazyLoad>
+        <img
+          className="h-auto w-[160px]  md:w-[240px]"
+          src="/images/emoji.png"
+          alt="brenda emoji 3d"
+        />
       </div>
     </section>
   );

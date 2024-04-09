@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { PinContainer } from "~/components/3d-pin";
 import { AnimatedTooltip } from "~/components/AnimatedTooltip";
 import { InfiniteMovingCards } from "~/components/InfiniteMovingCards";
@@ -186,6 +187,10 @@ const people = [
 ];
 
 export default function about() {
+  const ref = useRef();
+  useEffect(() => {
+    setTimeout(() => (ref.current.style = "background:transparent"), 2000);
+  }, []);
   return (
     <section className="pt-[120px] md:pt-[200px]  mx-auto">
       <div className="w-[90%] md:w-full pb-10 lg:pb-10 flex-wrap-reverse md:flex-wrap lg:flex-nowrap flex justify-center items-start pt-10 gap-12 md:gap-0 max-w-7xl mx-auto ">
@@ -213,7 +218,7 @@ export default function about() {
             on, or talk about working together, feel free to{" "}
             <a href="mailto:bremin11.20.93@gmail.com">
               {" "}
-              <span className="text-brand-500 font-semibold">email me</span>
+              <span className="text-brand-500 ">email me</span>
             </a>
             .
           </p>
@@ -319,17 +324,21 @@ export default function about() {
           I'd love to learn more about you and what we can design and build
           together.
         </p>
-        <div className="w-full md:w-[680px] mx-auto mt-16">
+        <section className="w-full md:w-[680px] mx-auto mt-16 ">
           <iframe
+            ref={ref}
             frameBorder="0"
             id="formmy-iframe"
             title="formmy"
             width="100%"
             height="560"
             src="https://formmy.app/embed/660c7c0d495f273b3c096bba"
-            style={{ margin: "0 auto", display: "block" }}
+            style={{
+              margin: "0 auto",
+              display: "block",
+            }}
           ></iframe>
-        </div>{" "}
+        </section>{" "}
       </div>
     </section>
   );
