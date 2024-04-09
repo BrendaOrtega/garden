@@ -79,7 +79,7 @@ const Main = () => {
     "/assets/stars.png"
   );
   return (
-    <Box bgImage={bgImage} backgroundSize="contain">
+    <Box bgImage={bgImage} backgroundSize="contain" className="dark">
       <Nav />
       <Outlet />
       <Footer />

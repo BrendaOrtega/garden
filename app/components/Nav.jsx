@@ -124,7 +124,7 @@ export default function Nav() {
                 </Text>
               </Box>
             </Link>
-            {/* <Button
+            <Button
               onClick={toggleColorMode}
               borderRadius="24px"
               bg={useColorModeValue("second.50", "black")}
@@ -144,7 +144,7 @@ export default function Nav() {
                   alt="moon white icon"
                 />
               )}
-            </Button> */}
+            </Button>
           </Flex>
         </Flex>
       </Container>
