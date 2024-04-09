@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { PinContainer } from "~/components/3d-pin";
-import { AnimatedTooltip } from "~/components/AnimatedTooltip";
 import { InfiniteMovingCards } from "~/components/InfiniteMovingCards";
 import styles from "~/styles/about.css";
 

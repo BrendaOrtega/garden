@@ -13,11 +13,11 @@ export default function Index() {
 
 const Body = () => {
   return (
-    <section className=" min-h-auto md:min-h-[70vh] w-[90%] md:w-full mx-auto  flex  justify-center lg:justify-between flex-wrap-reverse md:flex-wrap lg:flex-nowrap gap-2 lg:gap-10 items-center h-auto md:h-[500px] px-0 lg:px-20 pt-[120px] lg:py-auto mt-2 lg:mt-0 ">
+    <section className="dark min-h-auto md:min-h-[70vh] w-[90%] md:w-full mx-auto  flex  justify-center lg:justify-between flex-wrap-reverse md:flex-wrap lg:flex-nowrap gap-2 lg:gap-10 items-center h-auto md:h-[500px] px-0 lg:px-20 pt-[120px] lg:py-auto mt-2 lg:mt-0 ">
       <div className="mt-10 md:mt-0">
         <h1
           style={{ lineHeight: "140%" }}
-          className="text-black dark:text-white text-4xl md:text-5xl	font-bold"
+          className="text-black dark:text-white text-4xl md:text-5xl font-bold "
         >
           {" "}
           <motion.div
@@ -25,6 +25,7 @@ const Body = () => {
               transformOrigin: "center",
               display: "inline-block",
               marginRight: "16px",
+              zIndex: "-10",
             }}
             animate={{ rotate: 20 }}
             transition={{
@@ -35,7 +36,7 @@ const Body = () => {
               type: "tween",
             }}
           >
-            👋🏻
+            <span>👋🏻 </span>
           </motion.div>
           Hello, I'm Brenda.
           <br className="mt-4" />
@@ -137,21 +138,6 @@ const List = () => {
           lowSrc="https://i.imgur.com/MoNpbBT.png"
         />
       </div>
-      {/* <Card
-        name="Webdive"
-        description="Website & Property Management Application | Real State "
-        image="/images/projects/uniks.png"
-      /> */}
-      {/* <Card
-        name="Real state"
-        description="Website & Property Management Application | Real State "
-        image="/images/projects/uniks.png"
-      />
-      <Card
-        name="Unikko"
-        description="Website & Property Management Application | Real State "
-        image="/images/projects/uniks.png"
-      /> */}
     </div>
   );
 };
@@ -159,7 +145,7 @@ const List = () => {
 const Card = ({ image, name, description, lowSrc, link }) => {
   return (
     // <Link to={link}>
-    <div className="flex box w-full lg:w-[480px] xl:w-[480px] h-[360px] lg:h-[700px] group">
+    <div className=" flex box w-full lg:w-[480px] xl:w-[480px] h-[360px] lg:h-[700px] group z-0">
       <div className="flex flex-col overflow-hidden my-4 lg:my-8">
         <div className="h-[400px] lg:h-[700px] overflow-hidden rounded-2xl items-center transition-all">
           <BlurImage src={image} lowSrc={lowSrc} full />

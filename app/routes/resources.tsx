@@ -1,15 +1,3 @@
-import {
-  Flex,
-  Heading,
-  Text,
-  Image,
-  Container,
-  VStack,
-  useColorModeValue,
-  Button,
-} from "@chakra-ui/react";
-import { Link, Links } from "@remix-run/react";
-import Layout from "~/components/Layout";
 import TabBar from "~/components/TabBar";
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
@@ -35,27 +23,21 @@ export default function Resources() {
   }, [active]);
 
   return (
-    <>
-      <Container
-        maxW={"container.xxl"}
-        p={{ base: "160px 16px 80px 16px", lg: "240px  80px 120px 80px" }}
-      >
-        <Heading
-          textAlign="center"
-          fontSize={{ base: "4xl", lg: "5xl" }}
-          color="title"
-        >
+    <section className="max-w-7xl mx-auto pt-[160px] md:pt-[240px]">
+      <div className=" px-4  md:px-20 ">
+        <h2 className="text-center text-4xl md:text-5xl text-black dark:text-white leading-relaxed">
+          {" "}
           🚀 My best recommendations on design resources
-        </Heading>
-        <TabBar onClick={handleSelection} active={active} />
-        {activeSection}
-      </Container>
-    </>
+        </h2>
+      </div>
+      <TabBar onClick={handleSelection} active={active} />
+      {activeSection}
+    </section>
   );
 }
 
 const Books = () => (
-  <Flex gap={10} justifyContent="center" flexWrap="wrap">
+  <section className="flex gap-10 justify-center flex-wrap">
     <BookCard
       image="https://i.imgur.com/hEHoqE2.jpg"
       title="Dont make me think"
@@ -203,11 +185,11 @@ const Books = () => (
       link="https://www.fixtergeek.com.ms"
       score="5"
     />
-  </Flex>
+  </section>
 );
 
 const Courses = () => (
-  <Flex gap={10} justifyContent="center" flexWrap="wrap">
+  <section className="flex gap-10 justify-center flex-wrap">
     <CourseCard
       image="https://i.imgur.com/fhHswAo.png"
       title="Diseño de Interfaces"
@@ -232,11 +214,11 @@ const Courses = () => (
       cta="Ver"
       rank="4.5"
     />
-  </Flex>
+  </section>
 );
 
 const Blogs = () => (
-  <Flex gap={10} justifyContent="center" flexWrap="wrap">
+  <section className="flex gap-10 justify-center flex-wrap">
     <BlogCard
       image="https://i.imgur.com/c1cnvxV.png"
       title="N/N Group"
@@ -272,11 +254,11 @@ const Blogs = () => (
       link="https://www.uxmatters.com/top-articles.php"
       cta="Ver"
     />
-  </Flex>
+  </section>
 );
 
 const Papers = () => (
-  <Flex gap={10} justifyContent="center" flexWrap="wrap">
+  <section className="flex gap-10 justify-center flex-wrap">
     <DocsCard
       image="https://i.imgur.com/uetu8B8.png"
       title="Jakob’s Ten Usability Heuristics"
@@ -298,7 +280,7 @@ const Papers = () => (
       link="https://www.designkit.org/resources/1.html"
       cta="Descargar"
     />
-  </Flex>
+  </section>
 );
 
 const BookCard = ({ image, description, link, title, score }) => {
@@ -342,74 +324,41 @@ const CourseCard = ({ image, rank, description, cta, link, title }) => {
     <motion.div
       initial={{ opacity: 0, y: -40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      // initial="offscreen"
       viewport={{ once: true, amount: 0.8 }}
       transition={{ type: "spring", damping: 10, mass: 1.5, stiffness: 120 }}
     >
-      <Flex
-        flexDir="column"
-        w={{ base: "80%", md: "320px" }}
-        ml={{ base: "10%", md: "none" }}
-        h="auto"
-        alignItems="center"
-        position="relative"
-        role="group"
-      >
-        <Image
+      <div className="flex-col w-[80%] md:w-[320px] h-auto items-center relative group ml-[10%] md:ml-0">
+        <img
           alt="book cover"
-          position="absolute"
-          right="40px"
-          top="24px"
-          w="80px"
-          h="80px"
-          opacity="0"
-          _groupHover={{ opacity: "1" }}
-          zIndex="1"
+          className="absolute right-10 top-6 w-20 h-20 opacity-0 group-hover:opacity-100 z-10"
           src="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869"
         />
 
         <div className="relative flex w-full h-[240px] border-[1px] border-transparent bg-black cursor-pointer rounded-lg py-8 px-6 justify-center">
-          <Image
-            w="100%"
-            h="auto"
+          <img
+            className="w-full h-auto object-cover rounded-xl border-[1px] border-[#1A1A1A]"
             src={image}
             alt="stars"
-            objectFit="cover"
-            borderRadius="16px"
-            border="1px solid #1A1A1A"
           />
-          <Flex
-            _groupHover={{ transform: "scale(1.1)" }}
-            transition="all .2s ease-out"
-            bg={useColorModeValue("white", "#1D1C20")}
-            p="1% 2%"
-            position="absolute"
-            bottom="48px"
-            right="32px"
-            borderRadius="4px"
-            alignItems="center"
-          >
-            <Image
+          <div className="group-hover:scale-110  flex transition-all bg-[#1D1C20] py-[1%] px-[2%] absolute right-8 bottom-10 items-center rounded-md">
+            <img
+              className="h-6 mr-1"
               alt="rank icon"
-              h="24px"
-              mr="4px"
               src="./images/coffee.png"
             />
+
             <p className="mt-1 text-sm text-[#A9A9A9]"> {rank} </p>
-          </Flex>
+          </div>
         </div>
-        <Flex flexDirection="column" mt="16px" gap={2} textAlign="center">
-          <Heading fontFamily="Avenir" fontSize="xl" color="title">
-            {title}
-          </Heading>
+        <div className="flex flex-col mt-4 gap-2 text-center">
+          <h2 className="text-xl text-white"> {title}</h2>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <button className="mt-4 px-4 rounded-lg h-10 text-white bg-[#212123] hover:bg-[#353536]">
               {cta}
             </button>
           </a>
-          {/* <Text color='text' ontSize='md' lineHeight='1.2'>{description}</Text> */}
-        </Flex>
-      </Flex>
+        </div>
+      </div>
     </motion.div>
   );
 };
@@ -423,42 +372,22 @@ const BlogCard = ({ image, description, link, title, cta }) => {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ type: "spring", damping: 10, mass: 1.5, stiffness: 120 }}
     >
-      <Flex
-        flexDir="column"
-        w={{ base: "80%", md: "260px", lg: "200px" }}
-        ml={{ base: "10%", md: "none" }}
-        h="auto"
-        alignItems="center"
-        position="relative"
-        role="group"
-      >
-        <Image
+      <div className="flex flex-col w-[80%] md:w-[260px] lg:w-[200px] ml-[10%] md:ml-0 h-auto items-center justify-center relative group">
+        <img
+          className="absolute right-10 top-6 w-20 h-20 opacity-0 group-hover:opacity-100 z-10"
           alt="book cover"
-          position="absolute"
-          right="40px"
-          top="24px"
-          w="80px"
-          h="80px"
-          opacity="0"
-          _groupHover={{ opacity: "1" }}
-          zIndex="1"
           src="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869"
         />
         <div className="relative flex w-[200px] h-[200px] border-[1px] border-black bg-black cursor-pointer rounded-full py-8 px-6 justify-center">
-          <Image w="auto" h="100%" src={image} alt="stars" />
+          <img className="w-auto h-full" src={image} alt="stars" />
         </div>
-        <Flex flexDirection="column" mt="16px" gap={2} textAlign="center">
-          <Heading fontFamily="Avenir" fontSize="xl" color="title">
-            {title}{" "}
-          </Heading>
-          {/* <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text> */}
-        </Flex>
+        <h2 className="text-xl text-white"> {title}</h2>
         <a href={link} target="_blank" rel="noopener noreferrer">
           <button className="mt-4 px-4 rounded-lg h-10 text-white bg-[#212123] hover:bg-[#353536]">
             {cta}
           </button>
         </a>
-      </Flex>
+      </div>
     </motion.div>
   );
 };
@@ -472,43 +401,22 @@ const DocsCard = ({ image, description, link, title, cta }) => {
       viewport={{ once: true, amount: 0.8 }}
       transition={{ type: "spring", damping: 10, mass: 1.5, stiffness: 120 }}
     >
-      <Flex
-        flexDir="column"
-        w={{ base: "80%", md: "260px" }}
-        ml={{ base: "10%", md: "none" }}
-        h="auto"
-        alignItems="center"
-        position="relative"
-        role="group"
-      >
-        <Image
+      <div className="text-center flex flex-col w-[80%] md:w-[260px] lg:w-[280px] ml-[10%] md:ml-0 h-auto items-center justify-center relative group">
+        <img
+          className="absolute right-10 top-6 w-20 h-20 opacity-0 group-hover:opacity-100 z-10"
           alt="book cover"
-          position="absolute"
-          right="40px"
-          top="24px"
-          w="80px"
-          h="80px"
-          opacity="0"
-          _groupHover={{ opacity: "1" }}
-          zIndex="1"
           src="https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fdescarga.gif?alt=media&token=fec96524-5be2-4920-b75a-3d8a60830869"
         />
         <div className="relative flex w-full h-[300px]  bg-black cursor-pointer rounded-lg py-8 px-6 justify-center">
-          <Image w="auto" h="100%" src={image} alt="stars" />
+          <img className="w-auto h-full" src={image} alt="stars" />
         </div>
-
-        <Flex flexDirection="column" mt="16px" gap={2} textAlign="center">
-          <Heading fontFamily="Avenir" fontSize="xl" color="title">
-            {title}
-          </Heading>
-          {/* <Text color='text' fontSize='md' lineHeight='1.2'>{description}</Text> */}
-        </Flex>
+        <h2 className="text-xl text-white"> {title}</h2>
         <a href={link} target="_blank" rel="noopener noreferrer">
           <button className="mt-4 px-4 rounded-lg h-10 text-white bg-[#212123] hover:bg-[#353536]">
             {cta}
           </button>
         </a>
-      </Flex>
+      </div>
     </motion.div>
   );
 };

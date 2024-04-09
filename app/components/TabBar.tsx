@@ -14,17 +14,8 @@ export default function Nav({
   onClick: (arg0: number) => void;
 }) {
   return (
-    <Box
-      overflowX={{ base: "scroll", lg: "inherit" }}
-      m={{ base: "32px auto 40px", lg: "54px auto 80px" }}
-    >
-      <Container
-        bg="#1D1C20"
-        p="8px 12px"
-        borderRadius="40px"
-        display="flex"
-        w={{ base: "500px", lg: "auto" }}
-      >
+    <div className="overflow-x-scroll	 my-8 lg:my-12">
+      <div className="bg-[#1D1C20] px-3 py-2 rounded-full flex w-[500px] mx-auto">
         <TabActive
           onClick={() => onClick(0)}
           isActive={active === 0}
@@ -45,8 +36,8 @@ export default function Nav({
           isActive={active === 3}
           text="📑 Papers"
         />
-      </Container>
-    </Box>
+      </div>
+    </div>
   );
 }
 
@@ -59,24 +50,14 @@ const TabActive = ({
   text: string;
   isActive: boolean;
 }) => {
-  const activeBg = useColorModeValue("white", "white");
-  const inactiveBg = "transparent";
-  const activeColor = useColorModeValue("black", "black");
-  const inactiveColor = useColorModeValue("gray.500", "gray.500");
   return (
-    <Flex
+    <div
       onClick={onClick}
-      color={isActive ? activeColor : inactiveColor}
-      cursor="pointer"
-      w="138px"
-      bg={isActive ? activeBg : inactiveBg}
-      h={10}
-      alignItems="center"
-      textAlign="center"
-      justifyContent="center"
-      borderRadius="20px"
+      className={`h-10 cursor-pointer w-[138px] flex items-center justify-center text-center rounded-full ${
+        isActive ? "bg-white text-black" : "bg-transparent"
+      }`}
     >
-      <Text as="span">{text}</Text>
-    </Flex>
+      <p className="h-10 flex items-center"> {text}</p>
+    </div>
   );
 };

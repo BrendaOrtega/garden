@@ -46,20 +46,6 @@ export default function App() {
   useGoogleTM();
   useHotjar();
 
-  //   useEffect(() => {
-  //     // feedbug
-  //     const script = document.createElement('script');
-  //     script.innerText = `
-  // var s = document.createElement('script');
-  //  s.async = "true";
-  //  s.defer ="true";
-  //  s.src="https://feedbug.fly.dev/feedBug.js";
-  //  window.feedbugApiKey = "642b9c7da52ed3da53e9b784";
-  //  window.document.head.appendChild(s);
-  // `;
-  //     document.body.appendChild(script); // @TODO: FEEDBUG TESTING <===================================
-  //   }, [])
-
   return (
     <html lang="en">
       <head>
@@ -80,7 +66,6 @@ export default function App() {
 }
 
 const Main = () => {
-  const bgImage = useColorModeValue("/assets/stars.png", "/assets/stars.png");
   const { colorMode, toggleColorMode } = useColorMode();
   useEffect(() => {
     if (colorMode === "light") {
@@ -88,10 +73,10 @@ const Main = () => {
     }
   }, []);
   return (
-    <Box bgImage={bgImage} backgroundSize="contain">
+    <section className="dark bg-stars">
       <Nav />
       <Outlet />
       <Footer />
-    </Box>
+    </section>
   );
 };

@@ -1,14 +1,3 @@
-import {
-  Box,
-  Container,
-  Heading,
-  Flex,
-  Text,
-  Button,
-  Image,
-  Divider,
-  useColorModeValue,
-} from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
 import { redirect } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
@@ -19,14 +8,6 @@ import dbConnection from "~/db/db.server";
 import { TracingBeam } from "../../components/TracingBeam";
 import { useEffect, useRef } from "react";
 
-// const twitter =
-//   "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fmedia%2Ftwitter.svg?alt=media&token=8cc3ffaa-806f-420b-a50d-957511961cd8";
-// const facebook =
-//   "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fmedia%2Ffacebook.svg?alt=media&token=6fcb28c2-bc83-4fdb-a304-7a49d40f44d8";
-// const linkedin =
-//   "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fmedia%2Ficons8-linkedin.svg?alt=media&token=3e7d9b8e-9553-4856-ac01-e804783344cd";
-// const link =
-//   "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/garden%2Fmedia%2Flink.svg?alt=media&token=d11a8a8d-4e68-4da3-b539-0ab879797c3f";
 const twitter =
   "https://firebasestorage.googleapis.com/v0/b/camp-92fe8.appspot.com/o/external%2Ftwitter-blue.svg?alt=media&token=24dcc7cc-1de7-461d-8ab1-8f1fd9a63d26";
 const linkedin =
@@ -64,107 +45,64 @@ export default function () {
   }, []); //
 
   return (
-    <Box>
+    <section>
       <div
         style={{ backgroundImage: `url('${post.cover}')` }}
-        className="w-full h-[280px] lg:h-[540px] bg-cover bg-bottom bg-fixed	 grayscale-[80%]"
+        className="w-full h-[280px] lg:h-[540px] bg-cover bg-bottom bg-fixed grayscale-[80%]"
       />
       <TracingBeam className="px-6">
-        <Container paddingY={"8"} maxW={"container.sm"} position="relative">
+        <div className="py-8 max-w-xl relative mx-auto">
           <Link to="/blog">
-            <Button
-              top={{ base: "20px", lg: "40px" }}
-              position="absolute"
-              left={{ base: "16px", lg: "-54px" }}
-              variant={"ghost"}
-              fontSize={24}
+            <button
+              className="text-white hover:bg-[#212123] -left-[68px] top-12 rounded-lg flex justify-center items-center text-2xl
+             h-10 w-[56px] absolute"
             >
               <HiOutlineArrowSmLeft />
-            </Button>
+            </button>
           </Link>
-
-          <Heading
-            paddingBottom={"4"}
-            fontSize={{ base: "32px", lg: "48" }}
-            lineHeight={{ base: "110%", lg: "130%" }}
-            mt={{ base: "40px", lg: "inherit" }}
-            mb={{ base: "8px", lg: "inherit" }}
-            color="title"
-          >
+          <h2 className="pb-4 w-full text-4xl md:text-[40px] leading-normal mt-10 md:mt-[inherit] text-white ">
+            {" "}
             {post.title}
-          </Heading>
-          <Flex
-            mb={{ base: "16px", lg: "inherit" }}
-            justifyContent="space-between"
-            alignItems="flex-start"
-            flexWrap={{ base: "wrap", lg: "no-wrap" }}
-          >
-            <Flex
-              justifyContent={"space-between"}
-              marginBottom={{ base: "16px", lg: "32px" }}
-            >
-              <Flex>
-                <Box
-                  w={12}
-                  h={12}
-                  borderRadius={"50%"}
-                  bgSize="cover"
-                  bgPos={"center"}
-                  bgImg={post.authorImage || ""}
-                />
-                <Box paddingLeft={2}>
-                  <p className="mb-0 font-bold text-white">
-                    Brenda Gonzalez Ortega
-                  </p>
-
-                  <Text color={"#767676"}>{post.authorAt}</Text>
-                </Box>
-              </Flex>
-              <Text color={"#767676"}>{post.createdAt}</Text>
-            </Flex>
-            <Flex gap="2">
-              <Image
-                w="24px"
-                opacity={useColorModeValue(".7", ".5")}
-                transition="all 1s ease"
-                _hover={{ opacity: ".3" }}
-                cursor="pointer"
+          </h2>
+          <div className="flex justify-between border-b-[1px] items-center border-white/10 pb-8">
+            <div className="flex gap-4">
+              <div
+                style={{ backgroundImage: `url(${post.authorImage})` }}
+                className="w-12 h-12 rounded-full bg-cover bg-center "
+              />
+              <div>
+                <p className="mb-0 font-bold text-white">
+                  Brenda Gonzalez Ortega
+                </p>
+                <span className="text-[#767676]">{post.authorAt}</span>
+              </div>
+            </div>
+            <div className="flex gap-2 items-center">
+              <img
+                className="w-6 h-6 opacity-50 hover:opacity-30 transition-all"
                 src="/images/twitter-blue-dark.svg"
                 alt="twitter icon"
               />
-              <Image
-                w="24px"
-                opacity={useColorModeValue(".7", ".5")}
-                transition="all 1s ease"
-                _hover={{ opacity: ".3" }}
-                cursor="pointer"
+              <img
+                className="w-6 h-6 opacity-50 hover:opacity-30 transition-all"
                 src="/images/face.svg"
-                alt="facebook icon"
+                alt="twitter icon"
               />
-              <Image
-                w="24px"
-                opacity={useColorModeValue(".7", ".5")}
-                transition="all 1s ease"
-                _hover={{ opacity: ".3" }}
-                cursor="pointer"
+              <img
+                className="w-6 h-6 opacity-50 hover:opacity-30 transition-all"
                 src="/images/in-blue-dark.svg"
-                alt="linkedin icon"
+                alt="twitter icon"
               />
-              <Image
-                w="24px"
-                opacity={useColorModeValue(".7", ".5")}
-                transition="all 1s ease"
-                _hover={{ opacity: ".3" }}
-                cursor="pointer"
+              <img
+                className="w-6 h-6 opacity-50 hover:opacity-30 transition-all"
                 src="/images/link.svg"
-                alt="copy link icon"
+                alt="twitter icon"
               />
-            </Flex>
-          </Flex>
-          <Divider bg="#373C50" />
+            </div>
+          </div>
           <MarkDown>{post.body}</MarkDown>
-        </Container>
+        </div>
       </TracingBeam>
-    </Box>
+    </section>
   );
 }
