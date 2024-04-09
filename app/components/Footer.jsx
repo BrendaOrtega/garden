@@ -78,7 +78,9 @@ export default function Footer() {
           />
         </a>
       </Flex>
-      <p marginTop={4}>© 2022 Brenda González Ortega - All rights reserved.</p>
+      <p className="mt-4">
+        © 2022 Brenda González Ortega - All rights reserved.
+      </p>
     </Box>
   );
 }
