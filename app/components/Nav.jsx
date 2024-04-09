@@ -61,7 +61,7 @@ export default function Nav() {
               <div className="-z-10">
                 <Gato />
               </div>
-              <img className="h-[28px] ml-4" src="/name.png" />
+              <img className="h-[28px] ml-4 hidden md:block" src="/name.png" />
             </div>
           </Link>
           <Spacer />

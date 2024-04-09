@@ -224,7 +224,14 @@ export default function about() {
           </p>
         </div>
       </div>
-
+      <div className="my-0 md:my-[120px]">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="left"
+          speed="slow"
+        />
+        <InfiniteMovingCards items={tags} direction="left" speed="slow" />
+      </div>
       <div className="max-w-7xl w-[90%] md:w-full mx-auto text-center py-20 md:py-[160px]">
         <h2 className="text-4xl md:text-5xl font-bold mt-8">
           Some companies I've worked with
@@ -308,15 +315,8 @@ export default function about() {
           </div>
         </div>
       </div>
-      <div className="my-0 md:my-[120px]">
-        <InfiniteMovingCards
-          items={testimonials}
-          direction="left"
-          speed="slow"
-        />
-        <InfiniteMovingCards items={tags} direction="left" speed="slow" />
-      </div>
-      <div className="text-center py-20 md:py-[120px]">
+
+      {/* <div className="text-center py-20 md:py-[120px]">
         <h2 className="text-4xl md:text-5xl font-bold mt-8">
           Let's work together
         </h2>
@@ -339,7 +339,7 @@ export default function about() {
             }}
           ></iframe>
         </section>{" "}
-      </div>
+      </div> */}
     </section>
   );
 }

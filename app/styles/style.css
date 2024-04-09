@@ -2103,6 +2103,10 @@ video {
     margin-top: 400px;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:h-96 {
     height: 24rem;
   }
