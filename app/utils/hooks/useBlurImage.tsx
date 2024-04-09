@@ -30,10 +30,11 @@ export const BlurImage = ({
     <img
       alt="illustration"
       src={dynamicSrc}
+      className="hover:scale-105  cursor-pointer"
       style={{
         height: "100%",
         minWidth: full ? "100%" : 500,
-        transition: blur ? "none" : "filter 2s ease-out",
+        transition: blur ? " all 1s ease" : "filter 2s ease-out",
         filter: blur ? "blur(20px)" : "none",
         objectFit: "cover",
         clipPath: "inset(0px)",

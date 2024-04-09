@@ -1,12 +1,3 @@
-import {
-  Heading,
-  Image,
-  Text,
-  Box,
-  VStack,
-  Flex,
-  useColorModeValue,
-} from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
 import Layout from "~/components/Layout";
 import LazyLoad from "react-lazyload";
@@ -23,25 +14,13 @@ export default function Index() {
 
 const Body = () => {
   return (
-    <>
-      <Flex
-        w="container.xl"
-        justifyContent={{ base: "center", lg: "space-between" }}
-        flexWrap={["wrap", "wrap", "nowrap"]}
-        gap={{ base: "4", lg: "10" }}
-        alignItems="center"
-        h={["auto", "500px"]}
-        px={{ base: "0", lg: "20" }}
-        py={{ base: "0", lg: "inherit" }}
-        mt={{ base: "80px", lg: "0px" }}
-      >
-        <Heading
-          w={{ base: "100%", lg: "50%" }}
-          size="2xl"
-          lineHeight={"tall"}
-          color="title"
-          fontFamily="Proxima Nova"
+    <section className=" min-h-auto md:min-h-[70vh] w-[90%] md:w-full mx-auto  flex  justify-center lg:justify-between flex-wrap-reverse md:flex-wrap lg:flex-nowrap gap-2 lg:gap-10 items-center h-auto md:h-[500px] px-0 lg:px-20 pt-[120px] lg:py-auto mt-2 lg:mt-0 ">
+      <div className="mt-10 md:mt-0">
+        <h1
+          style={{ lineHeight: "140%" }}
+          className="text-black dark:text-white text-4xl md:text-5xl	font-bold"
         >
+          {" "}
           <motion.div
             style={{
               transformOrigin: "center",
@@ -60,104 +39,107 @@ const Body = () => {
             👋🏻
           </motion.div>
           Hello, I'm Brenda.
-          <br />
+          <br className="mt-4" />
           I'm a Product Designer based in México.
-        </Heading>
-        <Flex w={{ base: "100%", lg: "50%" }} justifyContent="flex-end">
-          <LazyLoad height={200}>
-            <Image
-              h="auto"
-              w={{ base: "0px", md: "240px", lg: "240px" }}
-              src="/images/emoji.png"
-              alt="brenda emoji 3d"
-            />
-          </LazyLoad>
-        </Flex>
-      </Flex>
-    </>
+        </h1>
+      </div>
+
+      <div className="w-full lg:w-[50%] justify-left md:justify-end flex">
+        <LazyLoad height={200}>
+          <img
+            className="h-auto w-[160px]  md:w-[240px]"
+            src="/images/emoji.png"
+            alt="brenda emoji 3d"
+          />
+        </LazyLoad>
+      </div>
+    </section>
   );
 };
 
 const List = () => {
   return (
-    <Flex
-      gap={{ lg: "0px 40px", xl: "0px 80px" }}
-      marginTop={{ base: "10", lg: "8", xl: "8" }}
-      display="flex"
-      flexWrap="wrap"
-      justifyContent="center"
-    >
+    <div className=" gap-10 lg:gap-20 mt-10 lg:mt-8 flex flex-wrap justify-center">
       <Card
-        className="box"
+        link="/projects/constructoken"
         name="Costructoken"
         description="Mobile app to save money to build your house | Fintech"
         image="/images/projects/token.png"
         lowSrc="https://i.imgur.com/y9b0S4Sm.png"
       />
+      <div className="mt-20">
+        <Card
+          link="/projects/formmt"
+          name="Formmy"
+          description="Web app to add contact forms to your website | Saas"
+          image="/images/projects/formmy.png"
+          lowSrc="https://i.imgur.com/pC19NU5m.png"
+        />
+      </div>
       <Card
-        className="box"
-        name="Formmy"
-        description="Web app to add contact forms to your website | Saas"
-        image="/images/projects/formmy.png"
-        lowSrc="https://i.imgur.com/pC19NU5m.png"
-      />
-      <Card
-        className="box"
+        link="/projects/flink"
         name="Flink"
         description="Mobile app to make investments | Fintech"
         image="/images/projects/flink.png"
         lowSrc="https://i.imgur.com/THUxqt9t.png"
       />
+      <div className="mt-20">
+        <Card
+          link="/projects/covalto"
+          name="Covalto App"
+          description="Credit Card Aplication | Fintech"
+          image="/images/projects/covalto.png"
+          lowSrc="https://i.imgur.com/16aC4jAt.png"
+        />
+      </div>
       <Card
-        className="box"
-        name="Covalto App"
-        description="Credit Card Aplication & Internal Management Platform | Fintech"
-        image="/images/projects/covalto.png"
-        lowSrc="https://i.imgur.com/16aC4jAt.png"
-      />
-      <Card
-        className="box"
+        link="/projects/santander"
         name="Santander Personal"
         description="Banking Mobile & Internal Management Application | Banking"
         image="/images/projects/personal.png"
         lowSrc="https://i.imgur.com/fLdMmXKt.png"
       />
+      <div className="mt-20">
+        <Card
+          link="/projects/santander"
+          name="Santander Móvil"
+          description="Banking Mobile Aplication | Banking"
+          image="/images/projects/sant.png"
+          lowSrc="https://i.imgur.com/pHbfSGEt.png"
+        />
+      </div>
       <Card
-        className="box"
-        name="Santander Móvil"
-        description="Banking Mobile Aplication | Banking"
-        image="/images/projects/sant.png"
-        lowSrc="https://i.imgur.com/pHbfSGEt.png"
-      />
-      <Card
-        className="box"
+        link="/projects/fixter"
         name="Fixter.org"
         description="Website & Learning platform | Software"
         image="/images/projects/org.png"
         lowSrc="https://i.imgur.com/w8YzbTG.png"
       />
+      <div className="mt-20">
+        <Card
+          link="/projects/fixtergeek"
+          name="FixterGeek"
+          description="Website & Learning platform | Education"
+          image="/images/projects/fix.png"
+          lowSrc="https://i.imgur.com/nRhOA5Ls.png"
+        />
+      </div>
       <Card
-        className="box"
-        name="FixterGeek"
-        description="Website & Learning platform | Education"
-        image="/images/projects/fix.png"
-        lowSrc="https://i.imgur.com/nRhOA5Ls.png"
-      />
-
-      <Card
-        className="box"
+        link="/projects/lastplay"
         name="LastPlay"
         description="Website & Learning platform | Education"
         image="/images/projects/play.png"
         lowSrc="https://i.imgur.com/HqWDIw3.png"
       />
-      <Card
-        className="box"
-        name="SurveyUp"
-        description="Surveys web & Management Platform | Market Research"
-        image="/images/projects/survey.png"
-        lowSrc="https://i.imgur.com/MoNpbBT.png"
-      />
+      <div className="mt-20">
+        <Card
+          link="/"
+          name="SurveyUp"
+          description="Surveys web & Management Platform | Market Research"
+          image="/images/projects/survey.png"
+          lowSrc="https://i.imgur.com/MoNpbBT.png"
+        />
+      </div>
       {/* <Card
         name="Webdive"
         description="Website & Property Management Application | Real State "
@@ -173,42 +155,29 @@ const List = () => {
         description="Website & Property Management Application | Real State "
         image="/images/projects/uniks.png"
       /> */}
-    </Flex>
+    </div>
   );
 };
 
-const Card = ({ image, name, description, className, lowSrc }) => {
+const Card = ({ image, name, description, lowSrc, link }) => {
   return (
-    <Flex
-      className={className}
-      w={{ base: "100%", lg: "360px", xl: "480px" }}
-      h={{ base: "360px", lg: "700px" }}
-    >
-      <Flex
-        flexDir={"column"}
-        overflow="hidden"
-        marginY={{ base: "4", lg: "8" }}
-      >
-        <Flex
-          h={{ base: "400px", lg: "700px" }}
-          overflow="hidden"
-          borderRadius="2xl"
-          alignItems="center"
-        >
+    // <Link to={link}>
+    <div className="flex box w-full lg:w-[480px] xl:w-[480px] h-[360px] lg:h-[700px] group">
+      <div className="flex flex-col overflow-hidden my-4 lg:my-8">
+        <div className="h-[400px] lg:h-[700px] overflow-hidden rounded-2xl items-center transition-all">
           <BlurImage src={image} lowSrc={lowSrc} full />
-          {/* <Image loading="lazy" src={image} alt='project cover' objectFit={"cover"} h="700px" w="100vw" transition='all 1s ease' _hover={{ transform: 'scale(1.1)' }} /> */}
-        </Flex>
-        <Flex>
-          <Box paddingY={4}>
-            <Heading size="md" color="title">
-              {name}
-            </Heading>
-            <Text fontSize="md" color="text" marginTop={"1"}>
-              {description}
-            </Text>
-          </Box>
-        </Flex>
-      </Flex>
-    </Flex>
+        </div>
+        <div className="group-hover:pl-6 transition-all">
+          <h2 className="text-xl text-black dark:text-white font-bold mt-4">
+            {name}
+          </h2>
+          <p className="text-base text-iron-500 dark:text-iron-300  mt-1">
+            {" "}
+            {description}
+          </p>
+        </div>
+      </div>
+    </div>
+    // </Link>
   );
 };
