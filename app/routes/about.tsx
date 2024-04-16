@@ -192,7 +192,7 @@ export default function about() {
   }, []);
   return (
     <section className="pt-[120px] md:pt-[200px]  mx-auto">
-      <div className="w-[90%] md:w-full pb-10 lg:pb-10 flex-wrap-reverse md:flex-wrap lg:flex-nowrap flex justify-center items-start pt-10 gap-12 md:gap-0 max-w-7xl mx-auto ">
+      <div className="w-full px-4   pb-10 lg:pb-10 flex-wrap-reverse md:flex-wrap lg:flex-nowrap flex justify-center items-start pt-10 gap-12 md:gap-0 max-w-7xl mx-auto ">
         <img
           className="w-full md:w-[680px] rounded-3xl "
           src="https://i.imgur.com/eDktKC9.png"
@@ -241,7 +241,7 @@ export default function about() {
         <p className="text-xl md:text-2xl mt-8 text-iron-400">
           Touch them to reveal more information
         </p>
-        <div className="flex flex-wrap md:flex-nowrap justify-between mt-12 md:mt-[120px]">
+        <div className="flex flex-wrap md:flex-nowrap justify-around md:justify-between mt-12 md:mt-[120px]">
           <div className=" flex gap-2 md:gap-16 flex-col">
             <Company
               title="miflink.com"
@@ -319,14 +319,14 @@ export default function about() {
       </div>
 
       <div className="text-center py-20 md:py-[120px]">
-        <h2 className="text-4xl md:text-5xl font-bold mt-8 text-white">
+        <h2 className="text-4xl md:text-5xl font-bold mt-8 text-white px-4  ">
           Let's work together
         </h2>
-        <p className="text-xl md:text-2xl mt-8 text-iron-400">
+        <p className="text-xl md:text-2xl mt-8 text-iron-400 w-[90%] px-4 ">
           I'd love to learn more about you and what we can design and build
           together.
         </p>
-        <section className="w-full md:w-[680px] mx-auto mt-16 ">
+        <section className="w-full md:w-[680px] mx-auto mt-16 px-4 ">
           <iframe
             ref={ref}
             frameBorder="0"

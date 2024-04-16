@@ -8,14 +8,13 @@ const logo =
 export default function Nav() {
   const { theme, setDarkTheme, setLightTheme } = useTheme("dark");
   return (
-    <section className="flex justify-center  w-full h-20 min-w-7xl fixed z-50">
+    <section className="flex justify-center  w-full h-20 min-w-7xl fixed z-[200]">
       <div className=" mx-auto w-[1280px] flex items-center justify-between   px-4 md_px-8 bg-black rounded-full h-16 md:h-20  mt-4 md:mt-8 shadow-[ 0px_4px_16px_0px_rgba(0, 0, 0, 0.80)]">
         <div className="  items-center">
           <Link to="/">
-            <div className="flex items-center justify-center">
-              <div>
-                <Gato />
-              </div>
+            <div className="flex items-center justify-center cursor-pointer  z-50 relative">
+              <div className=" cursor-pointer z-[100] w-[60px] h-[60px] absolute left-0"></div>
+              <Gato />
               <img className="h-[28px] ml-4 hidden md:block" src="/name.png" />
             </div>
           </Link>
