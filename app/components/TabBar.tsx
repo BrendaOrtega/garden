@@ -14,8 +14,8 @@ export default function Nav({
   onClick: (arg0: number) => void;
 }) {
   return (
-    <div className="overflow-x-scroll	 my-8 lg:my-12">
-      <div className="bg-[#1D1C20] px-3 py-2 rounded-full flex w-[500px] mx-auto">
+    <div className="hideScroll my-8 lg:my-12 ">
+      <div className="bg-[#1D1C20] px-3 py-2 rounded-full flex w-[500px] mx-auto  ">
         <TabActive
           onClick={() => onClick(0)}
           isActive={active === 0}

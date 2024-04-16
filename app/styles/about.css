@@ -5,6 +5,16 @@
 .box:nth-child(even) {
   margin-top: 64px;
 }
+.hideScroll {
+  overflow: auto;
+  height: 100px;
+  scrollbar-width: none; /*Firefox*/
+}
+
+/*Webkit*/
+.hideScroll::-webkit-scrollbar {
+  width: 0;
+}
 
 @media (max-width: 768px) {
   .box:nth-child(even) {

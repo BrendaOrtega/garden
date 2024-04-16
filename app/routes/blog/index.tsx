@@ -14,14 +14,14 @@ export default function blog() {
   const { posts } = useLoaderData();
 
   return (
-    <section className="max-w-7xl mx-auto pt-[160px] md:pt-[240px]">
+    <section className="max-w-7xl mx-auto pt-[160px] md:pt-[240px] w-full px-4 md:px-0">
       <div className=" px-4  md:px-20 ">
         <h2 className="text-center text-4xl md:text-5xl text-black dark:text-white leading-relaxed">
           {" "}
           📰 Something to read today
         </h2>
       </div>
-      <div className="flex flex-wrap mt-10 md:mt-[120px] gap-y-20 gap-x-10">
+      <div className="flex flex-wrap mt-10 justify-center md:mt-[120px]  gap-y-20 gap-x-6 md:gap-x-10">
         {posts.map((post: PostType) => (
           <CardPost
             {...post}

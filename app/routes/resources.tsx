@@ -1,6 +1,11 @@
 import TabBar from "~/components/TabBar";
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import styles from "~/styles/about.css";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function Resources() {
   const [active, setActive] = useState(0);
@@ -23,7 +28,7 @@ export default function Resources() {
   }, [active]);
 
   return (
-    <section className="max-w-7xl mx-auto pt-[160px] md:pt-[240px]">
+    <section className="max-w-7xl mx-auto pt-[160px] md:pt-[240px] ">
       <div className=" px-4  md:px-20 ">
         <h2 className="text-center text-4xl md:text-5xl text-black dark:text-white leading-relaxed">
           {" "}

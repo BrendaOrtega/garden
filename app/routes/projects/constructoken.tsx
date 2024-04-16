@@ -37,8 +37,8 @@ export default function constructoken() {
           </p>
         </div>
         <div className="w-[70%]">
-          <p className="text-xl">
-            Constructoken is a Fintech Startup that offers construction products
+          <p className="text-xl dark:text-iron-300">
+            Constructoken is a Fintech Startup that offers financial products to achive the users goal of build their dream house. construction products
             offers financial services and specia Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Voluptates quibusdam error veniam
             iste natus dolores, iusto quos blanditiis unde excepturi maxime quod
@@ -48,7 +48,7 @@ export default function constructoken() {
             odit, beatae, consectetur quidem vel saepe asperiores natus atque,
             neque laboriosam!
           </p>
-          <p className="text-xl mt-4">
+          <p className="text-xl mt-4 dark:text-iron-300">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
             quibusdam error veniam iste natus dolores, iusto quos blanditiis
             unde excepturi maxime quod autem? Doloribus, impedit ipsa possimus
@@ -57,7 +57,7 @@ export default function constructoken() {
             quod nisi omnis libero dicta odit, beatae, consectetur quidem vel
             saepe asperiores natus atque, neque laboriosam!
           </p>
-          <p className="text-xl mt-4">
+          <p className="text-xl mt-4 dark:text-iron-300">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
             quibusdam error veniam iste natus dolores, iusto quos blanditiis
             unde excepturi maxime quod autem? Doloribus, impedit ipsa possimus
@@ -68,21 +68,29 @@ export default function constructoken() {
           </p>
         </div>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">User Research</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          User Research
+        </h2>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">User Personas</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          User Personas
+        </h2>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">Definition</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          Definition
+        </h2>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">Design</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          Design
+        </h2>
       </div>
     </section>
   );
