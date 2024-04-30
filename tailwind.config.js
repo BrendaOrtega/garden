@@ -23,9 +23,19 @@ module.exports = {
           200: "#F1AFAA",
           500: "#E9786E",
         },
+        greenlight: "#6CC597",
+        lila: "#9A99EA",
+        ironblue: "#00F7E2",
+        bird: "#FFA800",
+        water: "#6E85BB",
+        sun: "#E8B140",
+        blood: "#E63737",
+        salmon: "#BD5648",
       },
       backgroundImage: {
         stars: "url('/assets/stars.png')",
+        formmy: "url('/assets/formmy/back.png')",
+        flink: "url('/assets/flink/back.png')",
       },
       animation: {
         scroll:

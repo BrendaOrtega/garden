@@ -74,7 +74,7 @@ const CardPost = ({ image, description, title, tag, slug, subTag }) => {
     return str.split(" ").splice(start, no_words).join(" ") + "...";
   };
   return (
-    <div className=" group border bg-black border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[35rem]">
+    <div className=" group border bg-black border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start max-w-sm mx-auto p-4 relative h-[30rem]">
       <Icon className="transition-all absolute group-hover:hidden h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="transition-all absolute group-hover:hidden h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
       <Icon className="transition-all absolute group-hover:hidden h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
@@ -86,7 +86,7 @@ const CardPost = ({ image, description, title, tag, slug, subTag }) => {
 
       <Link prefetch="intent" to={slug}>
         <div className="relative transition-all rounded-lg cursor-pointer">
-          <div className="w-full h-[400px] overflow-hidden">
+          <div className="w-full h-[320px] overflow-hidden">
             <img
               className="w-full h-full object-cover transition-all group-hover:scale-105"
               src={image}

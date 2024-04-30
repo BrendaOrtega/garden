@@ -1,77 +1,148 @@
 import { Link } from "@remix-run/react";
+import { Parallax } from "react-parallax";
 import Layout from "~/components/Layout";
+import Tag from "~/components/Tag";
 import styles from "~/styles/about.css";
 
 export default function lastplay() {
   return (
     <section className="max-w-7xl mx-auto pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px]">
-        <img className="object-cover w-full" src="/assets/flink/cover.png" />
+      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-[#262F5F]">
+        <Parallax
+          className="h-full w-[100%] mx-auto "
+          bgImage="/assets/lastplay/cover.png"
+          bgImageAlt="the cat"
+          strength={200}
+        ></Parallax>
       </div>
+
       <div className="flex gap-12 mt-28 ">
         <div className="w-[30%]">
-          <img src="/assets/flink/flink.png" />
+          <a
+            href="https://www.lastplay.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="w-[100px] hover:scale-90 transition-all"
+              src="/assets/lastplay/logo.png"
+            />
+          </a>
           <p className="text-base text-iron-500 dark:text-iron-300  mt-4">
-            Mobile app to make investments
+            Mobile app to manage sports tournaments
           </p>
+          <div className="flex flex-wrap gap-4 mt-6">
+            <Tag text="Mobile App" />
+            <Tag text="IOS/Android" />
+            <Tag text="UI Design" />
+            <Tag text="Figma" />
+          </div>
           <p className="dark:text-white font-bold text-xl mt-10 mb-1">Date</p>
           <p className="text-base text-iron-500 dark:text-iron-300 ">
-            Noviembre 2022 - Julio 2023
+            January 2023
           </p>
           <p className="dark:text-white font-bold text-xl mt-10 mb-1">Role</p>
           <p className="text-base text-iron-500 dark:text-iron-300 ">
-            Product Designer
+            UI Designer
           </p>
         </div>
         <div className="w-[70%]">
-          <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-            quibusdam error veniam iste natus dolores, iusto quos blanditiis
-            unde excepturi maxime quod autem? Doloribus, impedit ipsa possimus
-            totam minima exercitationem. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Unde labore recusandae voluptate aliquid. Totam
-            quod nisi omnis libero dicta odit, beatae, consectetur quidem vel
-            saepe asperiores natus atque, neque laboriosam!
+          <p className="text-xl md:text-2xl dark:text-iron-300">
+            <span className="text-water">Lastplay is a mobile application</span>{" "}
+            that offers specialized{" "}
+            <span className="text-water">
+              free services to manage sports tournaments{" "}
+            </span>{" "}
+            (tochito, soccer and basketball). To offer a good user experience,
+            there are different type of users: admin, player and guest.{" "}
           </p>
-          <p className="text-xl mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-            quibusdam error veniam iste natus dolores, iusto quos blanditiis
-            unde excepturi maxime quod autem? Doloribus, impedit ipsa possimus
-            totam minima exercitationem. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Unde labore recusandae voluptate aliquid. Totam
-            quod nisi omnis libero dicta odit, beatae, consectetur quidem vel
-            saepe asperiores natus atque, neque laboriosam!
+          <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+            As an admin you can{" "}
+            <span className="text-water">
+              create a tournament, add teams, players, published the game
+              schedule and track the score of each match
+            </span>{" "}
+            ; as a player, you can register for a team, keep track of your game
+            schedule, and view general tournament information and as a visitor
+            you can be aware of the schedule of your favorite teams.
           </p>
-          <p className="text-xl mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-            quibusdam error veniam iste natus dolores, iusto quos blanditiis
-            unde excepturi maxime quod autem? Doloribus, impedit ipsa possimus
-            totam minima exercitationem. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Unde labore recusandae voluptate aliquid. Totam
-            quod nisi omnis libero dicta odit, beatae, consectetur quidem vel
-            saepe asperiores natus atque, neque laboriosam!
+          <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+            My role in this project was to improve the user interface, take the
+            brand guidelines and redefine the user experience through
+            improvements to copy, workflows, and user interface elements
+            considering the technical limitations and business requirements.
           </p>
         </div>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">User Research</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          Understanding and definition
+        </h2>
+        <p className="text-xl dark:text-iron-300 mt-6">
+          The business requeriments and research results have been omitted for
+          privacy reasons. So, based on the business requeriments and user
+          needs, the first design iteration was done in two parts:
+        </p>
+        <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
+          <div className="w-full md:w-[380px] grow">
+            <img
+              className="rounded-xl rotate-3 h-[380px] w-full object-cover"
+              src="/assets/lastplay/img3.png"
+            />
+            <p className="text-base dark:text-iron-300 mt-8">
+              {" "}
+              Definition of information architecture
+            </p>
+          </div>
+          <div className="w-full md:w-[380px] grow">
+            <img
+              className="rounded-xl -rotate-3 h-[380px] w-full object-cover"
+              src="/assets/lastplay/img4.png"
+            />
+            <p className="text-base dark:text-iron-300 mt-8">
+              {" "}
+              Low-fidelity wireframes from scratch
+            </p>
+          </div>
+        </div>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">User Personas</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          UI Design
+        </h2>
+        <p className="text-xl dark:text-iron-300 mt-6">
+          After advancing to medium fidelity wireframes and testing them, a
+          moodboard and style guide were created to get started with high
+          fidelity wireframes.
+        </p>
+        <p className="text-xl dark:text-iron-300 mt-6">
+          These are the screens designed before the interface updates and the
+          screen after new brand guidelines were applied. The improvement
+          included copy changes, redefinition of workflows, new alternative
+          flows that considered errors and empty states within the application,
+          and a large change related to interface elements and UI patterns.
+        </p>
+        <div className="flex flex-col justify-center items-center">
+          <img src="/assets/lastplay/img1.png" />
+          <img className="w-[120px]" src="/assets/lastplay/color.png" />
+          <img src="/assets/lastplay/img2.png" />
+        </div>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">Definition</h2>
-      </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
-      <div>
-        <h2 className="text-4xl font-bold">Design</h2>
-      </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
-      <div>
-        <h2 className="text-4xl font-bold">Testing</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          Next steps
+        </h2>
+        <p className="text-xl dark:text-iron-300 mt-6">
+          The next steps will be to measure the use of the application and
+          organize surveys and user tests to verify the effectiveness,
+          efficiency, usability and user satisfaction when using the application
+          and continue iterating based on the results. Ay the same time, start
+          to work on the admin panel that will be manage by internal staff.
+        </p>
+        <img className="w-20 mt-6" src="/assets/lastplay/fur.png" />
       </div>
     </section>
   );

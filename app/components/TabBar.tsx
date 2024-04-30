@@ -34,7 +34,7 @@ export default function Nav({
         <TabActive
           onClick={() => onClick(3)}
           isActive={active === 3}
-          text="📑 Papers"
+          text="📑 Docs"
         />
       </div>
     </div>

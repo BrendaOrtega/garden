@@ -1,77 +1,153 @@
 import { Link } from "@remix-run/react";
+import { Parallax } from "react-parallax";
 import Layout from "~/components/Layout";
+import Tag from "~/components/Tag";
 import styles from "~/styles/about.css";
 
 export default function covalto() {
   return (
     <section className="max-w-7xl mx-auto pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px]">
-        <img className="object-cover w-full" src="/assets/flink/cover.png" />
+      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-[#F2C557]">
+        <Parallax
+          className="h-full w-[100%] mx-auto "
+          bgImage="/assets/covalto/cover2.png"
+          bgImageAlt="the cat"
+          strength={200}
+        ></Parallax>
       </div>
+
       <div className="flex gap-12 mt-28 ">
         <div className="w-[30%]">
-          <img src="/assets/flink/flink.png" />
-          <p className="text-base text-iron-500 dark:text-iron-300  mt-4">
-            Mobile app to make investments
-          </p>
+          <a
+            href="https://covalto.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="w-[200px]" src="/assets/covalto/logo.png" />
+          </a>
+          <div className="flex flex-wrap gap-4 mt-6">
+            <Tag text="Mobile App" />
+            <Tag text="IOS/Android" />
+            <Tag text="Fintech" />
+            <Tag text="Figma" />
+          </div>
           <p className="dark:text-white font-bold text-xl mt-10 mb-1">Date</p>
           <p className="text-base text-iron-500 dark:text-iron-300 ">
-            Noviembre 2022 - Julio 2023
+            Junio 2020 - Junio 2022
           </p>
           <p className="dark:text-white font-bold text-xl mt-10 mb-1">Role</p>
           <p className="text-base text-iron-500 dark:text-iron-300 ">
-            Product Designer
+            UX/UI Designer
           </p>
         </div>
         <div className="w-[70%]">
-          <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-            quibusdam error veniam iste natus dolores, iusto quos blanditiis
-            unde excepturi maxime quod autem? Doloribus, impedit ipsa possimus
-            totam minima exercitationem. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Unde labore recusandae voluptate aliquid. Totam
-            quod nisi omnis libero dicta odit, beatae, consectetur quidem vel
-            saepe asperiores natus atque, neque laboriosam!
+          <p className="text-xl dark:text-iron-300">
+            Covalto is a Bank that born from de Banco Finterra acquisition by
+            Credijusto. This new bank{" "}
+            <span className="text-bird">offers financial products </span> like:
+            personal and enterprisse loans, debit accounts, factoring and
+            leasing services and investment instruments. But, one of the main
+            goals in 2022 was launch a business credit card that was the best
+            solution to manage business expenses.
           </p>
-          <p className="text-xl mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-            quibusdam error veniam iste natus dolores, iusto quos blanditiis
-            unde excepturi maxime quod autem? Doloribus, impedit ipsa possimus
-            totam minima exercitationem. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Unde labore recusandae voluptate aliquid. Totam
-            quod nisi omnis libero dicta odit, beatae, consectetur quidem vel
-            saepe asperiores natus atque, neque laboriosam!
-          </p>
-          <p className="text-xl mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
-            quibusdam error veniam iste natus dolores, iusto quos blanditiis
-            unde excepturi maxime quod autem? Doloribus, impedit ipsa possimus
-            totam minima exercitationem. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Unde labore recusandae voluptate aliquid. Totam
-            quod nisi omnis libero dicta odit, beatae, consectetur quidem vel
-            saepe asperiores natus atque, neque laboriosam!
+          <p className="text-xl mt-4 dark:text-iron-300">
+            The challenge was{" "}
+            <span className="text-bird">
+              {" "}
+              design a mobile application or web app{" "}
+            </span>{" "}
+            that allows companies to request an expenses cards account in a 100%
+            digital way, where the users can request and assign expenses cards
+            for the collaborators of their companies and monitore and restrict
+            the expenses as well in each card.
           </p>
         </div>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">User Research</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          Understanding the problem - User needs
+        </h2>
+        <p className="text-xl mt-4 dark:text-iron-300">
+          To understand the user needs around the business credit card, I
+          started with the research that was done in two parts:
+        </p>
+        <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
+          <div className="w-full md:w-[380px] grow">
+            <img
+              className="rounded-2xl h-[280px] w-full object-cover"
+              src="/assets/covalto/img5.png"
+            />
+            <p className="text-xl dark:text-white mt-6">Benchmark</p>
+            <p className="text-sm dark:text-iron-300 mt-6">
+              Having considered the market option, I identified 3 options in the
+              local market and 3 more international options with a similar
+              offer.
+            </p>
+          </div>
+          <div className="w-full md:w-[380px] grow">
+            <img
+              className="rounded-2xl h-[280px] object-cover w-full"
+              src="/assets/flink/img6.png"
+            />
+            <p className="text-xl dark:text-white mt-6">Surveys & Interviews</p>
+            <p className="text-sm dark:text-iron-300 mt-6">
+              {" "}
+              I applied surveys to 50 participants and conducted a deep dive
+              interviews with 12 participants to understand needs, pain points
+              and opportunity areas around the business card services.
+            </p>
+          </div>
+        </div>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">User Personas</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          User Personas & Journeymap
+        </h2>
+        <p className="text-xl mt-4 dark:text-iron-300">
+          After gleaning valuable insights from the 'understand' phase, We'd
+          formed three personas – heavily influenced from the flexible
+          questionnaire analysis. These were created in order to help craft a
+          better experience later down the line when ideating.
+        </p>
+        <img className="mt-20" src="/assets/covalto/img1.png" />
+        <p className="text-xl mt-20 dark:text-iron-300 ">
+          A customer journey map was created to map the process step by step,
+          from the need for the business credit card to its use or cancellation.{" "}
+        </p>
+        <div className="flex justify-around">
+          <img className="mt-20" src="/assets/covalto/img1.png" />
+          <img className="mt-20" src="/assets/covalto/img2.png" />
+        </div>
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">Definition</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          Ideation & Prototyping
+        </h2>
+        <p className="text-xl mt-20 dark:text-iron-300 ">
+          A customer journey map was created to map the process step by step,
+          from the need for the business credit card to its use or cancellation.{" "}
+        </p>
+        <img className="mt-20" src="/assets/covalto/img3.png" />
+        <p className="text-xl mt-20 dark:text-iron-300 ">
+          A customer journey map was created to map the process step by step,
+          from the need for the business credit card to its use or cancellation.{" "}
+        </p>
+        <img className="mt-20" src="/assets/covalto/img4.png" />
+        <p className="text-xl mt-20 dark:text-iron-300 ">
+          A customer journey map was created to map the process step by step,
+          from the need for the business credit card to its use or cancellation.{" "}
+        </p>
+        <img className="mt-20" src="/assets/covalto/img7.png" />
       </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
+
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
       <div>
-        <h2 className="text-4xl font-bold">Design</h2>
-      </div>
-      <hr className="h-[1px] w-full bg-white/05 my-28"></hr>
-      <div>
-        <h2 className="text-4xl font-bold">Testing</h2>
+        <h2 className="text-4xl font-bold dark:text-white text-black">
+          Next steps
+        </h2>
       </div>
     </section>
   );

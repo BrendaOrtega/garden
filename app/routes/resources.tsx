@@ -44,6 +44,27 @@ export default function Resources() {
 const Books = () => (
   <section className="flex gap-10 justify-center flex-wrap">
     <BookCard
+      image="https://i.imgur.com/RMWa8ov.jpg"
+      title="Visual Thinking"
+      description="Apende a transimitir información de forma visual (técnicas de dibujo, estructiras, etc)."
+      link="https://www.fixtergeek.com.ms"
+      score="4.8"
+    />
+    <BookCard
+      image="https://i.imgur.com/WBELSMr.jpg"
+      title="Lean UX"
+      description="Aplicar algunos pasos de la metodología puede ser muy útil pero otros suenan útopicos por el nivel de maduración del área en muchas empresas e industrias."
+      link="https://www.fixtergeek.com.ms"
+      score="4"
+    />
+    <BookCard
+      image="https://i.imgur.com/Kt48boE.jpg"
+      title="The Design of Everyday Things"
+      description=""
+      link="https://www.fixtergeek.com.ms"
+      score="4.5"
+    />
+    <BookCard
       image="https://i.imgur.com/hEHoqE2.jpg"
       title="Dont make me think"
       description="Un imperdible si quieres conocer las bases de una buena experiencia de usuario."
@@ -57,13 +78,7 @@ const Books = () => (
       link="https://www.fixtergeek.com.ms"
       score="5"
     />
-    {/* <BookCard
-            image='https://i.imgur.com/WBELSMr.jpg'
-            title='Lean UX'
-            description='Conoce cómo aplicar la metogología Lean a la experiencia de usuario.'
-            link='https://www.fixtergeek.com.ms'
-            score='4'
-        /> */}
+
     <BookCard
       image="https://i.imgur.com/pdtkrye.jpg"
       title="Emotional design"
@@ -155,13 +170,7 @@ const Books = () => (
             link='https://www.fixtergeek.com.ms'
             score='4.5'
         />
-        <BookCard
-            image='https://i.imgur.com/Kt48boE.jpg'
-            title='The Design of Everyday Things'
-            description='Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem '
-            link='https://www.fixtergeek.com.ms'
-            score='4.5'
-        /> */}
+    */}
     <BookCard
       image="https://i.imgur.com/KzcDdYL.jpg"
       title="Ortotipografía para diseñadores"
@@ -272,6 +281,13 @@ const Papers = () => (
       cta="Descargar"
     />
     <DocsCard
+      image="https://i.imgur.com/dllmOBM.png"
+      title="Design Systems Repository"
+      description="Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem "
+      link="https://designsystemsrepo.com/design-systems"
+      cta="Ver"
+    />
+    <DocsCard
       image="https://i.imgur.com/qMJcq8U.png"
       title="The Basics of User Experience Design by IDEO"
       description="Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem "
@@ -305,7 +321,7 @@ const BookCard = ({ image, description, link, title, score }) => {
       />
       <div className="relative w-full  h-[300px] bg-[rgba(233, 237, 246, 0.05)] cursor-pointer px-8 py-6 justify-center">
         <img className="w-auto h-full mx-auto" src={image} alt="stars" />
-        <div className="absolute flex transition-all bg-iron-800 py-[1%] pl-[2%] pr-2 bottom-12 right-8 rounded-lg justify-center items-center">
+        <div className="absolute group-hover:scale-110  flex transition-all bg-iron-800 py-[1%] pl-[2%] pr-2 bottom-12 right-8 rounded-lg justify-center items-center">
           <img
             className="h-6 w-6 mr-1"
             alt="rank icon"

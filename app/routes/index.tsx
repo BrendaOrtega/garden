@@ -17,7 +17,7 @@ const Body = () => {
       <div className="mt-10 md:mt-0  px-4 md:px-10 lg:px-auto ">
         <h1
           style={{ lineHeight: "140%" }}
-          className="text-black dark:text-white text-4xl md:text-5xl font-bold "
+          className="text-black dark:text-white text-4xl md:text-5xl font-bold  "
         >
           {" "}
           <motion.div
@@ -57,23 +57,7 @@ const Body = () => {
 
 const List = () => {
   return (
-    <div className="cardList gap-10 lg:gap-20 mt-10 lg:mt-8 px-4 md:px-10 lg:px-auto flex flex-wrap justify-center">
-      <Card
-        link="/projects/constructoken"
-        name="Costructoken"
-        description="Mobile app to save money to build your house | Fintech"
-        image="/images/projects/token.png"
-        lowSrc="https://i.imgur.com/y9b0S4Sm.png"
-      />
-
-      <Card
-        link="/projects/formmt"
-        name="Formmy"
-        description="Web app to add contact forms to your website | Saas"
-        image="/images/projects/formmy.png"
-        lowSrc="https://i.imgur.com/pC19NU5m.png"
-      />
-
+    <div className="box gap-10 lg:gap-20 mt-10 lg:mt-8 px-4 md:px-10 lg:px-auto flex flex-wrap justify-center">
       <Card
         link="/projects/flink"
         name="Flink"
@@ -81,7 +65,13 @@ const List = () => {
         image="/images/projects/flink.png"
         lowSrc="https://i.imgur.com/THUxqt9t.png"
       />
-
+      <Card
+        link="/projects/constructoken"
+        name="Costructoken"
+        description="Mobile app to save money to build your house | Fintech"
+        image="/images/projects/token.png"
+        lowSrc="https://i.imgur.com/y9b0S4Sm.png"
+      />
       <Card
         link="/projects/covalto"
         name="Covalto App"
@@ -89,12 +79,19 @@ const List = () => {
         image="/images/projects/covalto.png"
         lowSrc="https://i.imgur.com/16aC4jAt.png"
       />
+      <Card
+        link="/projects/formmy"
+        name="Formmy"
+        description="Web app to add contact forms to your website | Saas"
+        image="/images/projects/formmy.png"
+        lowSrc="https://i.imgur.com/pC19NU5m.png"
+      />
 
       <Card
-        link="/projects/santander"
+        link="/projects/personal"
         name="Santander Personal"
         description="Banking Mobile & Internal Management Application | Banking"
-        image="/images/projects/personal.png"
+        image="/images/projects/personal2.png"
         lowSrc="https://i.imgur.com/fLdMmXKt.png"
       />
 
@@ -131,7 +128,7 @@ const List = () => {
       />
 
       <Card
-        link="/"
+        link="/projects/survey"
         name="SurveyUp"
         description="Surveys web & Management Platform | Market Research"
         image="/images/projects/survey.png"
@@ -144,7 +141,7 @@ const List = () => {
 const Card = ({ image, name, description, lowSrc, link }) => {
   return (
     <Link to={link}>
-      <div className=" flex box w-full  lg:w-[320px] xl:w-[480px] h-[360px] lg:h-[700px] group z-0">
+      <div className=" flex w-full  lg:w-[320px] xl:w-[480px] h-[360px] lg:h-[700px] group z-0">
         <div className="flex flex-col overflow-hidden my-4 lg:my-8 w-full ">
           <div className="h-[400px] lg:h-[700px] w-full overflow-hidden rounded-2xl items-center transition-all">
             <BlurImage src={image} lowSrc={lowSrc} full />
