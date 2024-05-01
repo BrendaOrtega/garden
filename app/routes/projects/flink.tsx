@@ -7,22 +7,25 @@ import styles from "~/styles/about.css";
 export default function flink() {
   return (
     <section className="max-w-7xl mx-auto  w-[90%] md:w-ful pt-[120px] md:pt-[200px] ">
-      <div className="w-full h-[280px] md:h-[680px] overflow-hidden rounded-[40px] bg-ironblue">
+      <div className="w-full h-[280px] md:h-[680px] overflow-hidden rounded-[40px] bg-flink bg-cover">
         <Parallax
-          className="h-full w-[80%] mx-auto "
+          className="h-full w-full md:w-[80%] mx-auto "
           bgImage="/assets/flink/cover.png"
           bgImageAlt="the cat"
           strength={200}
         ></Parallax>
       </div>
-      <div className="flex gap-12 mt-28 ">
-        <div className="w-[30%]">
+      <div className="flex flex-wrap md:flex-nowrap gap-12 mt-16 md:mt-28 ">
+        <div className="w-full md:w-[30%]">
           <a
             href="https://miflink.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-[120px]" src="/assets/flink/flink.png" />
+            <img
+              className="w-[120px] md:w-[160px] hover:scale-90 transition-all"
+              src="/assets/flink/flink.png"
+            />
           </a>
           <div className="flex flex-wrap gap-4 mt-6">
             <Tag text="Mobile App" />
@@ -75,7 +78,7 @@ export default function flink() {
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow">
             <img
-              className="rounded-xl rotate-3"
+              className="rounded-xl rotate-3 hover:-rotate-3 transition-all"
               src="/assets/flink/user1.png"
             />
             <p className="text-base dark:text-iron-300 mt-8">
@@ -86,7 +89,7 @@ export default function flink() {
           </div>
           <div className="w-full md:w-[380px] grow">
             <img
-              className="rounded-xl -rotate-3"
+              className="rounded-xl -rotate-3 hover:rotate-3 transition-all"
               src="/assets/flink/user2.png"
             />
             <p className="text-base dark:text-iron-300 mt-8">
@@ -151,9 +154,9 @@ export default function flink() {
             that need financial education
           </li>
         </ul>
-        <div className="flex justify-around mt-20">
-          <img className="h-40" src="/assets/flink/comment1.png" />
-          <img className="h-36" src="/assets/flink/comment2.png" />
+        <div className="flex justify-around mt-20 flex-wrap md:flex-nowrap">
+          <img className="h-40" src="/assets/flink/comment1.svg" />
+          <img className="h-36" src="/assets/flink/comment2.svg" />
         </div>
       </div>
       <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
@@ -172,7 +175,7 @@ export default function flink() {
           After analysis the user and business needs, our technical constrains
           and the user experience that we want to offer, the agreed work on:
         </p>
-        <div className="flex justify-around mt-20">
+        <div className="flex justify-around mt-20 flex-wrap md:flex-nowrap">
           <img className="w-[480px]" src="/assets/flink/img3.png" />
           <img className="w-[480px]" src="/assets/flink/img4.png" />
         </div>
@@ -188,7 +191,7 @@ export default function flink() {
           to ideating. This was done in three parts:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
-          <div className="w-full md:w-[380px] grow">
+          <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
             <img
               className="rounded-2xl h-[200px] w-full object-cover"
               src="/assets/flink/img5.png"
@@ -199,7 +202,7 @@ export default function flink() {
               into further exploration.
             </p>
           </div>
-          <div className="w-full md:w-[380px] grow">
+          <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
             <img
               className="rounded-2xl h-[200px] object-cover w-full"
               src="/assets/flink/img6.png"
@@ -209,7 +212,7 @@ export default function flink() {
               After scoring two ideas, move forward to high fidelity design.
             </p>
           </div>
-          <div className="w-full md:w-[380px] grow">
+          <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
             <img
               className="rounded-2xl h-[200px] object-cover w-full"
               src="/assets/flink/img7.png"

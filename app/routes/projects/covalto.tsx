@@ -6,8 +6,9 @@ import styles from "~/styles/about.css";
 
 export default function covalto() {
   return (
-    <section className="max-w-7xl mx-auto pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-[#F2C557]">
+    <section className="max-w-7xl mx-auto  w-[90%] md:w-ful pt-[120px] md:pt-[200px] ">
+      {" "}
+      <div className="w-full  h-[280px] md:h-[680px] overflow-hidden rounded-[40px] bg-[#F2C557]">
         <Parallax
           className="h-full w-[100%] mx-auto "
           bgImage="/assets/covalto/cover2.png"
@@ -15,15 +16,17 @@ export default function covalto() {
           strength={200}
         ></Parallax>
       </div>
-
-      <div className="flex gap-12 mt-28 ">
-        <div className="w-[30%]">
+      <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
+        <div className="w-full md:w-[30%]">
           <a
             href="https://covalto.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-[200px]" src="/assets/covalto/logo.png" />
+            <img
+              className="w-[200px] hover:scale-90 transition-all"
+              src="/assets/covalto/logo.png"
+            />
           </a>
           <div className="flex flex-wrap gap-4 mt-6">
             <Tag text="Mobile App" />
@@ -40,7 +43,7 @@ export default function covalto() {
             UX/UI Designer
           </p>
         </div>
-        <div className="w-[70%]">
+        <div className="w-full md:w-[70%]">
           <p className="text-xl dark:text-iron-300">
             Covalto is a Bank that born from de Banco Finterra acquisition by
             Credijusto. This new bank{" "}
@@ -63,7 +66,7 @@ export default function covalto() {
           </p>
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           Understanding the problem - User needs
@@ -73,7 +76,7 @@ export default function covalto() {
           started with the research that was done in two parts:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
-          <div className="w-full md:w-[380px] grow">
+          <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
             <img
               className="rounded-2xl h-[280px] w-full object-cover"
               src="/assets/covalto/img5.png"
@@ -85,7 +88,7 @@ export default function covalto() {
               offer.
             </p>
           </div>
-          <div className="w-full md:w-[380px] grow">
+          <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
             <img
               className="rounded-2xl h-[280px] object-cover w-full"
               src="/assets/flink/img6.png"
@@ -100,7 +103,7 @@ export default function covalto() {
           </div>
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           User Personas & Journeymap
@@ -116,12 +119,12 @@ export default function covalto() {
           A customer journey map was created to map the process step by step,
           from the need for the business credit card to its use or cancellation.{" "}
         </p>
-        <div className="flex justify-around">
+        <div className="flex justify-around flex-wrap md:flex-nowrap">
           <img className="mt-20" src="/assets/covalto/img1.png" />
           <img className="mt-20" src="/assets/covalto/img2.png" />
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           Ideation & Prototyping
@@ -142,8 +145,7 @@ export default function covalto() {
         </p>
         <img className="mt-20" src="/assets/covalto/img7.png" />
       </div>
-
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           Next steps

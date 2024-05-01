@@ -15,7 +15,7 @@ export default function constructoken() {
           strength={200}
         ></Parallax>
       </div>
-      <div className="flex flex-wrap md:flex-nowrap gap-12 mt-12 md:mt-28 ">
+      <div className="flex flex-wrap md:flex-nowrap gap-12 mt-16 md:mt-28 ">
         <div className="w-full md:w-[30%]">
           <a
             href="https://constructoken.com/"
@@ -23,7 +23,7 @@ export default function constructoken() {
             rel="noopener noreferrer"
           >
             <img
-              className="w-[240px]"
+              className="w-[240px] hover:scale-90 transition-all"
               src="/assets/constructoken/constru_logo.png"
             />
           </a>

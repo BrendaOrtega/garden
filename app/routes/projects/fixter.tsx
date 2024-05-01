@@ -6,24 +6,26 @@ import styles from "~/styles/about.css";
 
 export default function fixter() {
   return (
-    <section className="max-w-7xl mx-auto pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-[#E9786E]">
+    <section className="max-w-7xl mx-auto pt-[120px] md:pt-[200px]  w-[90%] md:w-full">
+      <div className="w-full  h-[280px] md:h-[680px] overflow-hidden rounded-[40px] bg-[#E9786E]">
         <Parallax
-          className="h-full w-[100%] mx-auto "
+          className="h-full w-[100%] mx-auto mt-10 md:mt-0 "
           bgImage="/assets/fixter/cover.png"
           bgImageAlt="the cat"
           strength={200}
         ></Parallax>
       </div>
-
-      <div className="flex gap-12 mt-28 ">
-        <div className="w-[30%]">
+      <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
+        <div className="w-full md:w-[30%]">
           <a
             href="https://fixter.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-[180px]" src="/assets/fixter/logo.png" />
+            <img
+              className="w-[180px] hover:scale-90 transition-all"
+              src="/assets/fixter/logo.png"
+            />
           </a>
 
           <div className="flex flex-wrap gap-4 mt-6">
@@ -42,7 +44,7 @@ export default function fixter() {
             UX/UI Designer
           </p>
         </div>
-        <div className="w-[70%]">
+        <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
             Fixter.org is a{" "}
             <span className="text-brand-500"> Consultancy Agency</span> that
@@ -71,7 +73,7 @@ export default function fixter() {
           </p>
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           UI Design
@@ -82,12 +84,12 @@ export default function fixter() {
           improvement included changes on the interface elements and UI
           patterns.
         </p>
-        <div>
+        <div className="mt-10">
           <img src="/assets/fixter/img1.png" />
           <img src="/assets/fixter/img2.png" />
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           Next steps

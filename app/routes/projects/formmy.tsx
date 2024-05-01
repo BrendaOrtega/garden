@@ -6,23 +6,26 @@ import styles from "~/styles/about.css";
 
 export default function formmy() {
   return (
-    <section className="max-w-7xl mx-auto  w-[90%] md:w-ful pt-[120px] md:pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-formmy">
+    <section className="max-w-7xl mx-auto  w-[90%] md:w-full pt-[120px] md:pt-[200px] ">
+      <div className="w-full  h-[280px] md:h-[680px]  overflow-hidden rounded-[40px] bg-formmy">
         <Parallax
-          className="h-full w-[80%] mx-auto "
+          className="h-full w-[80%] mt-10 md:mt-0 mx-auto "
           bgImage="/assets/formmy/cover.png"
           bgImageAlt="the cat"
           strength={200}
         ></Parallax>
       </div>
-      <div className="flex gap-12 mt-28 ">
-        <div className="w-[30%]">
+      <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
+        <div className="w-full md:w-[30%]">
           <a
             href="https://www.formmy.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-[240px]" src="/assets/formmy/logo.svg" />
+            <img
+              className="w-[200px] md:w-[240px] hover:scale-90 transition-all"
+              src="/assets/formmy/logo.svg"
+            />
           </a>
           <div className="flex flex-wrap gap-4 mt-6">
             <Tag text="Web App" />

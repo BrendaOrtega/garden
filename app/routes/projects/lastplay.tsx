@@ -6,18 +6,17 @@ import styles from "~/styles/about.css";
 
 export default function lastplay() {
   return (
-    <section className="max-w-7xl mx-auto pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-[#262F5F]">
+    <section className="max-w-7xl mx-auto  w-[90%] md:w-full pt-[120px] md:pt-[200px] ">
+      <div className="w-full  h-[280px] md:h-[680px] overflow-hidden rounded-[40px] bg-[#262F5F]">
         <Parallax
-          className="h-full w-[100%] mx-auto "
+          className="h-full w-[100%] mx-auto pt-10 md:pt-0 "
           bgImage="/assets/lastplay/cover.png"
           bgImageAlt="the cat"
           strength={200}
         ></Parallax>
       </div>
-
-      <div className="flex gap-12 mt-28 ">
-        <div className="w-[30%]">
+      <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
+        <div className="w-full md:w-[30%]">
           <a
             href="https://www.lastplay.app/"
             target="_blank"
@@ -46,7 +45,7 @@ export default function lastplay() {
             UI Designer
           </p>
         </div>
-        <div className="w-[70%]">
+        <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
             <span className="text-water">Lastplay is a mobile application</span>{" "}
             that offers specialized{" "}
@@ -74,7 +73,7 @@ export default function lastplay() {
           </p>
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           Understanding and definition
@@ -87,7 +86,7 @@ export default function lastplay() {
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow">
             <img
-              className="rounded-xl rotate-3 h-[380px] w-full object-cover"
+              className="rounded-xl rotate-3 hover:-rotate-3 h-[240px] md:h-[380px] w-full object-cover transition-all"
               src="/assets/lastplay/img3.png"
             />
             <p className="text-base dark:text-iron-300 mt-8">
@@ -97,7 +96,7 @@ export default function lastplay() {
           </div>
           <div className="w-full md:w-[380px] grow">
             <img
-              className="rounded-xl -rotate-3 h-[380px] w-full object-cover"
+              className="rounded-xl -rotate-3 hover:rotate-3 transition-all h-[240px] md:h-[380px] w-full object-cover"
               src="/assets/lastplay/img4.png"
             />
             <p className="text-base dark:text-iron-300 mt-8">
@@ -107,7 +106,7 @@ export default function lastplay() {
           </div>
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           UI Design
@@ -124,13 +123,13 @@ export default function lastplay() {
           flows that considered errors and empty states within the application,
           and a large change related to interface elements and UI patterns.
         </p>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mt-10">
           <img src="/assets/lastplay/img1.png" />
-          <img className="w-[120px]" src="/assets/lastplay/color.png" />
+          <img className="w-12 md:w-[120px]" src="/assets/lastplay/color.png" />
           <img src="/assets/lastplay/img2.png" />
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           Next steps

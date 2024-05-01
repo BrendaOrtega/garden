@@ -6,24 +6,27 @@ import styles from "~/styles/about.css";
 
 export default function personal() {
   return (
-    <section className="max-w-7xl mx-auto pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-[#E63737]">
+    <section className="max-w-7xl mx-auto pt-[120px] md:pt-[200px]  w-[90%] md:w-full">
+      <div className="w-full  h-[280px] md:h-[680px]  overflow-hidden rounded-[40px] bg-[#E63737]">
         <Parallax
-          className="h-full w-[80%] mx-auto "
+          className="h-full w-[80%] mx-auto mt-10 md:mt-0 "
           bgImage="/assets/personal/cover.png"
           bgImageAlt="the cat"
           strength={200}
         ></Parallax>
       </div>
 
-      <div className="flex gap-12 mt-28 ">
-        <div className="w-[30%]">
+      <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
+        <div className="w-full md:w-[30%]">
           <a
             href="https://www.santander.com.mx/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-[180px]" src="/assets/personal/logo.png" />
+            <img
+              className="w-[140px] md:w-[180px] hover:scale-90 transition-all"
+              src="/assets/personal/logo.png"
+            />
           </a>
 
           <div className="flex flex-wrap gap-4 mt-6">
@@ -43,7 +46,7 @@ export default function personal() {
             UX/UI Designer
           </p>
         </div>
-        <div className="w-[70%]">
+        <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
             Santander Personal is an{" "}
             <span className="text-blood">

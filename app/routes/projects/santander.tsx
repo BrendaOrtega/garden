@@ -6,24 +6,27 @@ import styles from "~/styles/about.css";
 
 export default function santander() {
   return (
-    <section className="max-w-7xl mx-auto pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-[#BD5648]">
+    <section className="max-w-7xl mx-auto pt-[120px] md:pt-[200px]  w-[90%] md:w-full">
+      <div className="w-full  h-[280px] md:h-[680px]  overflow-hidden rounded-[40px] bg-[#BD5648]">
         <Parallax
-          className="h-full w-[90%] mx-auto "
+          className="h-full w-[90%] mx-auto  "
           bgImage="/assets/santander/cover.png"
           bgImageAlt="the cat"
           strength={200}
         ></Parallax>
       </div>
 
-      <div className="flex gap-12 mt-28 ">
-        <div className="w-[30%]">
+      <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
+        <div className="w-full md:w-[30%]">
           <a
             href="https://www.santander.com.mx/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-[180px]" src="/assets/santander/logo.png" />
+            <img
+              className="w-[140px] md:w-[180px] hover:scale-90 transition-all"
+              src="/assets/santander/logo.png"
+            />
           </a>
           <div className="flex flex-wrap gap-4 mt-6">
             <Tag text="Mobile App" />
@@ -41,7 +44,7 @@ export default function santander() {
             UX/UI Designer
           </p>
         </div>
-        <div className="w-[70%]">
+        <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             Santander App is the application of Banco Santander, which offered
             banking services such as: transfers, investments, card payments,

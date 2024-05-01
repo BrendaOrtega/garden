@@ -7,24 +7,26 @@ import styles from "~/styles/about.css";
 
 export default function fixtergeek() {
   return (
-    <section className="max-w-7xl mx-auto pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-gradient-to-r from-[#5265F6] to-[#835EF6]">
+    <section className="max-w-7xl mx-auto pt-[120px] md:pt-[200px]  w-[90%] md:w-full">
+      <div className="w-full h-[280px] md:h-[680px] overflow-hidden rounded-[40px] bg-gradient-to-r from-[#5265F6] to-[#835EF6]">
         <Parallax
-          className="h-full w-[100%] mx-auto "
+          className="h-full w-[100%] mx-auto mt-10 md:mt-0 "
           bgImage="/assets/geeks/cover.png"
           bgImageAlt="the cat"
           strength={200}
         ></Parallax>
       </div>
-
-      <div className="flex gap-12 mt-28 ">
-        <div className="w-[30%]">
+      <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
+        <div className="w-full md:w-[30%]">
           <a
             href="https://fixtergeek.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="w-[220px]" src="/assets/geeks/logo.png" />
+            <img
+              className="w-[220px] hover:scale-90 transition-all"
+              src="/assets/geeks/logo.png"
+            />
           </a>
 
           <div className="flex flex-wrap gap-4 mt-6">
@@ -44,7 +46,7 @@ export default function fixtergeek() {
             Product Designer
           </p>
         </div>
-        <div className="w-[70%]">
+        <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
             Fixtergeek is a learning platform that offers on-demand development
             courses for programming languages or frameworks such as JavaScript,
@@ -66,7 +68,7 @@ export default function fixtergeek() {
           </p>
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-28"></hr>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-4xl font-bold dark:text-white text-black">
           User Interface Design
@@ -79,14 +81,14 @@ export default function fixtergeek() {
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow">
             <img
-              className="rounded-xl rotate-3 h-[380px] w-full object-cover"
+              className="rounded-xl rotate-3 h-[240px] md:h-[380px] w-full object-cover"
               src="/assets/lastplay/img3.png"
             />
             <p className="text-xl dark:text-iron-300 mt-8"> Moodboard</p>
           </div>
           <div className="w-full md:w-[380px] grow">
             <img
-              className="rounded-xl -rotate-3 h-[380px] w-full object-cover"
+              className="rounded-xl -rotate-3  h-[240px] md:h-[380px]  w-full object-cover"
               src="/assets/lastplay/img4.png"
             />
             <p className="text-xl dark:text-iron-300 mt-8"> Styleguide</p>

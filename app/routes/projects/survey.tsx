@@ -6,8 +6,8 @@ import styles from "~/styles/about.css";
 
 export default function formmy() {
   return (
-    <section className="max-w-7xl mx-auto  w-[90%] md:w-ful pt-[120px] md:pt-[200px] ">
-      <div className="w-full h-[680px] overflow-hidden rounded-[40px] bg-[#F9D054]">
+    <section className="max-w-7xl mx-auto  w-[90%] md:w-full pt-[120px] md:pt-[200px] ">
+      <div className="w-full  h-[280px] md:h-[680px] overflow-hidden rounded-[40px] bg-[#F9D054]">
         <Parallax
           className="h-full w-[90%] mx-auto "
           bgImage="/assets/survey/cover.png"
@@ -15,9 +15,12 @@ export default function formmy() {
           strength={200}
         ></Parallax>
       </div>
-      <div className="flex gap-12 mt-28 ">
-        <div className="w-[30%]">
-          <img className="w-[200px]" src="/assets/survey/logo.png" />
+      <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
+        <div className="w-full md:w-[30%]">
+          <img
+            className="w-[200px] hover:scale-90 transition-all"
+            src="/assets/survey/logo.png"
+          />
           <div className="flex flex-wrap gap-4 mt-6">
             <Tag text="Web App" />
             <Tag text="UI/UX Design" />
