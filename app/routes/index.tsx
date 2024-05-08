@@ -57,7 +57,7 @@ const Body = () => {
 
 const List = () => {
   return (
-    <div className="box gap-10 lg:gap-20 mt-10 lg:mt-8 px-4 md:px-10 lg:px-auto flex flex-wrap justify-center">
+    <div className="box gap-10 w-full lg:gap-20 mt-10 lg:mt-8 px-4 md:px-10  lg:px-auto flex flex-wrap justify-center">
       <Card
         link="/projects/flink"
         name="Flink"
@@ -86,6 +86,13 @@ const List = () => {
         image="/images/projects/formmy.png"
         lowSrc="https://i.imgur.com/pC19NU5m.png"
       />
+      <Card
+        link="/projects/ui"
+        name="UI Course"
+        description="User Interface course landing page | E-learning"
+        image="/assets/ui.png"
+        lowSrc="https://i.imgur.com/fLdMmXKt.png"
+      />
 
       <Card
         link="/projects/personal"
@@ -102,7 +109,13 @@ const List = () => {
         image="/images/projects/sant.png"
         lowSrc="https://i.imgur.com/pHbfSGEt.png"
       />
-
+      <Card
+        link="/projects/lastplay"
+        name="LastPlay"
+        description="Website & Learning platform | Education"
+        image="/images/projects/play.png"
+        lowSrc="https://i.imgur.com/HqWDIw3.png"
+      />
       <Card
         link="/projects/fixter"
         name="Fixter.org"
@@ -119,29 +132,21 @@ const List = () => {
         lowSrc="https://i.imgur.com/nRhOA5Ls.png"
       />
 
-      <Card
-        link="/projects/lastplay"
-        name="LastPlay"
-        description="Website & Learning platform | Education"
-        image="/images/projects/play.png"
-        lowSrc="https://i.imgur.com/HqWDIw3.png"
-      />
-
-      <Card
+      {/* <Card
         link="/projects/survey"
         name="SurveyUp"
         description="Surveys web & Management Platform | Market Research"
         image="/images/projects/survey.png"
         lowSrc="https://i.imgur.com/MoNpbBT.png"
-      />
+      /> */}
     </div>
   );
 };
 
 const Card = ({ image, name, description, lowSrc, link }) => {
   return (
-    <Link to={link}>
-      <div className=" flex w-full  lg:w-[320px] xl:w-[480px] h-[360px] lg:h-[700px] group z-0">
+    <Link className="w-full lg:w-[320px] xl:w-[480px]" to={link}>
+      <div className=" flex w-full  lg:w-[320px] xl:w-[480px] h-[360px] lg:h-[700px] group z-0 ">
         <div className="flex flex-col overflow-hidden my-4 lg:my-8 w-full ">
           <div className="h-[400px] lg:h-[700px] w-full overflow-hidden rounded-2xl items-center transition-all">
             <BlurImage src={image} lowSrc={lowSrc} full />

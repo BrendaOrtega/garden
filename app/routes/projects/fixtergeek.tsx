@@ -48,78 +48,46 @@ export default function fixtergeek() {
         </div>
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
-            Fixtergeek is a learning platform that offers on-demand development
-            courses for programming languages or frameworks such as JavaScript,
-            React, Remix, CSS, NodeJS, NextJs, Redux, etc. And also, you can
-            find there my own UI Course 😉.
+            Fixtergeek is a{" "}
+            <span className="text-mora">
+              learning platformthat offers on-demand development courses{" "}
+            </span>{" "}
+            for programming languages or frameworks such as JavaScript, React,
+            Remix, CSS, NodeJS, NextJs, Redux, etc. And also, you can find there
+            my own UI Course 😉.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            How to create a useful platform where users can learn easily and
-            enjoy the learning experience? What are the user needs? What is the
-            learning workflo that we can follow?
+            <span className="text-mora">
+              How to create a useful platform where users can learn easily and
+              enjoy the learning experience? What are the user needs?{" "}
+            </span>{" "}
+            What is the learning workflow that we can follow?
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            With this in mind, we identify two types of user: collaborator and
-            student. As a collaborator, our user needed a way to view key data,
-            manage courses (create them, upload content, and edit them), send
+            With this in mind, I identified two types of user: collaborator and
+            student. As a collaborator, our user need a way to view key data,
+            manage courses (create them, upload content, and edit them), sent
             the newsletter, and assign courses to enrolled students. And our
-            student user needed to be able to see her courses, access each
-            other's material and edit her profile.
+            student user need to be able to see her courses, access each other's
+            material and edit her profile.
+          </p>
+          <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+            After define the users, user stories, user flows, the site map and
+            had had a sketching sessions, I moved forward to work on the hight
+            fidelity wireframes, including happy and unhappy paths.
           </p>
         </div>
       </div>
-      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
-        <h2 className="text-4xl font-bold dark:text-white text-black">
-          User Interface Design
-        </h2>
-        <p className="text-xl dark:text-iron-300 mt-6">
-          The business requeriments and research results have been omitted for
-          privacy reasons. So, based on the business requeriments and user
-          needs, the first design iteration was done in two parts:
-        </p>
-        <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
-          <div className="w-full md:w-[380px] grow">
-            <img
-              className="rounded-xl rotate-3 h-[240px] md:h-[380px] w-full object-cover"
-              src="/assets/lastplay/img3.png"
-            />
-            <p className="text-xl dark:text-iron-300 mt-8"> Moodboard</p>
-          </div>
-          <div className="w-full md:w-[380px] grow">
-            <img
-              className="rounded-xl -rotate-3  h-[240px] md:h-[380px]  w-full object-cover"
-              src="/assets/lastplay/img4.png"
-            />
-            <p className="text-xl dark:text-iron-300 mt-8"> Styleguide</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <p className="text-xl dark:text-iron-300 mt-12">
-          After a research process, I identify two types of user: collaborator
-          and student. As a collaborator, our user needed a way to view key
-          data, manage courses (create them, upload content, and edit them),
-          send the newsletter, and assign courses to enrolled students. And our
-          student user needed to be able to see her courses, access each other's
-          material and edit her profile.
-        </p>
-        <p className="text-xl dark:text-iron-300 mt-6">
-          Whit this in mind, I continued with the definition and ideation
-          process until reaching this result:
-        </p>
-        <p className="text-xs dark:text-iron-300 mt-6">
-          *Some details of the product and process have been changed or omitted
-          for privacy reasons.
-        </p>
         <div className="flex flex-col  w-full">
           <ContainerScroll
             titleComponent={
               <>
-                <h1 className="text-4xl font-semibold text-black dark:text-white">
-                  High fidelity <br />
-                  <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                    Wireframes{" "}
+                <h1 className="text-xl font-semibold text-black dark:text-white">
+                  High fidelity wirefranes
+                  <br />
+                  <span className="text-3xl md:text-[4rem] font-bold mt-1 leading-none">
+                    User Interface Design{" "}
                   </span>
                 </h1>
               </>

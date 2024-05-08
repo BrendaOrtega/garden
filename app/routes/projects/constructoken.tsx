@@ -53,8 +53,12 @@ export default function constructoken() {
               facilitate to self-producers of housing the construction or
               remodeling of their housing
             </span>{" "}
-            from any area of Mexico through financial products and prepayment of
-            materials.
+            from any place of Mexico through financial products and prepayment
+            of materials. And looking for a complete experience, they offer
+            extra services to facilitate the construction of users' homes like
+            automatic quoations based on the place where user lives (considering
+            local prices), default House plans, and attractive rewards when the
+            user meet his goal.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             The self-producers of housing carry out each part of the
@@ -62,7 +66,8 @@ export default function constructoken() {
             construction, searching for materials, even supervising the work. To
             help self-producers with this complicated process, it's necessary to
             know their needs in each part of the process and identify at which
-            points Construtoken can help them.
+            points Construtoken can help them in a way that is useful to users
+            and gives them the value necessary to use it.
           </p>
         </div>
       </div>
@@ -78,10 +83,10 @@ export default function constructoken() {
           challenge. These were:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
-          <div className="w-full md:w-[380px] grow">
+          <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
             <img
-              className="rounded-2xl"
-              src="https://i.imgur.com/tRz5Xfg.png"
+              className="rounded-2xl h-[280px]"
+              src="/assets/constructoken/img04.png"
             />
             <p className="text-xl dark:text-iron-300 mt-6">
               {" "}
@@ -90,16 +95,22 @@ export default function constructoken() {
               Criptoladrillo.
             </p>
           </div>
-          <div className="w-full md:w-[380px] grow">
-            <img src="https://i.imgur.com/tRz5Xfg.png" />
+          <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
+            <img
+              className="rounded-2xl h-[280px] object-cover"
+              src="/assets/constructoken/img05.png"
+            />
             <p className="text-xl dark:text-iron-300 mt-6">
               {" "}
               Application of quantitative and qualitative surveys in 4 diferent
               city in México to idenfity goals and needs.
             </p>
           </div>
-          <div className="w-full md:w-[380px] grow">
-            <img src="https://i.imgur.com/tRz5Xfg.png" />
+          <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
+            <img
+              className="rounded-2xl h-[280px] object-cover"
+              src="/assets/constructoken/img06.png"
+            />
             <p className="text-xl dark:text-iron-300 mt-6">
               {" "}
               Contextual observation, identifing the pains and needs in each
@@ -114,45 +125,89 @@ export default function constructoken() {
           Generating Personas
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          After gleaning valuable insights from the 'understand' phase, I'd
-          formed three personas – heavily influenced from the flexible
-          questionnaire analysis. These were created in order to help craft a
-          better experience later down the line when ideating.
+          After gleaning valuable insights from the 'understand' phase, plot an
+          affinity diagram and an empathy map, I'd formed two personas – heavily
+          influenced from the flexible questionnaire analysis. These were
+          created in order to help craft a better experience later down the line
+          when ideating.
         </p>
-        <img
-          className="w-[320px] mt-20"
-          src="https://i.imgur.com/aveFBUy.png"
-        />
+        <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
+          <div className="w-full md:w-[380px] grow">
+            <img
+              className="rounded-xl rotate-3 hover:-rotate-3 transition-all"
+              src="/assets/constructoken/img07.png"
+            />
+            <p className="text-base dark:text-iron-300 mt-8">
+              {" "}
+              Emiliano is a user that wants building his house but he doesn't
+              have access to banks financial products.
+            </p>
+          </div>
+          <div className="w-full md:w-[380px] grow">
+            <img
+              className="rounded-xl -rotate-3 hover:rotate-3 transition-all"
+              src="/assets/constructoken/img08.png"
+            />
+            <p className="text-base dark:text-iron-300 mt-8">
+              {" "}
+              Luis is living has been working for a long time to build his house
+              in México, but it's difficult for him to do it from the United
+              States.
+            </p>
+          </div>
+        </div>
       </div>
       <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-3xl md:text-4xl font-bold dark:text-white text-black">
-          Ideation
+          Definition & Ideation
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
           After looking at data, analysing user needs, creating personas to
           match these insights and discussing business requeriments. I moved on
           to ideating. This was done in three parts:
           <p />
-          <ul>
-            <li>
-              {" "}
-              <span className="text-greenlight"> • </span>A sketching session
-              using a technique called Crazy Eights (getting lots of ideas down
-              in a short time frame).
-            </li>
-            <li>
-              {" "}
-              <span className="text-greenlight"> • </span>A deeper analysis of
-              two ideas I thought had longevity from the sketching session
-            </li>
-            <li>
-              {" "}
-              <span className="text-greenlight"> • </span> Scoring the two ideas
-              I liked against the list of user needs to see which one to take
-              forward into further exploration
-            </li>
-          </ul>
+          <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
+            <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
+              <img
+                className="rounded-2xl h-[240px] object-cover"
+                src="/assets/constructoken/img10.jpg"
+              />
+              <h3 className="text-white text-xl mt-6">MoSCoW method</h3>
+              <p className="text-xl dark:text-iron-300 mt-6">
+                {" "}
+                After work with the product and development team on a Value
+                proposition canvas and define the user stories, I moved foward
+                to prioritize the features with MoSCoW method.
+              </p>
+            </div>
+            <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
+              <img
+                className="rounded-2xl h-[240px] object-cover"
+                src="/assets/constructoken/img13.jpg"
+              />
+              <h3 className="text-white text-xl mt-6">Site map</h3>
+              <p className="text-xl dark:text-iron-300 mt-6">
+                {" "}
+                Having considered the prioritized features I worked on the app
+                architecture.
+              </p>
+            </div>
+            <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
+              <img
+                className="rounded-2xl h-[240px] object-cover"
+                src="/assets/constructoken/img14.png"
+              />
+              <h3 className="text-white text-xl mt-6">
+                Sketching & User flow{" "}
+              </h3>
+              <p className="text-xl dark:text-iron-300 mt-6">
+                {" "}
+                I started with sketching session to define the userflows into
+                the app, including happy paths and unhappy paths.
+              </p>
+            </div>
+          </div>
         </p>
       </div>
       <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
@@ -162,65 +217,35 @@ export default function constructoken() {
         </h2>
 
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          After tallying up two strong ideas against user needs, the 'search &
-          social' concept came out the winner (just!). I then began developing
-          this idea with low & high fidelity wireframes for both desktop and
-          mobile.
+          After ensuring that the user flows math with the needs of the users, I
+          began working on a style guide based on the brand guidelines to
+          continue with the high-purpose wireframes of both the application and
+          the website.
         </p>
-        <div className="grid-cols-1 md:grid-cols-3 grid mt-20">
-          <div className="bg-[#F2F4F6] h-[340px] overflow-hidden flex items-center justify-center ">
-            <img
-              className="w-[80%] mt-8"
-              src="/assets/constructoken/img02.png"
-            />
-          </div>
-          <div className="bg-[#1D1C20] h-[340px] overflow-hidden flex items-center justify-center ">
-            <img
-              className="w-[80%] mt-8"
-              src="/assets/constructoken/img01.png"
-            />
-          </div>
-          <div className="bg-[#F2F4F6] h-[340px] overflow-hidden flex items-center justify-center ">
-            <img
-              className="w-[80%] mt-8"
-              src="/assets/constructoken/img03.png"
-            />
-          </div>
-          <div className="bg-[#1D1C20] h-[340px] overflow-hidden flex items-center justify-center ">
-            <img
-              className="w-[80%] -mt-8"
-              src="/assets/constructoken/img04.png"
-            />
-          </div>
-          <div className="bg-[#F2F4F6] h-[340px] overflow-hidden flex items-center justify-center ">
-            <img
-              className="w-[80%] -mt-8"
-              src="/assets/constructoken/img05.png"
-            />
-          </div>
-          <div className="bg-[#1D1C20] h-[340px] overflow-hidden flex items-center justify-center ">
-            <img
-              className="w-[80%] -mt-8"
-              src="/assets/constructoken/img06.png"
-            />
-          </div>
+        <div className=" flex flex-col gap-20 mt-20 ">
+          <img src="/assets/constructoken/img15.png" />
+          <img
+            className="w-full mx-auto "
+            src="/assets/constructoken/img16.png"
+          />
+          <img
+            className="w-full mx-auto"
+            src="/assets/constructoken/img09.png"
+          />
         </div>
       </div>
       <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
       <div>
         <h2 className="text-3xl md:text-4xl font-bold dark:text-white text-black">
-          Next Steps & Involvement
+          Next Steps
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          Next steps: Test the prototype with the users who partook in the
-          flexible questionnaire and iterate on the design based on user
-          feedback before taking into development.
+          Test the prototype with users and iterate on the design based on user
+          feedback before taking into development and then start with a beta
+          test with 10 users to continue collecting feedback and iterating the
+          design.
         </p>
-        <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          Involvement: As this was an interview task, this piece was conducted
-          directly by myself, with the help of Edwina Nolan to source existing
-          data and questionnaire results around the Coast & Sea section.
-        </p>
+        <img className="w-20 mt-10" src="/assets/constructoken/fur.png" />
       </div>
     </section>
   );

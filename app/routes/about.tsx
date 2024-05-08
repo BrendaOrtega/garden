@@ -194,7 +194,7 @@ export default function about() {
     <section className="pt-[120px] md:pt-[200px]  mx-auto">
       <div className="w-full px-4   pb-10 lg:pb-10 flex-wrap-reverse md:flex-wrap lg:flex-nowrap flex justify-center items-start pt-10 gap-12 md:gap-0 max-w-7xl mx-auto ">
         <img
-          className="w-full md:w-[680px] rounded-3xl "
+          className="w-full md:w-[680px] rounded-3xl  "
           src="https://i.imgur.com/eDktKC9.png"
         />
         <div className="bg-transparent md:bg-black px-0 md:px-10 pt-0 md:pt-10 -ml-0 md:-ml-16 mt-0 md:mt-[400px] rounded-3xl">
@@ -218,11 +218,15 @@ export default function about() {
           <p className="text-xl md:text-2xl mt-8 text-iron-400 ">
             If you want to know more about me, know more about what I’m working
             on, or talk about working together, feel free to{" "}
-            <a href="mailto:bremin11.20.93@gmail.com">
-              {" "}
-              <span className="text-brand-500 ">email me</span>
-            </a>
-            .
+            <span className="relative group text-brand-500">
+              <a href="mailto:bremin11.20.93@gmail.com"> email me.</a>
+              <span
+                className="absolute -top-3 left-10 group-hover:opacity-100 transition-opacity bg-iron-800 text-sm text-gray-100 rounded-md  
+    -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto py-2 px-4"
+              >
+                bremin11.20.93@gmail.com
+              </span>
+            </span>
           </p>
         </div>
       </div>

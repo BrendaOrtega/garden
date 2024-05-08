@@ -31,6 +31,7 @@ module.exports = {
         sun: "#E8B140",
         blood: "#E63737",
         salmon: "#BD5648",
+        mora: "#6C7DFB",
       },
       backgroundImage: {
         stars: "url('/assets/stars.png')",

@@ -52,21 +52,21 @@ export default function personal() {
             <span className="text-blood">
               omnichannel platform for the bank's high-income clients.
             </span>{" "}
-            It is available as a web platform for the bank's internal users and
-            in the mobile application for end users.
+            It's available as a web platform for the bank's internal users and
+            as a section in the mobile application for end users.
           </p>
           <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
-            As its name indicates, it is a special section within the
-            application that only premium Santander customers have access to,
-            through which they receive{" "}
+            As its name indicates, it's a special section within the application
+            that only premium Santander customers have access to, through which
+            they receive{" "}
             <span className="text-blood">
               personalized attention to contract financial services in a 100%
               digital way.
             </span>{" "}
-            While on the internal side, it is an administrative platform that
-            allows you to track all contracts for financial products, keep a
-            record of each movement and directly assign the client to an agent
-            who will provide permanent support.
+            While on the internal side, it's an administrative platform that
+            allows to track all contracts for financial products, keep a record
+            of each movement and directly assign the client to an agent who will
+            provide permanent support.
           </p>
           <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
             I worked on this project from start to finish, from the initial kick

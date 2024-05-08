@@ -37,7 +37,7 @@ export default function formmy() {
           </div>
           <p className="dark:text-white font-bold text-xl mt-10 mb-1">Date</p>
           <p className="text-base text-iron-500 dark:text-iron-300 ">
-            December 2024
+            December 2023
           </p>
           <p className="dark:text-white font-bold text-xl mt-10 mb-1">Role</p>
           <p className="text-base text-iron-500 dark:text-iron-300 ">

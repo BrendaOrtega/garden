@@ -46,7 +46,7 @@ export default function santander() {
         </div>
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            Santander App is the application of Banco Santander, which offered
+            Santander App is the application of Santander Bank, which offers
             banking services such as: transfers, investments, card payments,
             payment of services, card management, etc.
           </p>
@@ -55,21 +55,22 @@ export default function santander() {
             different features and flows within the application. But I directly
             had responsibility for 3 specific features:{" "}
             <span className="text-salmon">
-              Card payments, payment of services and Investments.
+              Card payments, Services payments and Investments.
             </span>
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             Based on the guidelines and the previously defined design system, I
-            worked on the credit card payment flows (own and third parties,
-            registration, cancellation and payment of services (electricity,
-            internet, etc.), and the investment flow where As a user you can
-            choose type of investment, term, amount, etc. Likewise, I worked on{" "}
+            worked on the credit card payment flows: own and third parties,
+            registration, cancellation; services payments like registration of
+            services (electricity, internet and telephone) and domiciliation of
+            services; and the investment flow where users can choose type of
+            investment they want to do, term, amount, etc. Likewise, I worked on{" "}
             <span className="text-salmon">
               testing the components of the design system (in code).
             </span>
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            for privacy reasons, I can't show more information about it.
+            For privacy reasons, I can't show more information about it.
           </p>
         </div>
       </div>

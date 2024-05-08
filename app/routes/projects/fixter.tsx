@@ -48,27 +48,26 @@ export default function fixter() {
           <p className="text-xl md:text-2xl dark:text-iron-300">
             Fixter.org is a{" "}
             <span className="text-brand-500"> Consultancy Agency</span> that
-            offers it services at affordable prices like{" "}
+            offers IT services at affordable prices like{" "}
             <span className="text-brand-500">
               {" "}
               web design, web development, UX/UI services,{" "}
             </span>{" "}
-            mobile apps development and and programming language training
-            courses.{" "}
+            mobile apps development and programming language training courses.{" "}
           </p>
           <p className="text-xl md:text-2xl mt-6 dark:text-iron-300">
-            Recently, Fixter.org needs changed because the brand guiledines have
-            been updated, also they are looking for to offer an online quote for
-            his client's projects and they seek to show the list of Software As
-            A Service created by them, so, the old website did't have the
+            Recently, Fixter.org's needs changed because the brand guiledines
+            were updated, also they are looking for to offer an online quotation
+            for his client's projects and they seek to show the list of Software
+            As A Service created by them, so, the old website did't have the
             arquitecture to display the new information it was necessary design
             a new website without change the tone and voice brand.
           </p>
           <p className="text-xl md:text-2xl mt-6 dark:text-iron-300">
             My challenge in this project was{" "}
             <span className="text-brand-500">
-              redesign the website inferface looking for a more modern, simple,
-              visual and interactive look and feel.
+              redesign the website inferface looking for modern, simple, visual
+              and interactive look and feel.
             </span>
           </p>
         </div>
@@ -95,10 +94,10 @@ export default function fixter() {
           Next steps
         </h2>
         <p className="text-xl dark:text-iron-300 mt-6">
-          The next steps will be tracking the website analytics (users, views,
-          conversions, session time, etc), analyze them together with the
-          results of user tests to improve the ussability and efficiency of the
-          website.
+          The next steps are to organize user tests periodically as well as to
+          track the website's analytics (users, views, conversions, session
+          time, etc) to identify points of improvement and improve the
+          ussability and efficiency in the website.
         </p>
         <img className="w-20 mt-6" src="/assets/lastplay/fur.png" />
       </div>

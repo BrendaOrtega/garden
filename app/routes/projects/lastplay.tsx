@@ -52,23 +52,26 @@ export default function lastplay() {
             <span className="text-water">
               free services to manage sports tournaments{" "}
             </span>{" "}
-            (tochito, soccer and basketball). To offer a good user experience,
-            there are different type of users: admin, player and guest.{" "}
+            (tochito, soccer and basketball). Considering the user involved in
+            this type of tournments, we identified three user types with
+            diferent needs: admin, player and guest.{" "}
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            As an admin you can{" "}
+            Based on the busines and User needs, we defined the minium features
+            that they need to have a good experience in the app. As an admin you
+            can create a tournament, add teams, players, published the game
+            schedule and track the score of each match ; as a player, you can
+            register for a team, keep track of your game schedule, and view
+            general tournament information and as a visitor you can be aware of
+            the schedule of your favorite teams.
+          </p>
+          <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+            My role in this project was to{" "}
             <span className="text-water">
-              create a tournament, add teams, players, published the game
-              schedule and track the score of each match
+              improve the user interface, take the brand guidelines and redefine
+              the user experience through improvements to copy, workflows, and
+              user interface elements
             </span>{" "}
-            ; as a player, you can register for a team, keep track of your game
-            schedule, and view general tournament information and as a visitor
-            you can be aware of the schedule of your favorite teams.
-          </p>
-          <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            My role in this project was to improve the user interface, take the
-            brand guidelines and redefine the user experience through
-            improvements to copy, workflows, and user interface elements
             considering the technical limitations and business requirements.
           </p>
         </div>
@@ -80,18 +83,18 @@ export default function lastplay() {
         </h2>
         <p className="text-xl dark:text-iron-300 mt-6">
           The business requeriments and research results have been omitted for
-          privacy reasons. So, based on the business requeriments and user
-          needs, the first design iteration was done in two parts:
+          privacy reasons. So, based on the research step results, the first
+          design proposal was done in two parts:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow">
             <img
               className="rounded-xl rotate-3 hover:-rotate-3 h-[240px] md:h-[380px] w-full object-cover transition-all"
-              src="/assets/lastplay/img3.png"
+              src="/assets/lastplay/img3.jpg"
             />
             <p className="text-base dark:text-iron-300 mt-8">
               {" "}
-              Definition of information architecture
+              Site map / Information Architecture
             </p>
           </div>
           <div className="w-full md:w-[380px] grow">

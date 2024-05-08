@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 .title {
   font-size: 50px;
 }
@@ -23,4 +25,10 @@
   .box a:nth-child(even) {
     margin-top: 0px;
   }
+}
+
+.architects-daughter-regular {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
