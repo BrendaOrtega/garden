@@ -219,7 +219,7 @@ export default function flink() {
 
           <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
             <img
-              className="rounded-2xl h-[200px] object-cover w-full"
+              className="rounded-2xl h-[200px] object-cover w-full border border-white/10"
               src="/assets/flink/img7.png"
             />
             <h3 className="text-white text-xl mt-6">Prototyping and testing</h3>

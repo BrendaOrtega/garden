@@ -56,12 +56,14 @@ export default function fixter() {
             mobile apps development and programming language training courses.{" "}
           </p>
           <p className="text-xl md:text-2xl mt-6 dark:text-iron-300">
-            Recently, Fixter.org's needs changed because the brand guiledines
-            were updated, also they are looking for to offer an online quotation
-            for his client's projects and they seek to show the list of Software
-            As A Service created by them, so, the old website did't have the
-            arquitecture to display the new information it was necessary design
-            a new website without change the tone and voice brand.
+            Recently, Fixter.org's decided improve the experience in the website
+            based on the analytics data, update the brand guidelines, and also
+            they are looking for add new features like to offer an online
+            quotation for his client's projects and they seek to show the list
+            of Software As A Service created by them, so, the old website did't
+            have the arquitecture to display the new information it was
+            necessary design a new website without change the tone and voice
+            brand.
           </p>
           <p className="text-xl md:text-2xl mt-6 dark:text-iron-300">
             My challenge in this project was{" "}

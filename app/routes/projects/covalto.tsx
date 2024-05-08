@@ -145,14 +145,50 @@ export default function covalto() {
           from the need for the business credit card to its use or cancellation.{" "}
         </p>
         <div className="flex mt-20 gap-10">
-          <img
+          {/* <img
             className="rounded-2xl  object-cover "
             src="/assets/covalto/img1.png"
-          />
+          /> */}
           <img
             className="rounded-2xl  object-cover "
             src="/assets/covalto/img2.png"
           />
+        </div>
+      </div>
+      <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
+      <div>
+        <h2 className="text-3xl md:text-4xl font-bold dark:text-white text-black">
+          What did data tell us?
+        </h2>
+        <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+          Important needs to come out of these surveys included:
+        </p>
+        <ul>
+          <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+            {" "}
+            <span className="text-sun"> • 66% of users (companies)</span> use
+            business cards or pantry cards
+          </li>
+          <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+            {" "}
+            <span className="text-sun"> • 58% copmanies</span> use platforms
+            that don't have card spending restriction options
+          </li>
+          <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+            {" "}
+            <span className="text-sun"> • </span>
+            Employees who use pantry cards don't have an application to manage
+            their expenses
+          </li>
+          <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+            {" "}
+            <span className="text-sun"> • 23% of users </span> have problems
+            paying with their TDC (they are not accepted in all establishments)
+          </li>
+        </ul>
+        <div className="flex justify-around mt-20 flex-wrap md:flex-nowrap">
+          <img className="h-40" src="/assets/covalto/comment1.svg" />
+          <img className="h-36" src="/assets/covalto/comment2.svg" />
         </div>
       </div>
       <hr className="h-[1px] border-[.5px] w-full border-white/15 my-12 md:my-28"></hr>{" "}
