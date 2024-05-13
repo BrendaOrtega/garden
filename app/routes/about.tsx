@@ -326,7 +326,10 @@ export default function about() {
         <h2 className="text-4xl md:text-5xl font-bold mt-8 text-white px-4  ">
           Let's work together
         </h2>
-        <p className="text-xl md:text-2xl mt-8 text-iron-400 w-[90%] px-4 ">
+        <p
+          className="text-xl md:text-2xl mt-8 text-iron-400 w-[90%] mx-auto px-4 text-center
+        "
+        >
           I'd love to learn more about you and what we can design and build
           together.
         </p>
