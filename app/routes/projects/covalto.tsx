@@ -45,13 +45,13 @@ export default function covalto() {
         </div>
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
-            Covalto is a Bank that born from de Banco Finterra acquisition by
-            Credijusto. This new bank{" "}
-            <span className="text-bird">offers financial products </span> like:
-            personal and enterprisse loans, debit accounts, factoring and
-            leasing services and investment instruments. But, one of the main
-            goals in 2022 was launch a business credit card that was the best
-            solution to manage business expenses.
+            Covalto is a Bank that was born from de Banco Finterra acquisition
+            by Credijusto. This new bank{" "}
+            <span className="text-bird">offers financial products </span> like
+            personal and enterprise loans, debit accounts, factoring and leasing
+            services, and investment instruments. But, one of the main goals in
+            2022 was to launch a business credit card that was the best solution
+            to manage business expenses.
           </p>
           <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
             The challenge was{" "}
@@ -59,9 +59,9 @@ export default function covalto() {
               {" "}
               design a mobile application or web app{" "}
             </span>{" "}
-            that allows companies to request an expenses cards account in a 100%
-            digital way, where the users can request and assign expenses cards
-            for the collaborators of their companies and monitore and restrict
+            that allows companies to request an expense card account in a 100%
+            digital way, where the users can request and assign expense cards
+            for the collaborators of their companies and monitor and restrict
             the expenses as well in each card.
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function covalto() {
             <h3 className="text-xl dark:text-white mt-6">Benchmark</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
               Having considered the market option, We identified 20 options in
-              the local and international market with a similar offer. So, we
+              the local and international markets with a similar offer. So, we
               analyzed and compared these financial products.
             </p>
           </div>
@@ -96,9 +96,9 @@ export default function covalto() {
             <h3 className="text-xl dark:text-white mt-6">Interviews</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
               {" "}
-              I conducted a deep dive interviews with 12 participants to
-              understand needs, pain points and opportunity areas around the
-              business card services.
+              I conducted deep-dive interviews with 12 participants to
+              understand the needs, pain points, and opportunity areas around
+              the business card services.
             </p>
           </div>
         </div>
@@ -109,10 +109,10 @@ export default function covalto() {
           User Personas & Journeymap
         </h2>
         <p className="text-xl mt-4 dark:text-iron-300">
-          After gleaning valuable insights from the 'understand' phase, We'd
-          formed three personas – heavily influenced from the flexible
-          questionnaire analysis. These were created in order to help craft a
-          better experience later down the line when ideating.
+          After gleaning valuable insights from the 'understand' phase, We
+          formed three personas – heavily influenced by the flexible
+          questionnaire analysis. These were created to help craft a better
+          experience later down the line when ideating.
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow transition-all">
@@ -121,7 +121,7 @@ export default function covalto() {
               src="/assets/covalto/user1.png"
             />
             <p className="text-sm dark:text-iron-300 mt-8">
-              Sofia is in charge of managing the company's cards and expenses,
+              Sofia is in charge of managing the company's cards and expenses
               and is the one who normally has problems limiting employee
               spending and justifying all company expenses.
             </p>
@@ -171,7 +171,7 @@ export default function covalto() {
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
-            <span className="text-sun"> • 58% copmanies</span> use platforms
+            <span className="text-sun"> • 58% of copmanies</span> use platforms
             that don't have card spending restriction options
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
@@ -197,9 +197,9 @@ export default function covalto() {
           Definition
         </h2>
         <p className="text-xl mt-4 dark:text-iron-300 ">
-          Working closely with Product VP, we defined per user type the
-          feautures that the app must have to archive the businees goals and
-          solve the user needs improving his experience usisng business cards.*
+          Working closely with the Product VP, we defined per user type the
+          features that the app must have to achieve the business goals and
+          solve the user's needs improving his experience using business cards.
         </p>
         <img
           className="rounded-2xl  object-cover mt-10 "
@@ -215,11 +215,11 @@ export default function covalto() {
         <h2 className="text-4xl font-bold dark:text-white text-black">
           Ideation & Prototyping
         </h2>
-        <p className="text-xl mt-4 dark:text-iron-300 ">
+        {/* <p className="text-xl mt-4 dark:text-iron-300 ">
           Working closely with Product VP, we defined per user type the
           feautures that the app must have to archive the businees goals and
           solve the user needs improving his experience usisng business cards.*
-        </p>
+        </p> */}
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
             <img
@@ -229,7 +229,7 @@ export default function covalto() {
             <h3 className="text-white text-xl mt-6">Site map</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
               To ensure that content is found in the places where users expect
-              to find it, I conducted a ideation session with some users.
+              to find it, I conducted an ideation session with some users.
             </p>
           </div>
 
@@ -241,7 +241,7 @@ export default function covalto() {
             <h3 className="text-white text-xl mt-6">Wireframing</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
               {" "}
-              With the site map defined, I moved forward to design low fidelity
+              With the site map defined, I moved forward to design low-fidelity
               wireframes.
             </p>
           </div>
@@ -250,19 +250,19 @@ export default function covalto() {
               className="rounded-2xl h-[200px] object-cover w-full"
               src="/assets/covalto/img5.png"
             />
-            <h3 className="text-white text-xl mt-6">Blue print</h3>
+            <h3 className="text-white text-xl mt-6">Blueprint</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
               We identified some issues related with the company documents
-              verification, so I worked on a service blue print to improve the
+              verification, so I worked on a service blueprint to improve the
               workflow.
             </p>
           </div>
         </div>
         <h3 className="text-white text-xl mt-20">High fidelity wireframes</h3>
         <p className="text-xl dark:text-iron-300 mt-2">
-          After reviewed the mid-fidelity wireframes with product and
-          development team, I continued with high fidelity wireframes to IOS and
-          Android.
+          After reviewing the mid-fidelity wireframes with the product and
+          development team, I continued with high-fidelity wireframes for IOS
+          and Android.
         </p>
         <img className=" object-cover w-full" src="/assets/covalto/img7.png" />
       </div>

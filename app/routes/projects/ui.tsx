@@ -51,21 +51,21 @@ export default function ui() {
             decisions and support them.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            In this course you will learn theoretically and practically from how
-            to choose your color palette and typography, learn about web
-            elements and their use cases, current design trends, to create a
-            prototype, and organize and apply usability tests to your design.
+            In this course, you will learn theoretically and practically how to
+            choose your color palette and typography, learn about web elements
+            and their use cases, and current design trends, create a prototype,
+            and organize and apply usability tests to your design.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             <span className="text-lila">
-              The landing page aims to be clear through the copy, structure and
-              visual content,{" "}
+              The landing page aims to be clear through the copy, structure, and
+              visual content,
             </span>{" "}
-            showing in a direct and simple way the information that users want
-            to know about the course through adequate storytelling. While the
-            interface seeks{" "}
+            showing directly and simply the information that users want to know
+            about the course through adequate storytelling. While the interface
+            seeks
             <span className="text-lila">
-              be attractive, efficient, consistent and interactive.
+              to be attractive, efficient, consistent, and interactive.
             </span>
           </p>
         </div>

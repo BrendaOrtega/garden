@@ -59,22 +59,22 @@ export default function fixtergeek() {
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             <span className="text-mora">
               How to create a useful platform where users can learn easily and
-              enjoy the learning experience? What are the user needs?{" "}
+              enjoy the learning experience? What are the user needs? What is
+              the learning workflow that we can follow?{" "}
             </span>{" "}
-            What is the learning workflow that we can follow?
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            With this in mind, I identified two types of user: collaborator and
-            student. As a collaborator, our user need a way to view key data,
-            manage courses (create them, upload content, and edit them), sent
-            the newsletter, and assign courses to enrolled students. And our
-            student user need to be able to see her courses, access each other's
-            material and edit her profile.
+            With this in mind, I identified two types of users: collaborators
+            and students. As a collaborator, our users need a way to view key
+            data, manage courses (create them, upload content, and edit them),
+            send the newsletter, and assign courses to enrolled students. Our
+            student users need to be able to see their courses, access each
+            other's material, and edit his profile.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            After define the users, user stories, user flows, the site map and
-            had had a sketching sessions, I moved forward to work on the hight
-            fidelity wireframes, including happy and unhappy paths.
+            After defining the users, user stories, user flows, and the site map
+            and having had sketching sessions, I moved forward to work on
+            high-fidelity wireframes, including happy and unhappy paths.
           </p>
         </div>
       </div>

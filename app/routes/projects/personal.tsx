@@ -58,20 +58,21 @@ export default function personal() {
           <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
             As its name indicates, it's a special section within the application
             that only premium Santander customers have access to, through which
-            they receive{" "}
+            they receive
             <span className="text-blood">
               personalized attention to contract financial services in a 100%
               digital way.
             </span>{" "}
-            While on the internal side, it's an administrative platform that
-            allows to track all contracts for financial products, keep a record
-            of each movement and directly assign the client to an agent who will
+            On the internal side, it's an administrative platform that allows
+            one to track all contracts for financial products, keep a record of
+            each movement, and directly assign the client to an agent who will
             provide permanent support.
           </p>
           <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
-            I worked on this project from start to finish, from the initial kick
-            off, research, definition and design to platform testing. However,
-            for privacy reasons, I can't show more information about it.{" "}
+            I worked on this project from start to finish, from the initial
+            kick-off, research, definition, and design to platform testing.
+            However, for privacy reasons, I can't show more information about
+            it.{" "}
           </p>
         </div>
       </div>

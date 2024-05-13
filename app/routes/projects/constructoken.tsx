@@ -50,24 +50,24 @@ export default function constructoken() {
             to{" "}
             <span className="text-greenlight">
               {" "}
-              facilitate to self-producers of housing the construction or
+              facilitate self-producers of housing the construction or
               remodeling of their housing
             </span>{" "}
-            from any place of Mexico through financial products and prepayment
+            from any place in Mexico through financial products and prepayment
             of materials. And looking for a complete experience, they offer
             extra services to facilitate the construction of users' homes like
-            automatic quoations based on the place where user lives (considering
-            local prices), default House plans, and attractive rewards when the
-            user meet his goal.
+            automatic quotations based on the place where the user lives
+            (considering local prices), default House plans, and attractive
+            rewards when the user meets his goal.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             The self-producers of housing carry out each part of the
             construction independently, from making the plan of the
-            construction, searching for materials, even supervising the work. To
-            help self-producers with this complicated process, it's necessary to
-            know their needs in each part of the process and identify at which
-            points Construtoken can help them in a way that is useful to users
-            and gives them the value necessary to use it.
+            construction, searching for materials, and even supervising the
+            work. To help self-producers with this complicated process, it's
+            necessary to know their needs in each part of the process and
+            identify at which points Construtoken can help them in a way that is
+            useful to users and gives them the value necessary to use it.
           </p>
         </div>
       </div>
@@ -77,10 +77,9 @@ export default function constructoken() {
           Understanding the process
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          In order to get to grips with the problem areas around the
-          autoproduction housing process, I'd carried out three different
-          exercises to collect as much information as possible around the
-          challenge. These were:
+          To get to grips with the problem areas around the auto production
+          housing process, I carried out three different exercises to collect as
+          much information as possible about the challenge. These were:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
@@ -91,7 +90,7 @@ export default function constructoken() {
             <p className="text-xl dark:text-iron-300 mt-6">
               {" "}
               Desktop research on similar products or services on the market,
-              where we find 3 direct competitors: Construrama, Keobra and
+              where we find 3 direct competitors: Construrama, Keobra, and
               Criptoladrillo.
             </p>
           </div>
@@ -102,8 +101,8 @@ export default function constructoken() {
             />
             <p className="text-xl dark:text-iron-300 mt-6">
               {" "}
-              Application of quantitative and qualitative surveys in 4 diferent
-              city in México to idenfity goals and needs.
+              Application of quantitative and qualitative surveys in 4 different
+              cities in México to identify goals and needs.
             </p>
           </div>
           <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
@@ -113,7 +112,7 @@ export default function constructoken() {
             />
             <p className="text-xl dark:text-iron-300 mt-6">
               {" "}
-              Contextual observation, identifing the pains and needs in each
+              Contextual observation, identifying the pains and needs in each
               step of the autoconstruction process.
             </p>
           </div>
@@ -125,11 +124,11 @@ export default function constructoken() {
           Generating Personas
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          After gleaning valuable insights from the 'understand' phase, plot an
-          affinity diagram and an empathy map, I'd formed two personas – heavily
-          influenced from the flexible questionnaire analysis. These were
-          created in order to help craft a better experience later down the line
-          when ideating.
+          After gleaning valuable insights from the 'understand' phase, plotting
+          an affinity diagram and an empathy map, I formed two personas –
+          heavily influenced by the flexible questionnaire analysis. These were
+          created to help craft a better experience later down the line when
+          ideating.
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow">
@@ -139,7 +138,7 @@ export default function constructoken() {
             />
             <p className="text-base dark:text-iron-300 mt-8">
               {" "}
-              Emiliano is a user that wants building his house but he doesn't
+              Emiliano is a user who wants to build his house but he doesn't
               have access to banks financial products.
             </p>
           </div>
@@ -150,8 +149,8 @@ export default function constructoken() {
             />
             <p className="text-base dark:text-iron-300 mt-8">
               {" "}
-              Luis is living has been working for a long time to build his house
-              in México, but it's difficult for him to do it from the United
+              Luis has been working for a long time to build his house in
+              México, but it's difficult for him to do it from the United
               States.
             </p>
           </div>
@@ -163,8 +162,8 @@ export default function constructoken() {
           Definition & Ideation
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          After looking at data, analysing user needs, creating personas to
-          match these insights and discussing business requeriments. I moved on
+          After looking at data, analyzing user needs, creating personas to
+          match these insights, and discussing business requirements. I moved on
           to ideating. This was done in three parts:
           <p />
           <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
@@ -176,9 +175,9 @@ export default function constructoken() {
               <h3 className="text-white text-xl mt-6">MoSCoW method</h3>
               <p className="text-xl dark:text-iron-300 mt-6">
                 {" "}
-                After work with the product and development team on a Value
-                proposition canvas and define the user stories, I moved foward
-                to prioritize the features with MoSCoW method.
+                After working with the product and development team on a Value
+                proposition canvas and defining the user stories, I moved
+                forward to prioritize the features with the MoSCoW method.
               </p>
             </div>
             <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
@@ -203,7 +202,7 @@ export default function constructoken() {
               </h3>
               <p className="text-xl dark:text-iron-300 mt-6">
                 {" "}
-                I started with sketching session to define the userflows into
+                I started with a sketching session to define the user flows into
                 the app, including happy paths and unhappy paths.
               </p>
             </div>
@@ -241,7 +240,7 @@ export default function constructoken() {
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
           Test the prototype with users and iterate on the design based on user
-          feedback before taking into development and then start with a beta
+          feedback before taking it into development and then start with a beta
           test with 10 users to continue collecting feedback and iterating the
           design.
         </p>

@@ -57,20 +57,20 @@ export default function lastplay() {
             diferent needs: admin, player and guest.{" "}
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            Based on the busines and User needs, we defined the minium features
-            that they need to have a good experience in the app. As an admin you
-            can create a tournament, add teams, players, published the game
-            schedule and track the score of each match ; as a player, you can
-            register for a team, keep track of your game schedule, and view
-            general tournament information and as a visitor you can be aware of
-            the schedule of your favorite teams.
+            Based on the business and User needs, we defined the minimum
+            features that they need to have a good experience in the app. As an
+            admin you can create a tournament, add teams, and players, publish
+            the game schedule, and track the score of each match; as a player,
+            you can register for a team, keep track of your game schedule, and
+            view general tournament information and as a visitor you can be
+            aware of the schedule of your favorite teams.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            My role in this project was to{" "}
+            My role in this project was
             <span className="text-water">
-              improve the user interface, take the brand guidelines and redefine
-              the user experience through improvements to copy, workflows, and
-              user interface elements
+              to improve the user interface, take the brand guidelines and
+              redefine the user experience through improvements to copy,
+              workflows, and user interface elements
             </span>{" "}
             considering the technical limitations and business requirements.
           </p>
@@ -82,7 +82,7 @@ export default function lastplay() {
           Understanding and definition
         </h2>
         <p className="text-xl dark:text-iron-300 mt-6">
-          The business requeriments and research results have been omitted for
+          The business requirements and research results have been omitted for
           privacy reasons. So, based on the research step results, the first
           design proposal was done in two parts:
         </p>
@@ -115,13 +115,13 @@ export default function lastplay() {
           UI Design
         </h2>
         <p className="text-xl dark:text-iron-300 mt-6">
-          After advancing to medium fidelity wireframes and testing them, a
-          moodboard and style guide were created to get started with high
-          fidelity wireframes.
+          After advancing to medium-fidelity wireframes and testing them, a mood
+          board and style guide were created to get started with high-fidelity
+          wireframes.
         </p>
         <p className="text-xl dark:text-iron-300 mt-6">
           These are the screens designed before the interface updates and the
-          screen after new brand guidelines were applied. The improvement
+          screens after new brand guidelines were applied. The improvement
           included copy changes, redefinition of workflows, new alternative
           flows that considered errors and empty states within the application,
           and a large change related to interface elements and UI patterns.
@@ -140,9 +140,10 @@ export default function lastplay() {
         <p className="text-xl dark:text-iron-300 mt-6">
           The next steps will be to measure the use of the application and
           organize surveys and user tests to verify the effectiveness,
-          efficiency, usability and user satisfaction when using the application
-          and continue iterating based on the results. Ay the same time, start
-          to work on the admin panel that will be manage by internal staff.
+          efficiency, usability, and user satisfaction when using the
+          application and continue iterating based on the results. At the same
+          time, start to work on the admin panel that will be managed by
+          internal staff.
         </p>
         <img className="w-20 mt-6" src="/assets/lastplay/fur.png" />
       </div>

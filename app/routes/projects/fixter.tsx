@@ -56,20 +56,20 @@ export default function fixter() {
             mobile apps development and programming language training courses.{" "}
           </p>
           <p className="text-xl md:text-2xl mt-6 dark:text-iron-300">
-            Recently, Fixter.org's decided improve the experience in the website
-            based on the analytics data, update the brand guidelines, and also
-            they are looking for add new features like to offer an online
+            Recently, Fixter.org's decided to improve the experience in the
+            website based on the analytics data, update the brand guidelines,
+            and also they decided add new features like offering an online
             quotation for his client's projects and they seek to show the list
-            of Software As A Service created by them, so, the old website did't
-            have the arquitecture to display the new information it was
-            necessary design a new website without change the tone and voice
+            of Software As A Service created by them, so, the old website didn't
+            have the architecture to display the new information it was
+            necessary to design a new website without change the tone and voice
             brand.
           </p>
           <p className="text-xl md:text-2xl mt-6 dark:text-iron-300">
             My challenge in this project was{" "}
             <span className="text-brand-500">
-              redesign the website inferface looking for modern, simple, visual
-              and interactive look and feel.
+              to redesign the website interface looking for a modern, simple,
+              visual, and interactive look and feel.
             </span>
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function fixter() {
         <p className="text-xl dark:text-iron-300 mt-6">
           These are the old website screens designed before the interface
           updates and the screens after new brand guidelines were applied. The
-          improvement included changes on the interface elements and UI
+          improvement included changes in the interface elements and UI
           patterns.
         </p>
         <div className="mt-10">
@@ -98,8 +98,8 @@ export default function fixter() {
         <p className="text-xl dark:text-iron-300 mt-6">
           The next steps are to organize user tests periodically as well as to
           track the website's analytics (users, views, conversions, session
-          time, etc) to identify points of improvement and improve the
-          ussability and efficiency in the website.
+          time, etc) to identify points of improvement and improve the usability
+          and efficiency in the website.
         </p>
         <img className="w-20 mt-6" src="/assets/lastplay/fur.png" />
       </div>

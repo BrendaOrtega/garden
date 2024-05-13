@@ -50,19 +50,19 @@ export default function flink() {
               {" "}
               democratize stock investments.{" "}
             </span>
-            With Flink users can invest in New York Stock Exchange (NYSE) and
-            the National Association of Securities Dealers Automated Quotations
-            (Nasdaq) shares from 30 pesos mexicanos to later sell their stocks
-            at higher prices and make profits or dividends, they can also invest
-            money in low-risk products and obtain daily returns with the savings
-            account.
+            With Flink users can invest in the New York Stock Exchange (NYSE)
+            and the National Association of Securities Dealers Automated
+            Quotations (Nasdaq) shares from 30 pesos mexicanos to later sell
+            their stocks at higher prices and make profits or dividends, they
+            can also invest money in low-risk products and obtain daily returns
+            with the savings account.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            When I joint the company, the app was in the oficial stores, but we
-            were facing 3 challenges:{" "}
+            When I joined the company, the app was in the official store but we
+            were facing 3 challenges: t{" "}
             <span className="text-ironblue">
-              the volumen of daily transactions should increase, the users had
-              not the best experience in the app and they had problems to take
+              volume of daily transactions should increase, the users didn’t
+              have the best experience in the app and they had problems making
               investment decisions,
             </span>{" "}
             and a high percentage of users leave the onboarding process before
@@ -71,7 +71,7 @@ export default function flink() {
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             In this case study, I'm going to focus on the first and second
             challenges to leave aside the third, since for privacy reasons I
-            can't reveal more information about it.{" "}
+            can't reveal more information about it.
           </p>
         </div>
       </div>
@@ -81,8 +81,8 @@ export default function flink() {
           Personas
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          We had 4 user personas defined, but for focused on our 2 challenges we
-          focused on two. Our user persona represent the 2 types of users to
+          We had 4 user personas defined, but for focused on the 2 challenges we
+          focused on two. Our user persona represents the 2 types of users to
           whom the application is oriented, users that don't have extensive
           knowledge in investments but are risk takers.
         </p>
@@ -117,18 +117,18 @@ export default function flink() {
           Understanding the problem - User needs
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          Flink's mission is to become the easy and favorite investments
-          application, it is important for customers to easly find stocks and
-          understand the information related with to make good investment
-          decisions. As the catalog and the information continue increasing , it
+          Flink's mission is to become the easiest and favorite investment
+          application, it is important for customers to easily find stocks and
+          understand the information related with to making good investment
+          decisions. As the catalog and the information continue increasing, it
           was becoming evident that so much information overwhelms users. So,
           the mission of bringing users closer to investments is not being
           fulfilled.
         </p>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          Based on this assumption, we conducted deep dive interviews with 14
-          participants to understand pain points, opportunity areas and define
-          what actions take.
+          Based on this assumption, we conducted deep-dive interviews with 14
+          participants to understand pain points and opportunity areas and
+          define what actions to take.
         </p>
         <div className="bg-[#0E0E10] px-[10%] mt-20">
           <img className="" src="/assets/flink/img1.png" />
@@ -187,7 +187,7 @@ export default function flink() {
           <img className="w-[70%]" src="/assets/flink/img2.png" />
         </div>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          After analyzed the user and business needs, our technical constrains
+          After analyzing the user and business needs, our technical constraints
           and the user experience that we want to offer, the agreed work was:
         </p>
         <div className="flex justify-around mt-20 flex-wrap md:flex-nowrap">
@@ -201,8 +201,8 @@ export default function flink() {
           Ideation & Prototyping
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          Now, having agreed on the action plan, I moved on to ideating. This
-          was done in three parts:
+          Having agreed on the action plan, I moved on to ideating. This was
+          done in three parts:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
@@ -212,8 +212,9 @@ export default function flink() {
             />
             <h3 className="text-white text-xl mt-6">A sketching session</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
-              to explore diferent design proposals and adeeper analysis of some
-              ideas to see which one to take forward into further exploration.
+              to explore different design proposals and a deeper analysis of
+              some ideas to see which one to take forward into further
+              exploration.
             </p>
           </div>
 
@@ -225,7 +226,7 @@ export default function flink() {
             <h3 className="text-white text-xl mt-6">Prototyping and testing</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
               {" "}
-              We worked on low-fidelity wireframes based on the most rated idea,
+              We worked on low-fidelity wireframes based on the most-rated idea,
               then we did usability tests with 6 users to test our hypothesis
               and our design.
             </p>
@@ -240,7 +241,7 @@ export default function flink() {
             </h3>
             <p className="text-xl dark:text-iron-300 mt-2">
               {" "}
-              After analyzed the results, we move forward to high fidelity
+              After analyzing the results, we move forward to high-fidelity
               wireframes using our Design System: Enchiridion.
             </p>
           </div>
@@ -250,10 +251,10 @@ export default function flink() {
         </h2>
         <p className="  dark:text-iron-300 text-xl mt-10">
           {" "}
-          The first proposal to help users to make better investment decisions
-          was a small but complex section in the stock detail view, where we
-          show a suggested action to take, based on expert opinion accompanied
-          by analysis and related graphs It was a win win because, at the same
+          The first proposal to help users make better investment decisions was
+          a small but complex section in the stock detail view, where we show a
+          suggested action to take, based on expert opinion accompanied by
+          analysis and related graphs It was a win-win because, at the same
           time, this proposal helps to increase the daily transactions.
         </p>
         <div className="flex justify-center mt-20">
@@ -261,7 +262,7 @@ export default function flink() {
         </div>
         <p className="  dark:text-iron-300 text-xl mt-20">
           {" "}
-          The second proposal focused on increase the buying and selling of
+          The second proposal focused on increasing the buying and selling of
           shares without leaving aside the user experience, is about offering
           the option of creating combos of shares, which can be shared by expert
           users and purchased by others.
@@ -276,10 +277,10 @@ export default function flink() {
           Measuring Success & Next steps
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          The next step is track the average daily purchases and sales, and the
-          average per purchase-sale ticket, in addition to applying surveys to
-          users to find out their experience on the "Analysts recommend" section
-          and its usefulness.
+          The next step is to track the average daily purchases and sales, and
+          the average per purchase-sale ticket, in addition to applying surveys
+          to users to find out their experience on the "Analysts recommend"
+          section and its usefulness.
         </p>
         <img className="w-20 mt-10" src="/assets/flink/img9.png" />
       </div>

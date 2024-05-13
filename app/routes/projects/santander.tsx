@@ -47,24 +47,24 @@ export default function santander() {
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             Santander App is the application of Santander Bank, which offers
-            banking services such as: transfers, investments, card payments,
+            banking services such as transfers, investments, card payments,
             payment of services, card management, etc.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            <span className="text-salmon"> I worked </span>in a general way on
-            different features and flows within the application. But I directly
-            had responsibility for 3 specific features:{" "}
+            I worked in a general way on different features and flows within the
+            application. However, I directly had responsibility for 3 specific
+            features:
             <span className="text-salmon">
-              Card payments, Services payments and Investments.
+              Card payments, Service payments and Investments.
             </span>
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             Based on the guidelines and the previously defined design system, I
             worked on the credit card payment flows: own and third parties,
             registration, cancellation; services payments like registration of
-            services (electricity, internet and telephone) and domiciliation of
-            services; and the investment flow where users can choose type of
-            investment they want to do, term, amount, etc. Likewise, I worked on{" "}
+            services (electricity, internet, and telephone) and domiciliation of
+            services; and the investment flow where users can choose the type of
+            investment they want to do, term, amount, etc. Likewise, I worked on
             <span className="text-salmon">
               testing the components of the design system (in code).
             </span>
