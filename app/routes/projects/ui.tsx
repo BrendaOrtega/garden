@@ -24,7 +24,7 @@ export default function ui() {
           >
             <img
               className="w-[220px] hover:scale-90 transition-all"
-              src="/assets/ui/logo.png"
+              src="/assets/ui/Logo.png"
             />
           </a>
           <div className="flex flex-wrap gap-4 mt-6">
@@ -45,10 +45,10 @@ export default function ui() {
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
             This is the website of my own{" "}
-            <span className="text-lila"> Interface Design course</span>, part of
-            the fixtergeek.com offer. This course is for designers or developers
-            who want to master the basics of UI design and make better design
-            decisions and support them.
+            <span className="text-[#B37CF2]"> Interface Design course</span>,
+            part of the fixtergeek.com offer. This course is for designers or
+            developers who want to master the basics of UI design and make
+            better design decisions and support them.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             In this course, you will learn theoretically and practically how to
@@ -57,14 +57,14 @@ export default function ui() {
             and organize and apply usability tests to your design.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            <span className="text-lila">
+            <span className="text-[#B37CF2]">
               The landing page aims to be clear through the copy, structure, and
               visual content,
             </span>{" "}
             showing directly and simply the information that users want to know
             about the course through adequate storytelling. While the interface
             seeks
-            <span className="text-lila">
+            <span className="text-[#B37CF2]">
               to be attractive, efficient, consistent, and interactive.
             </span>
           </p>

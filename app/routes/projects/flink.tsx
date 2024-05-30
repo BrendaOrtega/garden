@@ -52,26 +52,26 @@ export default function flink() {
             </span>
             With Flink users can invest in the New York Stock Exchange (NYSE)
             and the National Association of Securities Dealers Automated
-            Quotations (Nasdaq) shares from 30 pesos mexicanos to later sell
-            their stocks at higher prices and make profits or dividends, they
+            Quotations (Nasdaq) shares with as little as 30 MXP to later sell
+            their stocks at higher prices and make profits or dividends. They
             can also invest money in low-risk products and obtain daily returns
             with the savings account.
           </p>
+
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            When I joined the company, the app was in the official store but we
-            were facing 3 challenges: t{" "}
+            When I joined the company, the app was in the official store
+            but was experiencing three challenges.{" "}
             <span className="text-ironblue">
-              volume of daily transactions should increase, the users didn’t
-              have the best experience in the app and they had problems making
-              investment decisions,
+              The volume of daily transactions wasn´t increasing enough, the
+              users didn’t have the best experience with the app, so they found
+              it difficult to make investment decisions,
             </span>{" "}
-            and a high percentage of users leave the onboarding process before
-            finish it.
+            and a high percentage of users left before completing the onboarding
+            process.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            In this case study, I'm going to focus on the first and second
-            challenges to leave aside the third, since for privacy reasons I
-            can't reveal more information about it.
+            In this case study, I will focus on the first and second challenges
+            but will not address the third for privacy reasons.
           </p>
         </div>
       </div>
@@ -81,10 +81,9 @@ export default function flink() {
           Personas
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          We had 4 user personas defined, but for focused on the 2 challenges we
-          focused on two. Our user persona represents the 2 types of users to
-          whom the application is oriented, users that don't have extensive
-          knowledge in investments but are risk takers.
+          We had 4 user personas defined, but to address the two challenges, we
+          focused on two. Our user persona represents the 2 types of users that
+          don't have extensive knowledge in investments but are risk takers.
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow">
@@ -94,8 +93,8 @@ export default function flink() {
             />
             <p className="text-base dark:text-iron-300 mt-8">
               {" "}
-              Andrea is our younger user, she is looking for new ways to
-              increase his heritage but she is not sure how she can do it.
+              Andrea is our younger user; she is looking for new ways to
+              increase his legacy but she is not sure how to do it.
             </p>
           </div>
           <div className="w-full md:w-[380px] grow">
@@ -105,8 +104,8 @@ export default function flink() {
             />
             <p className="text-base dark:text-iron-300 mt-8">
               {" "}
-              Bruno is our main user, he is young but his ambitions lead him to
-              make risky decisions to get what he wants.
+              Bruno is our main user; he is young but his ambitious nature leads
+              him to make rash decisions to get what he wants.
             </p>
           </div>
         </div>
@@ -117,17 +116,17 @@ export default function flink() {
           Understanding the problem - User needs
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          Flink's mission is to become the easiest and favorite investment
-          application, it is important for customers to easily find stocks and
-          understand the information related with to making good investment
-          decisions. As the catalog and the information continue increasing, it
-          was becoming evident that so much information overwhelms users. So,
+          Flink's mission is to become the favorite investment application and
+          the easiest to use. it is important for customers to easily find
+          stocks and understand the information needed to make good investment
+          decisions. As the catalog and the information continued increasing, it
+          became evident that the volume of information overwhelmed users. So,
           the mission of bringing users closer to investments is not being
           fulfilled.
         </p>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
           Based on this assumption, we conducted deep-dive interviews with 14
-          participants to understand pain points and opportunity areas and
+          participants to understand pain points and areas of opportunity and
           define what actions to take.
         </p>
         <div className="bg-[#0E0E10] px-[10%] mt-20">
@@ -145,19 +144,19 @@ export default function flink() {
         <ul>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
-            <span className="text-ironblue"> • 41% of users</span> use his
+            <span className="text-ironblue"> • 41% of users</span> use their
             application daily
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
             <span className="text-ironblue"> • </span>Just under{" "}
-            <span className="text-ironblue"> 23% </span>invest in stocks 1 time
+            <span className="text-ironblue"> 23% </span> invest in stocks once
             per week
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
-            <span className="text-ironblue"> •</span> 50% of users consider that
-            need more data or{" "}
+            <span className="text-ironblue"> •</span> 50% of users feel they
+            more data or help to make better decisions
             <span className="text-ironblue">
               {" "}
               help to take better decisions
@@ -165,8 +164,8 @@ export default function flink() {
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
-            <span className="text-ironblue"> • 28% of users </span> consider
-            that need financial education
+            <span className="text-ironblue"> • 28% of users </span> want
+            financial education
           </li>
         </ul>
         <div className="flex justify-around mt-20 flex-wrap md:flex-nowrap">
@@ -180,15 +179,16 @@ export default function flink() {
           Plan of Action
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          With all of the above in mind, design and product paired up to discuss
-          ideas and proposals to solve our 2 main challenges:
+          With all of the above in mind, the design and product teams paired up
+          to discuss ideas and proposals to solve our challenges:
         </p>
         <div className="flex  justify-center">
           <img className="w-[70%]" src="/assets/flink/img2.png" />
         </div>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
           After analyzing the user and business needs, our technical constraints
-          and the user experience that we want to offer, the agreed work was:
+          and the user experience that we want to offer, we agreed on the
+          following steps:
         </p>
         <div className="flex justify-around mt-20 flex-wrap md:flex-nowrap">
           <img className="w-[480px]" src="/assets/flink/img3.png" />
@@ -201,8 +201,7 @@ export default function flink() {
           Ideation & Prototyping
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          Having agreed on the action plan, I moved on to ideating. This was
-          done in three parts:
+          Ideating was done in three parts:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
@@ -212,9 +211,9 @@ export default function flink() {
             />
             <h3 className="text-white text-xl mt-6">A sketching session</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
-              to explore different design proposals and a deeper analysis of
-              some ideas to see which one to take forward into further
-              exploration.
+              We used this session to explore different design proposals and
+              conduct a deeper analysis of the best ideas to choose one to take
+              forward into further exploration.
             </p>
           </div>
 
@@ -226,9 +225,9 @@ export default function flink() {
             <h3 className="text-white text-xl mt-6">Prototyping and testing</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
               {" "}
-              We worked on low-fidelity wireframes based on the most-rated idea,
-              then we did usability tests with 6 users to test our hypothesis
-              and our design.
+              We worked on low-fidelity wireframes based on the most
+              highly-rated idea; then, we did usability tests with 6 users to
+              test our hypothesis and our design.
             </p>
           </div>
           <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
@@ -241,7 +240,7 @@ export default function flink() {
             </h3>
             <p className="text-xl dark:text-iron-300 mt-2">
               {" "}
-              After analyzing the results, we move forward to high-fidelity
+              After analyzing the results, we moved on to high-fidelity
               wireframes using our Design System: Enchiridion.
             </p>
           </div>
@@ -252,10 +251,10 @@ export default function flink() {
         <p className="  dark:text-iron-300 text-xl mt-10">
           {" "}
           The first proposal to help users make better investment decisions was
-          a small but complex section in the stock detail view, where we show a
-          suggested action to take, based on expert opinion accompanied by
-          analysis and related graphs It was a win-win because, at the same
-          time, this proposal helps to increase the daily transactions.
+          a small but complex section in the stock detail view. In this section
+          we suggested actions to take, based on expert opinion accompanied by
+          analysis and related graphs. This strategy helped users and, at the
+          same time, it helps increase the number of daily transactions.
         </p>
         <div className="flex justify-center mt-20">
           <img className="w-[80%]" src="/assets/flink/img8.png" />
@@ -263,9 +262,9 @@ export default function flink() {
         <p className="  dark:text-iron-300 text-xl mt-20">
           {" "}
           The second proposal focused on increasing the buying and selling of
-          shares without leaving aside the user experience, is about offering
-          the option of creating combos of shares, which can be shared by expert
-          users and purchased by others.
+          shares without impacking the user experience. This proposal offers
+          users the option to create combos of shares, which can be shared by
+          expert users and purchased by others.
         </p>
         <div className="flex justify-center mt-20">
           <img className="w-[80%]" src="/assets/flink/img10.png" />
@@ -277,10 +276,10 @@ export default function flink() {
           Measuring Success & Next steps
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          The next step is to track the average daily purchases and sales, and
-          the average per purchase-sale ticket, in addition to applying surveys
-          to users to find out their experience on the "Analysts recommend"
-          section and its usefulness.
+          The next steps are to track the average daily purchases and sales and
+          the average per purchase-sale ticket. In addition to survey users to
+          find out more about their experience on the "Analysts recommend"
+          section and its usefulness in their investment decision-making.
         </p>
         <img className="w-20 mt-10" src="/assets/flink/img9.png" />
       </div>
