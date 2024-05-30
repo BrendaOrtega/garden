@@ -24,7 +24,7 @@ export default function flink() {
           >
             <img
               className="w-[120px] md:w-[160px] hover:scale-90 transition-all"
-              src="/assets/flink/flink.png"
+              src="/assets/flink/Flink.png"
             />
           </a>
           <div className="flex flex-wrap gap-4 mt-6">
