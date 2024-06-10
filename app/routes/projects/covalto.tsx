@@ -17,7 +17,13 @@ export default function covalto() {
         ></Parallax>
       </div>
       <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-bird"> Projects </span> ⇢{" "}
+              <span className="text-white"> Covalto</span>
+            </p>
+          </Link>
           <a
             href="https://covalto.com/"
             target="_blank"
@@ -45,24 +51,24 @@ export default function covalto() {
         </div>
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
-            Covalto is a Bank that was born from de Banco Finterra acquisition
-            by Credijusto. This new bank{" "}
-            <span className="text-bird">offers financial products </span> like
-            personal and enterprise loans, debit accounts, factoring and leasing
-            services, and investment instruments. But, one of the main goals in
-            2022 was to launch a business credit card that was the best solution
-            to manage business expenses.
+            Covalto is a Bank that was born from the Credijusto acquisition of
+            Banco Finterra. This new bank
+            <span className="text-bird"> offers financial products </span> such
+            as personal and corporate loans, debit accounts, factoring and
+            leasing services, and investment instruments. But, one of its main
+            goals in 2022 was to launch a corporate credit card that would
+            provide the best option to manage business expenses.
           </p>
           <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
-            The challenge was{" "}
+            The challenge was to
             <span className="text-bird">
               {" "}
               design a mobile application or web app{" "}
             </span>{" "}
-            that allows companies to request an expense card account in a 100%
-            digital way, where the users can request and assign expense cards
-            for the collaborators of their companies and monitor and restrict
-            the expenses as well in each card.
+            that allowed companies to request a corporate expense account card
+            that was 100% digital, where the users can request and assign
+            expense cards for their employees, but be able to monitor and
+            restrict approved expenses on each card.
           </p>
         </div>
       </div>
@@ -72,8 +78,8 @@ export default function covalto() {
           Understanding the problem - User needs
         </h2>
         <p className="text-xl mt-4 dark:text-iron-300">
-          To understand the user needs around the business credit card, I
-          started with the research that was done in two parts:
+          To understand the user needs connected with the corporate credit card,
+          I started with research that was completed in two parts:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow hover:-translate-y-4 transition-all">
@@ -83,8 +89,8 @@ export default function covalto() {
             />
             <h3 className="text-xl dark:text-white mt-6">Benchmark</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
-              Having considered the market option, We identified 20 options in
-              the local and international markets with a similar offer. So, we
+              Having defined the market option, we identified 20 options in
+              local and international markets with a similar offer. Then, we
               analyzed and compared these financial products.
             </p>
           </div>
@@ -97,8 +103,8 @@ export default function covalto() {
             <p className="text-xl dark:text-iron-300 mt-2">
               {" "}
               I conducted deep-dive interviews with 12 participants to
-              understand the needs, pain points, and opportunity areas around
-              the business card services.
+              understand the needs, pain points, and areas of opportunity around
+              corporate credit card services.
             </p>
           </div>
         </div>
@@ -109,40 +115,38 @@ export default function covalto() {
           User Personas & Journeymap
         </h2>
         <p className="text-xl mt-4 dark:text-iron-300">
-          After gleaning valuable insights from the 'understand' phase, We
-          formed three personas – heavily influenced by the flexible
-          questionnaire analysis. These were created to help craft a better
-          experience later down the line when ideating.
+          After gleaning valuable insights from the 'understand' phase, we
+          created three user personas.
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow transition-all">
             <img
-              className="rounded-2xl  w-full object-cover rotate-3 hover:-rotate-3"
+              className="rounded-2xl  w-full object-cover rotate-3 hover:-rotate-3 transition-all"
               src="/assets/covalto/user1.png"
             />
             <p className="text-sm dark:text-iron-300 mt-8">
-              Sofia is in charge of managing the company's cards and expenses
-              and is the one who normally has problems limiting employee
-              spending and justifying all company expenses.
+              Sofia manages the company's cards and expenses and is the one who
+              is responsible for limiting employee spending and justifying all
+              company expenses.
             </p>
           </div>
           <div className="w-full md:w-[380px] grow transition-all">
             <img
-              className="rounded-2xl  object-cover w-full -rotate-3 hover:rotate-3"
+              className="rounded-2xl  object-cover w-full -rotate-3 hover:rotate-3 transition-all"
               src="/assets/covalto/user2.png"
             />
 
             <p className="text-sm dark:text-iron-300 mt-8 ">
               {" "}
-              Juan Carlos is the one who uses the business card for his daily
-              expenses as a sales agent, but he has difficulties managing his
-              expenses and being able to pay with it.
+              Juan Carlos uses the business card for his daily expenses as a
+              sales agent, but he has difficulties managing his expenses and
+              being able to pay with it.
             </p>
           </div>
         </div>
         <p className="text-xl mt-20 dark:text-iron-300 ">
           A customer journey map was created to map the process step by step,
-          from the need for the business credit card to its use or cancellation.{" "}
+          from the need for the business credit card to its use or cancellation.
         </p>
         <div className="flex mt-20 gap-10">
           {/* <img
@@ -167,18 +171,18 @@ export default function covalto() {
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
             <span className="text-sun"> • 66% of users (companies)</span> use
-            business cards or pantry cards
+            business cards or prepaid employee living expense cards
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
-            <span className="text-sun"> • 58% of copmanies</span> use platforms
+            <span className="text-sun"> • 58% of companies</span> use platforms
             that don't have card spending restriction options
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
             <span className="text-sun"> • </span>
-            Employees who use pantry cards don't have an application to manage
-            their expenses
+            Employees who use prepaid employee cards don't have an application
+            to manage their expenses
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
@@ -197,9 +201,10 @@ export default function covalto() {
           Definition
         </h2>
         <p className="text-xl mt-4 dark:text-iron-300 ">
-          Working closely with the Product VP, we defined per user type the
-          features that the app must have to achieve the business goals and
-          solve the user's needs improving his experience using business cards.
+          Working closely with the Product VP, we worked with each user type to
+          define the features that the app must have to meet the business goals
+          and the user's needs; therefore, improving their experience using
+          business cards.*
         </p>
         <img
           className="rounded-2xl  object-cover mt-10 "
@@ -252,8 +257,8 @@ export default function covalto() {
             />
             <h3 className="text-white text-xl mt-6">Blueprint</h3>
             <p className="text-xl dark:text-iron-300 mt-2">
-              We identified some issues related with the company documents
-              verification, so I worked on a service blueprint to improve the
+              We identified some issues with the company document verification
+              process, so I worked on a service blueprint to improve the
               workflow.
             </p>
           </div>
@@ -272,9 +277,9 @@ export default function covalto() {
           Next steps
         </h2>
         <p className="text-xl dark:text-iron-300 mt-2">
-          Continuing to iterate the app, a beta launch was scheduled in February
-          2020 to test the app (experientially and functionally) with real
-          users. Iterations continued after this testing cycle.
+          Continuing to iterate the app, a beta launch to test the app
+          (experientially and functionally) with real users was scheduled for
+          February 2022. Iterations continued after this testing cycle.
         </p>
         <img className="w-20 mt-10" src="/assets/covalto/fur.png" />
       </div>

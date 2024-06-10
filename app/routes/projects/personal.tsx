@@ -17,7 +17,13 @@ export default function personal() {
       </div>
 
       <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-blood"> Projects </span> ⇢{" "}
+              <span className="text-white"> Santander personal</span>
+            </p>
+          </Link>
           <a
             href="https://www.santander.com.mx/"
             target="_blank"
@@ -47,32 +53,33 @@ export default function personal() {
           </p>
         </div>
         <div className="w-full md:w-[70%]">
-          <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
+          <p className="text-xl md:text-2xl mt-0 dark:text-iron-300">
             Santander Personal is an{" "}
             <span className="text-blood">
               omnichannel platform for the bank's high-income clients.
             </span>{" "}
-            It's available as a web platform for the bank's internal users and
-            as a section in the mobile application for end users.
+            It's a web platform for the bank's internal users and as a section
+            in the mobile application for end users.
           </p>
           <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
             As its name indicates, it's a special section within the application
-            that only premium Santander customers have access to, through which
-            they receive
+            that only premium Santander customers have access to. In this
+            exclusive part of the application, select clients receive
             <span className="text-blood">
-              personalized attention to contract financial services in a 100%
-              digital way.
+              {" "}
+              personalized attention to contract financial services digitally,
+              without the need to go to a bank branch.
             </span>{" "}
-            On the internal side, it's an administrative platform that allows
-            one to track all contracts for financial products, keep a record of
-            each movement, and directly assign the client to an agent who will
-            provide permanent support.
+            Internally at the bank, it's an administrative platform that allows
+            staff to track all financial product contracts, keep a record of
+            each movement, and directly assign each client to an agent who will
+            be available for continued support.
           </p>
           <p className="text-xl md:text-2xl mt-4 dark:text-iron-300">
             I worked on this project from start to finish, from the initial
             kick-off, research, definition, and design to platform testing.
-            However, for privacy reasons, I can't show more information about
-            it.{" "}
+            However, for privacy reasons, I am unable to provide more details
+            about the project.
           </p>
         </div>
       </div>

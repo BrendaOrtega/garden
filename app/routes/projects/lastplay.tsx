@@ -16,7 +16,13 @@ export default function lastplay() {
         ></Parallax>
       </div>
       <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-water"> Projects </span> ⇢{" "}
+              <span className="text-white"> Lastplay </span>
+            </p>
+          </Link>
           <a
             href="https://www.lastplay.app/"
             target="_blank"
@@ -48,26 +54,28 @@ export default function lastplay() {
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
             <span className="text-water">Lastplay is a mobile application</span>{" "}
-            that offers specialized{" "}
+            that offers specialized
             <span className="text-water">
+              {" "}
               free services to manage sports tournaments{" "}
             </span>{" "}
-            (tochito, soccer and basketball). Considering the user involved in
-            this type of tournments, we identified three user types with
-            diferent needs: admin, player and guest.{" "}
+            (tochito, soccer, and basketball). After identifying the users
+            involved in this type of tournament, we identified three user types
+            with different needs: admin, player, and guest.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            Based on the business and User needs, we defined the minimum
-            features that they need to have a good experience in the app. As an
-            admin you can create a tournament, add teams, and players, publish
-            the game schedule, and track the score of each match; as a player,
-            you can register for a team, keep track of your game schedule, and
-            view general tournament information and as a visitor you can be
-            aware of the schedule of your favorite teams.
+            Based on the business and user needs, we defined the minimum
+            features needed to provide a good experience in the app. Admins can
+            create a tournament, add teams, and players, publish the game
+            schedule, and track the score of each match; players can register
+            for a team, keep track of your game schedule, and view general
+            tournament information and a visitor can be aware of the schedule of
+            your favorite teams.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             My role in this project was
             <span className="text-water">
+              {" "}
               to improve the user interface, take the brand guidelines and
               redefine the user experience through improvements to copy,
               workflows, and user interface elements
@@ -82,9 +90,9 @@ export default function lastplay() {
           Understanding and definition
         </h2>
         <p className="text-xl dark:text-iron-300 mt-6">
-          The business requirements and research results have been omitted for
-          privacy reasons. So, based on the research step results, the first
-          design proposal was done in two parts:
+          For reasons of privacy business requirements and research results have
+          not been included here. But, based on the research step results, the
+          first design proposal was done in two parts:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow">
@@ -115,15 +123,15 @@ export default function lastplay() {
           UI Design
         </h2>
         <p className="text-xl dark:text-iron-300 mt-6">
-          After advancing to medium-fidelity wireframes and testing them, a mood
-          board and style guide were created to get started with high-fidelity
+          After advancing to and testing medium-fidelity wireframes, a mood
+          board and style guide were created to get started on high-fidelity
           wireframes.
         </p>
         <p className="text-xl dark:text-iron-300 mt-6">
-          These are the screens designed before the interface updates and the
-          screens after new brand guidelines were applied. The improvement
+          These are the mockups designed before the interface updates and the
+          mockups after new brand guidelines were applied. The improvement
           included copy changes, redefinition of workflows, new alternative
-          flows that considered errors and empty states within the application,
+          flows that corrected errors and empty states within the application,
           and a large change related to interface elements and UI patterns.
         </p>
         <div className="flex flex-col justify-center items-center mt-10">
@@ -141,8 +149,8 @@ export default function lastplay() {
           The next steps will be to measure the use of the application and
           organize surveys and user tests to verify the effectiveness,
           efficiency, usability, and user satisfaction when using the
-          application and continue iterating based on the results. At the same
-          time, start to work on the admin panel that will be managed by
+          application and continue iterating based on these results. At the same
+          time, work will be started on the admin panel that will be managed by
           internal staff.
         </p>
         <img className="w-20 mt-6" src="/assets/lastplay/fur.png" />

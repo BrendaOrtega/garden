@@ -17,7 +17,13 @@ export default function santander() {
       </div>
 
       <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-salmon"> Projects </span> ⇢{" "}
+              <span className="text-white"> Santander </span>
+            </p>
+          </Link>
           <a
             href="https://www.santander.com.mx/"
             target="_blank"
@@ -45,32 +51,35 @@ export default function santander() {
           </p>
         </div>
         <div className="w-full md:w-[70%]">
-          <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
+          <p className="text-xl md:text-2xl dark:text-iron-300 mt-0">
             Santander App is the application of Santander Bank, which offers
-            banking services such as transfers, investments, card payments,
-            payment of services, card management, etc.
+            banking services such as transfers, investments, credit card
+            payments and management, payment for financial services, among
+            others.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            I worked in a general way on different features and flows within the
-            application. However, I directly had responsibility for 3 specific
-            features:
+            I worked on different features and flows within the application.
+            However, I was directly responsible for 3 specific features:
             <span className="text-salmon">
-              Card payments, Service payments and Investments.
+              card payments, service payments, and investments.
             </span>
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            Based on the guidelines and the previously defined design system, I
-            worked on the credit card payment flows: own and third parties,
-            registration, cancellation; services payments like registration of
-            services (electricity, internet, and telephone) and domiciliation of
-            services; and the investment flow where users can choose the type of
-            investment they want to do, term, amount, etc. Likewise, I worked on
+            Staying consistent with the guidelines and the previously defined
+            design system, I worked on the credit card payment flows: own and
+            third parties, registration, cancellation; services payments such as
+            registration of services (electricity, internet, and telephone) and
+            domiciliation of services; and the investment flow where users can
+            choose the type of investment they want, as well as details such as
+            the term and amount. I also worked
             <span className="text-salmon">
-              testing the components of the design system (in code).
+              {" "}
+              on testing the components of the design system (in code).
             </span>
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            For privacy reasons, I can't show more information about it.
+            For privacy reasons, I am unable to provide more details about this
+            project.
           </p>
         </div>
       </div>

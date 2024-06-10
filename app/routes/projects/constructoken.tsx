@@ -16,7 +16,13 @@ export default function constructoken() {
         ></Parallax>
       </div>
       <div className="flex flex-wrap md:flex-nowrap gap-12 mt-16 md:mt-28 ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-greenlight"> Projects </span> ⇢{" "}
+              <span className="text-white"> Constructoken</span>
+            </p>
+          </Link>
           <a
             href="https://constructoken.com/"
             target="_blank"
@@ -61,11 +67,10 @@ export default function constructoken() {
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             Clients carry out each part of the construction independently, from
             making the plan of the construction, procuring materials, to
-            supervising the work. To help self-producers with this complicated
-            process, was necessary to know their needs in each part of the
-            process and identify at which points Construtoken can help them in a
-            way that is useful to users and gives them the value necessary to
-            use it.
+            supervising the work. To help users with this complicated process,
+            it was necessary to know their needs in each part of the process and
+            identify at which points Construtoken can help them in a way that is
+            useful to users and gives them the value necessary to use it.
           </p>
         </div>
       </div>
@@ -77,8 +82,7 @@ export default function constructoken() {
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
           To fully understand the problem areas around the auto production
           housing process, I carried out three different research tasks to
-          collect as much information as possible about the challenges. These
-          were:
+          collect as much information as possible. These were:
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow  hover:-translate-y-4 transition-all">
@@ -124,10 +128,9 @@ export default function constructoken() {
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
           After gleaning valuable insights from the 'understand' phase, plotting
-          an affinity diagram and an empathy map, I formed two personas –
-          heavily influenced by the flexible questionnaire analysis. These were
-          created to help craft a better experience later down the line in the
-          ideation stage.
+          an affinity diagram and an empathy map, I formed two personas. These
+          were created to help craft a better experience later down the line in
+          the ideation stage.
         </p>
         <div className="flex flex-wrap md:flex-nowrap gap-16 mt-20">
           <div className="w-full md:w-[380px] grow">
@@ -215,10 +218,10 @@ export default function constructoken() {
         </h2>
 
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          After ensuring that the user flows match the users’ needs, I began
+          After ensuring that the user flows solve the users’ needs, I began
           working on a style guide based on the brand guidelines and then
-          continued with the high-purpose wireframes of both the application and
-          the website.
+          continued with the high-fidelity wireframes of both the application
+          and the website.
         </p>
         <div className=" flex flex-col gap-20 mt-20 ">
           <img src="/assets/constructoken/img15.png" />

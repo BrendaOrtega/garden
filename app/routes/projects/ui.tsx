@@ -16,7 +16,13 @@ export default function ui() {
         ></Parallax>
       </div>
       <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-[#B37CF2]"> Projects </span> ⇢{" "}
+              <span className="text-white"> UI Course </span>
+            </p>
+          </Link>
           <a
             href="https://ui.fixtergeek.com/"
             target="_blank"
@@ -45,26 +51,31 @@ export default function ui() {
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
             This is the website of my own{" "}
-            <span className="text-[#B37CF2]"> Interface Design course</span>,
-            part of the fixtergeek.com offer. This course is for designers or
-            developers who want to master the basics of UI design and make
-            better design decisions and support them.
+            <span className="text-[#B37CF2]">
+              {" "}
+              User Interface Design course
+            </span>
+            , which is part of the fixtergeek.com offer. This course is for
+            designers or developers who want to master the basics of UI design,
+            make better design decisions and support them with best practices.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-            In this course, you will learn theoretically and practically how to
-            choose your color palette and typography, learn about web elements
-            and their use cases, and current design trends, create a prototype,
-            and organize and apply usability tests to your design.
+            In this course, participants learn both theoretically and
+            practically how to choose color palettes and typographies. They also
+            learn about web elements and their use cases, current design trends,
+            create a prototype, and organize and apply usability tests to
+            design.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             <span className="text-[#B37CF2]">
-              The landing page aims to be clear through the copy, structure, and
-              visual content,
+              The landing page has been designed to be clear through the copy,
+              structure, and visual content,
             </span>{" "}
-            showing directly and simply the information that users want to know
-            about the course through adequate storytelling. While the interface
-            seeks
+            directly and simply presenting the information that users want to
+            know about the course through effective storytelling while the
+            interface seeks
             <span className="text-[#B37CF2]">
+              {" "}
               to be attractive, efficient, consistent, and interactive.
             </span>
           </p>

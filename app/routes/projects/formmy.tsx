@@ -16,7 +16,13 @@ export default function formmy() {
         ></Parallax>
       </div>
       <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-lila"> Projects </span> ⇢{" "}
+              <span className="text-white"> Formmy</span>
+            </p>
+          </Link>
           <a
             href="https://www.formmy.app/"
             target="_blank"
@@ -47,16 +53,20 @@ export default function formmy() {
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
             Formmy is a web application
-            <span className="text-lila"> for adding contact forms</span> to your
-            website. With Formmy you can create your form and customize it to
-            add it to your website just by copying and pasting an iframe into
-            your code and manage your client's messages from the dashboard.
+            <span className="text-lila">
+              {" "}
+              that allows you to add contact forms{" "}
+            </span>{" "}
+            to your website. With Formmy you can create your form, customize it,
+            and add it to your website just by copying and pasting an iframe
+            into your code. Then, you can manage your client's messages from the
+            dashboard.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             What type of inputs are necessary for the users? How might we
-            configure all form items in a way which entices users to implemented
-            in their websites? Is the step by step implementation process clear
-            to users?
+            configure all form items in a way which entices users to put it on
+            their websites? Is the step-by-step implementation process clear to
+            users?
           </p>
         </div>
       </div>

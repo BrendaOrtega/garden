@@ -16,7 +16,13 @@ export default function fixter() {
         ></Parallax>
       </div>
       <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-brand-500"> Projects </span> ⇢{" "}
+              <span className="text-white"> Fixter.org</span>
+            </p>
+          </Link>
           <a
             href="https://fixter.org/"
             target="_blank"
@@ -47,23 +53,23 @@ export default function fixter() {
         <div className="w-full md:w-[70%]">
           <p className="text-xl md:text-2xl dark:text-iron-300">
             Fixter.org is a{" "}
-            <span className="text-brand-500"> Consultancy Agency</span> that
-            offers IT services at affordable prices like{" "}
+            <span className="text-brand-500"> consultancy agency</span> that
+            offers IT services like web design,
             <span className="text-brand-500">
               {" "}
-              web design, web development, UX/UI services,{" "}
+              web development, UX/UI services, mobile apps development, and
+              programming language training courses at affordable prices.
             </span>{" "}
-            mobile apps development and programming language training courses.{" "}
           </p>
           <p className="text-xl md:text-2xl mt-6 dark:text-iron-300">
-            Recently, Fixter.org's decided to improve the experience in the
-            website based on the analytics data, update the brand guidelines,
-            and also they decided add new features like offering an online
-            quotation for his client's projects and they seek to show the list
-            of Software As A Service created by them, so, the old website didn't
-            have the architecture to display the new information it was
-            necessary to design a new website without change the tone and voice
-            brand.
+            Recently, Fixter.org's decided to use analytics data to improve the
+            user experience of their website. At the same time they began to
+            update the brand guidelines, and they also decided to add new
+            features such as an online quotation for their clients’ projects and
+            show the list of Software As A Service created by them, Since the
+            old website didn't have the architecture to display the new
+            information, it was necessary to design a new website without change
+            the tone and voice brand.
           </p>
           <p className="text-xl md:text-2xl mt-6 dark:text-iron-300">
             My challenge in this project was{" "}
@@ -80,10 +86,9 @@ export default function fixter() {
           UI Design
         </h2>
         <p className="text-xl dark:text-iron-300 mt-6">
-          These are the old website screens designed before the interface
-          updates and the screens after new brand guidelines were applied. The
-          improvement included changes in the interface elements and UI
-          patterns.
+          These are the old website mockups designed before the interface
+          updates and the mockups after new brand guidelines were applied. The
+          update included changes in the interface elements and UI patterns.
         </p>
         <div className="mt-10">
           <img src="/assets/fixter/img1.png" />
@@ -97,11 +102,11 @@ export default function fixter() {
         </h2>
         <p className="text-xl dark:text-iron-300 mt-6">
           The next steps are to organize user tests periodically as well as to
-          track the website's analytics (users, views, conversions, session
-          time, etc) to identify points of improvement and improve the usability
-          and efficiency in the website.
+          track the website's analytics (including users, views, conversions,
+          session time) to identify points in need of improvement and improve
+          the usability and efficiency of the website.
         </p>
-        <img className="w-20 mt-6" src="/assets/lastplay/fur.png" />
+        <img className="w-20 mt-6" src="/assets/fixter/fur.png" />
       </div>
     </section>
   );

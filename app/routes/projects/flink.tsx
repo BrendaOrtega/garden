@@ -16,7 +16,13 @@ export default function flink() {
         ></Parallax>
       </div>
       <div className="flex flex-wrap md:flex-nowrap gap-12 mt-16 md:mt-28 ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-ironblue"> Projects </span> ⇢{" "}
+              <span className="text-white"> Flink</span>
+            </p>
+          </Link>
           <a
             href="https://miflink.com/"
             target="_blank"
@@ -155,11 +161,11 @@ export default function flink() {
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
             {" "}
-            <span className="text-ironblue"> •</span> 50% of users feel they
-            more data or help to make better decisions
+            <span className="text-ironblue"> •</span> 50% of users feel that
+            having more data
             <span className="text-ironblue">
               {" "}
-              help to take better decisions
+              helps them make better decisions
             </span>
           </li>
           <li className="text-xl md:text-2xl dark:text-iron-300 mt-6">
@@ -179,16 +185,18 @@ export default function flink() {
           Plan of Action
         </h2>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          With all of the above in mind, the design and product teams paired up
-          to discuss ideas and proposals to solve our challenges:
+          With all of the above in mind, the challenges and objectives were
+          adjusted to solve both the needs of the user and the business, so the
+          design and product teams paired up to to discuss ideas and proposals
+          to solve our challenges:
         </p>
         <div className="flex  justify-center">
           <img className="w-[70%]" src="/assets/flink/img2.png" />
         </div>
         <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
-          After analyzing the user and business needs, our technical constraints
-          and the user experience that we want to offer, we agreed on the
-          following steps:
+          After rank our proposals, our technical constraints and the user
+          experience that we want to offer, we agreed on prioritize two
+          features:
         </p>
         <div className="flex justify-around mt-20 flex-wrap md:flex-nowrap">
           <img className="w-[480px]" src="/assets/flink/img3.png" />

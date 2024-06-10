@@ -17,7 +17,13 @@ export default function fixtergeek() {
         ></Parallax>
       </div>
       <div className="flex gap-12 mt-16 md:mt-28 flex-wrap md:flex-nowrap ">
-        <div className="w-full md:w-[30%]">
+        <div className="w-full md:w-[30%] relative">
+          <Link to="/">
+            <p className="uppercase text-white/30 text-xs absolute -top-10">
+              <span className="hover:text-mora"> Projects </span> ⇢{" "}
+              <span className="text-white"> Fixtergeek</span>
+            </p>
+          </Link>
           <a
             href="https://fixtergeek.com/"
             target="_blank"
@@ -50,7 +56,7 @@ export default function fixtergeek() {
           <p className="text-xl md:text-2xl dark:text-iron-300">
             Fixtergeek is a{" "}
             <span className="text-mora">
-              learning platformthat offers on-demand development courses{" "}
+              learning platform that offers on-demand development courses{" "}
             </span>{" "}
             for programming languages or frameworks such as JavaScript, React,
             Remix, CSS, NodeJS, NextJs, Redux, etc. And also, you can find there
@@ -67,8 +73,8 @@ export default function fixtergeek() {
             With this in mind, I identified two types of users: collaborators
             and students. As a collaborator, our users need a way to view key
             data, manage courses (create them, upload content, and edit them),
-            send the newsletter, and assign courses to enrolled students. Our
-            student users need to be able to see their courses, access each
+            send the newsletter, and assign courses to enrolled students. And as
+            a student, users need to be able to see their courses, access each
             other's material, and edit his profile.
           </p>
           <p className="text-xl md:text-2xl dark:text-iron-300 mt-6">
